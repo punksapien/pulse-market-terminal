@@ -1,0 +1,45 @@
+{
+  "schema": "pulse.live_price.v1",
+  "mapping_version": "sha256:164d44a50b3cab7acdf37ccf32dd2b2034feac1fcbc33428f071c920ecfdae6c",
+  "sequence": 1,
+  "generated_ms": 1800000000000,
+  "expires_ms": 1800000015000,
+  "rows": [
+    {
+      "id": 0,
+      "status": "unavailable",
+      "reason": "source_unavailable",
+      "source_ms": null,
+      "expires_ms": null,
+      "input_refs": [],
+      "price": null
+    },
+    {
+      "id": 1,
+      "status": "unavailable",
+      "reason": "source_unavailable",
+      "source_ms": null,
+      "expires_ms": null,
+      "input_refs": [],
+      "price": null
+    },
+    {
+      "id": 2,
+      "status": "unavailable",
+      "reason": "source_unavailable",
+      "source_ms": null,
+      "expires_ms": null,
+      "input_refs": [],
+      "price": null
+    }
+  ],
+  "inputs": {
+    "fixture:live:price": {
+      "version": "fixture.live.v1",
+      "source_ms": 1799999999500,
+      "verified_at_ms": null,
+      "expires_ms": 1800000119500,
+      "definition_version": "live.price.v1"
+    }
+  }
+}

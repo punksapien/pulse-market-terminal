@@ -1,0 +1,16 @@
+{
+ "symbol": "BTCUSDT",
+ "ticker": {
+  "lastPrice": "79463.20",
+  "openPrice": "81473.90",
+  "priceChangePercent": "-2.468",
+  "openTime": 1792769880000,
+  "closeTime": 1792856312414
+ },
+ "kline_1m_at_openTime": {
+  "openTime": 1792769880000,
+  "open": "81473.90"
+ },
+ "computed_percent": -2.468,
+ "matches": true
+}

@@ -1,0 +1,16 @@
+{
+ "symbol": "ETHUSDT",
+ "ticker": {
+  "lastPrice": "2296.58",
+  "openPrice": "2400.83",
+  "priceChangePercent": "-4.342",
+  "openTime": 1792769880000,
+  "closeTime": 1792856311623
+ },
+ "kline_1m_at_openTime": {
+  "openTime": 1792769880000,
+  "open": "2400.83"
+ },
+ "computed_percent": -4.342,
+ "matches": true
+}

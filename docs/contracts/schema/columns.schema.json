@@ -1,0 +1,455 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pulse:schema:v1:columns",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "pulse.columns.v1"
+    },
+    "part": {
+      "enum": [
+        "core",
+        "volatility",
+        "ls",
+        "funding",
+        "funding_change",
+        "oi",
+        "references"
+      ]
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 8192
+    },
+    "mapping_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9_.:-]+$"
+    },
+    "generation": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9_.:-]+$"
+    },
+    "horizon": {
+      "enum": [
+        "1H",
+        "4H",
+        "24H"
+      ]
+    },
+    "generated_ms": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "expires_ms": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "metadata": {
+      "type": "array",
+      "maxItems": 100000,
+      "items": {
+        "type": "object"
+      }
+    },
+    "groups": {
+      "type": "array",
+      "maxItems": 100000,
+      "items": {
+        "type": "object"
+      }
+    },
+    "columns": {
+      "type": "array",
+      "maxItems": 1024,
+      "items": {
+        "oneOf": [
+          {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 32,
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128
+                }
+              },
+              {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 8191
+                },
+                "uniqueItems": true
+              },
+              {
+                "const": "j"
+              },
+              {
+                "oneOf": [
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "c"
+                      },
+                      {}
+                    ],
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "d"
+                      },
+                      {
+                        "type": "array"
+                      }
+                    ],
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "s"
+                      },
+                      {},
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "prefixItems": [
+                            {
+                              "type": "integer",
+                              "minimum": 0
+                            },
+                            {}
+                          ],
+                          "minItems": 2,
+                          "maxItems": 2
+                        }
+                      }
+                    ],
+                    "minItems": 3,
+                    "maxItems": 3
+                  }
+                ]
+              }
+            ],
+            "minItems": 4,
+            "maxItems": 4
+          },
+          {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 32,
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128
+                }
+              },
+              {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 8191
+                },
+                "uniqueItems": true
+              },
+              {
+                "const": "f"
+              },
+              {
+                "oneOf": [
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "c"
+                      },
+                      {}
+                    ],
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "d"
+                      },
+                      {
+                        "type": "array"
+                      }
+                    ],
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "s"
+                      },
+                      {},
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "prefixItems": [
+                            {
+                              "type": "integer",
+                              "minimum": 0
+                            },
+                            {}
+                          ],
+                          "minItems": 2,
+                          "maxItems": 2
+                        }
+                      }
+                    ],
+                    "minItems": 3,
+                    "maxItems": 3
+                  }
+                ]
+              },
+              {
+                "oneOf": [
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "c"
+                      },
+                      {}
+                    ],
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "d"
+                      },
+                      {
+                        "type": "array"
+                      }
+                    ],
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "s"
+                      },
+                      {},
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "prefixItems": [
+                            {
+                              "type": "integer",
+                              "minimum": 0
+                            },
+                            {}
+                          ],
+                          "minItems": 2,
+                          "maxItems": 2
+                        }
+                      }
+                    ],
+                    "minItems": 3,
+                    "maxItems": 3
+                  }
+                ]
+              },
+              {
+                "oneOf": [
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "c"
+                      },
+                      {}
+                    ],
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "d"
+                      },
+                      {
+                        "type": "array"
+                      }
+                    ],
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "s"
+                      },
+                      {},
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "prefixItems": [
+                            {
+                              "type": "integer",
+                              "minimum": 0
+                            },
+                            {}
+                          ],
+                          "minItems": 2,
+                          "maxItems": 2
+                        }
+                      }
+                    ],
+                    "minItems": 3,
+                    "maxItems": 3
+                  }
+                ]
+              },
+              {
+                "oneOf": [
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "c"
+                      },
+                      {}
+                    ],
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "d"
+                      },
+                      {
+                        "type": "array"
+                      }
+                    ],
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "s"
+                      },
+                      {},
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "prefixItems": [
+                            {
+                              "type": "integer",
+                              "minimum": 0
+                            },
+                            {}
+                          ],
+                          "minItems": 2,
+                          "maxItems": 2
+                        }
+                      }
+                    ],
+                    "minItems": 3,
+                    "maxItems": 3
+                  }
+                ]
+              }
+            ],
+            "minItems": 7,
+            "maxItems": 7
+          }
+        ]
+      }
+    },
+    "inputs": {
+      "type": "object"
+    },
+    "header": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema",
+    "part",
+    "count",
+    "mapping_version",
+    "generation",
+    "horizon",
+    "generated_ms",
+    "expires_ms",
+    "metadata",
+    "groups",
+    "columns",
+    "inputs"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "part": {
+            "const": "core"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "header"
+        ]
+      },
+      "else": {
+        "not": {
+          "required": [
+            "header"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,578 @@
+{
+  "schema": "pulse.columns.v1",
+  "part": "core",
+  "count": 1,
+  "mapping_version": "sha256:f6bf9e306fa2314c7de7d6b58d2796fb1b9322cd88d737e6e6728733bb510ca9",
+  "generation": "sha256:49c5810a2af990d3bad8240b69dfdafd101c866c5528d9503e456452bd958ec2",
+  "horizon": "1H",
+  "generated_ms": 1800000000000,
+  "expires_ms": 1800000060000,
+  "metadata": [
+    {
+      "unit": "fraction",
+      "assurance": null,
+      "definition_version": "price_change.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "score",
+      "assurance": null,
+      "definition_version": "legacy_context.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "log_ratio",
+      "assurance": null,
+      "definition_version": "legacy_context.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "state",
+      "assurance": null,
+      "definition_version": "legacy_context.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "fraction",
+      "assurance": null,
+      "definition_version": "legacy_outlook.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "text",
+      "assurance": null,
+      "definition_version": "legacy_outlook.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "state",
+      "assurance": null,
+      "definition_version": "legacy_outlook.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "price",
+      "assurance": null,
+      "definition_version": "price_change.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "state",
+      "assurance": null,
+      "definition_version": "signal.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "USDT",
+      "assurance": null,
+      "definition_version": "volume.rt.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    }
+  ],
+  "groups": [
+    {
+      "asof_ms": 1799999999000,
+      "expires_ms": 1800000060000,
+      "input_refs": [
+        "fixture:source"
+      ]
+    }
+  ],
+  "columns": [
+    [
+      [
+        "changes",
+        "1H"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.02"
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "context",
+        "rsi_14"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "55"
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "context",
+        "volatility_momentum"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.189"
+      ],
+      [
+        "c",
+        2
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "context",
+        "volatility_velocity"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "Accelerating"
+      ],
+      [
+        "c",
+        3
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "history"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        {}
+      ]
+    ],
+    [
+      [
+        "id"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        0
+      ]
+    ],
+    [
+      [
+        "outlook",
+        "confidence"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.45"
+      ],
+      [
+        "c",
+        4
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "outlook",
+        "description"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "Fictional protocol fixture; not a market outlook."
+      ],
+      [
+        "c",
+        5
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "outlook",
+        "label"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "Fade"
+      ],
+      [
+        "c",
+        6
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "price"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "102"
+      ],
+      [
+        "c",
+        7
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "signal",
+        "category"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "Uptrend"
+      ],
+      [
+        "c",
+        8
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "signal",
+        "code"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "MomentumLong"
+      ],
+      [
+        "c",
+        8
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "signal_since",
+        "asof_ms"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        1799999999000
+      ]
+    ],
+    [
+      [
+        "signal_since",
+        "at_ms"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        1799999990000
+      ]
+    ],
+    [
+      [
+        "signal_since",
+        "definition_version"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "signal_state.v1"
+      ]
+    ],
+    [
+      [
+        "signal_since",
+        "expires_ms"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        1800000060000
+      ]
+    ],
+    [
+      [
+        "signal_since",
+        "input_refs"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        [
+          "fixture:source"
+        ]
+      ]
+    ],
+    [
+      [
+        "signal_since",
+        "price"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "100"
+      ]
+    ],
+    [
+      [
+        "signal_since",
+        "reason"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        null
+      ]
+    ],
+    [
+      [
+        "signal_since",
+        "state"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "MomentumLong"
+      ]
+    ],
+    [
+      [
+        "signal_since",
+        "status"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "available"
+      ]
+    ],
+    [
+      [
+        "volume",
+        "quote_24h"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "1000000"
+      ],
+      [
+        "c",
+        9
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "volume",
+        "venue"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "Binance_USDT_perpetual"
+      ]
+    ]
+  ],
+  "header": {
+    "schema": "pulse.snapshot.v1",
+    "mapping_version": "sha256:f6bf9e306fa2314c7de7d6b58d2796fb1b9322cd88d737e6e6728733bb510ca9",
+    "generation": "sha256:49c5810a2af990d3bad8240b69dfdafd101c866c5528d9503e456452bd958ec2",
+    "horizon": "1H",
+    "generated_ms": 1800000000000,
+    "expires_ms": 1800000060000,
+    "universe": [
+      {
+        "id": 0,
+        "pair_id": "B-BTC_USDT",
+        "symbol": "BTCUSDT",
+        "funding_hours": 8
+      }
+    ]
+  },
+  "inputs": {
+    "fixture:source": {
+      "version": "fixture.input.v1",
+      "source_ms": 1799999999000,
+      "verified_at_ms": 1800000000000,
+      "expires_ms": 1800029699000,
+      "definition_version": "fixture.source.v1"
+    }
+  }
+}

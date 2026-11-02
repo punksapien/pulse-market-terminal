@@ -1,0 +1,10 @@
+{
+  "evidence_commit": "635b3a6",
+  "kind": "historical public Mumbai reachability observation, not live data",
+  "pair_id": "BTCUSDT",
+  "series": "global",
+  "bucket_ms": 1792979700000,
+  "ratio": "2.2289",
+  "long_share": "0.6903",
+  "short_share": "0.3097"
+}

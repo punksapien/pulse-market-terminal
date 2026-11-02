@@ -1,0 +1,2112 @@
+{
+  "policy": "top350.quote_24h_usdt.v1",
+  "source_ms": 1793162493004,
+  "mapping_version": "sha256:6a02d7759bfcc2c27159385e0e03119a2ea3d8112723c0a6ceeca91cadca4fc8",
+  "ranking_sha256": "sha256:6beb0616abcc24a97351739220f29d2e373521e1e127ed47f69500ae4358c267",
+  "cutoff": {
+    "pair_id": "B-SKR_USDT",
+    "quote_24h_usdt": "1404848.941745"
+  },
+  "universe": [
+    {
+      "funding_hours": 4,
+      "id": 0,
+      "pair_id": "B-0G_USDT",
+      "symbol": "0GUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 1,
+      "pair_id": "B-1000BONK_USDT",
+      "symbol": "1000BONKUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 2,
+      "pair_id": "B-1000FLOKI_USDT",
+      "symbol": "1000FLOKIUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 3,
+      "pair_id": "B-1000LUNC_USDT",
+      "symbol": "1000LUNCUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 4,
+      "pair_id": "B-1000PEPE_USDT",
+      "symbol": "1000PEPEUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 5,
+      "pair_id": "B-1000SHIB_USDT",
+      "symbol": "1000SHIBUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 6,
+      "pair_id": "B-1000XEC_USDT",
+      "symbol": "1000XECUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 7,
+      "pair_id": "B-2Z_USDT",
+      "symbol": "2ZUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 8,
+      "pair_id": "B-4_USDT",
+      "symbol": "4USDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 9,
+      "pair_id": "B-AAVE_USDT",
+      "symbol": "AAVEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 10,
+      "pair_id": "B-ACE_USDT",
+      "symbol": "ACEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 11,
+      "pair_id": "B-ACU_USDT",
+      "symbol": "ACUUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 12,
+      "pair_id": "B-ADA_USDT",
+      "symbol": "ADAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 13,
+      "pair_id": "B-AERO_USDT",
+      "symbol": "AEROUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 14,
+      "pair_id": "B-AGLD_USDT",
+      "symbol": "AGLDUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 15,
+      "pair_id": "B-AGT_USDT",
+      "symbol": "AGTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 16,
+      "pair_id": "B-AIGENSYN_USDT",
+      "symbol": "AIGENSYNUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 17,
+      "pair_id": "B-AIN_USDT",
+      "symbol": "AINUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 18,
+      "pair_id": "B-AIOT_USDT",
+      "symbol": "AIOTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 19,
+      "pair_id": "B-AKE_USDT",
+      "symbol": "AKEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 20,
+      "pair_id": "B-AKT_USDT",
+      "symbol": "AKTUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 21,
+      "pair_id": "B-ALGO_USDT",
+      "symbol": "ALGOUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 22,
+      "pair_id": "B-ALLO_USDT",
+      "symbol": "ALLOUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 23,
+      "pair_id": "B-ALT_USDT",
+      "symbol": "ALTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 24,
+      "pair_id": "B-ANIME_USDT",
+      "symbol": "ANIMEUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 25,
+      "pair_id": "B-APE_USDT",
+      "symbol": "APEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 26,
+      "pair_id": "B-API3_USDT",
+      "symbol": "API3USDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 27,
+      "pair_id": "B-APR_USDT",
+      "symbol": "APRUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 28,
+      "pair_id": "B-APT_USDT",
+      "symbol": "APTUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 29,
+      "pair_id": "B-ARB_USDT",
+      "symbol": "ARBUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 30,
+      "pair_id": "B-ARC_USDT",
+      "symbol": "ARCUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 31,
+      "pair_id": "B-ARIA_USDT",
+      "symbol": "ARIAUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 32,
+      "pair_id": "B-ARKM_USDT",
+      "symbol": "ARKMUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 33,
+      "pair_id": "B-ARK_USDT",
+      "symbol": "ARKUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 34,
+      "pair_id": "B-ARX_USDT",
+      "symbol": "ARXUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 35,
+      "pair_id": "B-AR_USDT",
+      "symbol": "ARUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 36,
+      "pair_id": "B-ASTER_USDT",
+      "symbol": "ASTERUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 37,
+      "pair_id": "B-ATH_USDT",
+      "symbol": "ATHUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 38,
+      "pair_id": "B-ATOM_USDT",
+      "symbol": "ATOMUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 39,
+      "pair_id": "B-AT_USDT",
+      "symbol": "ATUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 40,
+      "pair_id": "B-AUCTION_USDT",
+      "symbol": "AUCTIONUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 41,
+      "pair_id": "B-AVAX_USDT",
+      "symbol": "AVAXUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 42,
+      "pair_id": "B-AVA_USDT",
+      "symbol": "AVAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 43,
+      "pair_id": "B-AVNT_USDT",
+      "symbol": "AVNTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 44,
+      "pair_id": "B-AXL_USDT",
+      "symbol": "AXLUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 45,
+      "pair_id": "B-AXS_USDT",
+      "symbol": "AXSUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 46,
+      "pair_id": "B-AZTEC_USDT",
+      "symbol": "AZTECUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 47,
+      "pair_id": "B-A_USDT",
+      "symbol": "AUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 48,
+      "pair_id": "B-BABY_USDT",
+      "symbol": "BABYUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 49,
+      "pair_id": "B-BANK_USDT",
+      "symbol": "BANKUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 50,
+      "pair_id": "B-BASED_USDT",
+      "symbol": "BASEDUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 51,
+      "pair_id": "B-BAT_USDT",
+      "symbol": "BATUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 52,
+      "pair_id": "B-BB_USDT",
+      "symbol": "BBUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 53,
+      "pair_id": "B-BCH_USDT",
+      "symbol": "BCHUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 54,
+      "pair_id": "B-BEAMX_USDT",
+      "symbol": "BEAMXUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 55,
+      "pair_id": "B-BEAT_USDT",
+      "symbol": "BEATUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 56,
+      "pair_id": "B-BERA_USDT",
+      "symbol": "BERAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 57,
+      "pair_id": "B-BILL_USDT",
+      "symbol": "BILLUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 58,
+      "pair_id": "B-BIO_USDT",
+      "symbol": "BIOUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 59,
+      "pair_id": "B-BIRB_USDT",
+      "symbol": "BIRBUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 60,
+      "pair_id": "B-BLESS_USDT",
+      "symbol": "BLESSUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 61,
+      "pair_id": "B-BLUR_USDT",
+      "symbol": "BLURUSDT"
+    },
+    {
+      "funding_hours": 1,
+      "id": 62,
+      "pair_id": "B-BMT_USDT",
+      "symbol": "BMTUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 63,
+      "pair_id": "B-BNB_USDT",
+      "symbol": "BNBUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 64,
+      "pair_id": "B-BOME_USDT",
+      "symbol": "BOMEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 65,
+      "pair_id": "B-BREV_USDT",
+      "symbol": "BREVUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 66,
+      "pair_id": "B-BR_USDT",
+      "symbol": "BRUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 67,
+      "pair_id": "B-BSB_USDT",
+      "symbol": "BSBUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 68,
+      "pair_id": "B-BTC_USDT",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 69,
+      "pair_id": "B-BTR_USDT",
+      "symbol": "BTRUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 70,
+      "pair_id": "B-BTW_USDT",
+      "symbol": "BTWUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 71,
+      "pair_id": "B-BULLA_USDT",
+      "symbol": "BULLAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 72,
+      "pair_id": "B-BZ_USDT",
+      "symbol": "BZUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 73,
+      "pair_id": "B-B_USDT",
+      "symbol": "BUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 74,
+      "pair_id": "B-CAKE_USDT",
+      "symbol": "CAKEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 75,
+      "pair_id": "B-CAP_USDT",
+      "symbol": "CAPUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 76,
+      "pair_id": "B-CC_USDT",
+      "symbol": "CCUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 77,
+      "pair_id": "B-CELO_USDT",
+      "symbol": "CELOUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 78,
+      "pair_id": "B-CFG_USDT",
+      "symbol": "CFGUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 79,
+      "pair_id": "B-CFX_USDT",
+      "symbol": "CFXUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 80,
+      "pair_id": "B-CHIP_USDT",
+      "symbol": "CHIPUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 81,
+      "pair_id": "B-CHR_USDT",
+      "symbol": "CHRUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 82,
+      "pair_id": "B-CHZ_USDT",
+      "symbol": "CHZUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 83,
+      "pair_id": "B-CLANKER_USDT",
+      "symbol": "CLANKERUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 84,
+      "pair_id": "B-CLO_USDT",
+      "symbol": "CLOUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 85,
+      "pair_id": "B-CL_USDT",
+      "symbol": "CLUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 86,
+      "pair_id": "B-COMP_USDT",
+      "symbol": "COMPUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 87,
+      "pair_id": "B-COPPER_USDT",
+      "symbol": "COPPERUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 88,
+      "pair_id": "B-COTI_USDT",
+      "symbol": "COTIUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 89,
+      "pair_id": "B-CRV_USDT",
+      "symbol": "CRVUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 90,
+      "pair_id": "B-CTR_USDT",
+      "symbol": "CTRUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 91,
+      "pair_id": "B-CT_USDT",
+      "symbol": "CTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 92,
+      "pair_id": "B-CVC_USDT",
+      "symbol": "CVCUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 93,
+      "pair_id": "B-CYBER_USDT",
+      "symbol": "CYBERUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 94,
+      "pair_id": "B-CYS_USDT",
+      "symbol": "CYSUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 95,
+      "pair_id": "B-DASH_USDT",
+      "symbol": "DASHUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 96,
+      "pair_id": "B-DATAIP_USDT",
+      "symbol": "DATAIPUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 97,
+      "pair_id": "B-DEXE_USDT",
+      "symbol": "DEXEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 98,
+      "pair_id": "B-DODOX_USDT",
+      "symbol": "DODOXUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 99,
+      "pair_id": "B-DOGE_USDT",
+      "symbol": "DOGEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 100,
+      "pair_id": "B-DOOD_USDT",
+      "symbol": "DOODUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 101,
+      "pair_id": "B-DOS_USDT",
+      "symbol": "DOSUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 102,
+      "pair_id": "B-DOT_USDT",
+      "symbol": "DOTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 103,
+      "pair_id": "B-DUSK_USDT",
+      "symbol": "DUSKUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 104,
+      "pair_id": "B-DYDX_USDT",
+      "symbol": "DYDXUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 105,
+      "pair_id": "B-EDEN_USDT",
+      "symbol": "EDENUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 106,
+      "pair_id": "B-EDGE_USDT",
+      "symbol": "EDGEUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 107,
+      "pair_id": "B-EDU_USDT",
+      "symbol": "EDUUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 108,
+      "pair_id": "B-EGLD_USDT",
+      "symbol": "EGLDUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 109,
+      "pair_id": "B-EIGEN_USDT",
+      "symbol": "EIGENUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 110,
+      "pair_id": "B-ELSA_USDT",
+      "symbol": "ELSAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 111,
+      "pair_id": "B-ENA_USDT",
+      "symbol": "ENAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 112,
+      "pair_id": "B-ENSO_USDT",
+      "symbol": "ENSOUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 113,
+      "pair_id": "B-ENS_USDT",
+      "symbol": "ENSUSDT"
+    },
+    {
+      "funding_hours": 1,
+      "id": 114,
+      "pair_id": "B-ERA_USDT",
+      "symbol": "ERAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 115,
+      "pair_id": "B-ESPORTS_USDT",
+      "symbol": "ESPORTSUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 116,
+      "pair_id": "B-ESP_USDT",
+      "symbol": "ESPUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 117,
+      "pair_id": "B-ETC_USDT",
+      "symbol": "ETCUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 118,
+      "pair_id": "B-ETHFI_USDT",
+      "symbol": "ETHFIUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 119,
+      "pair_id": "B-ETH_USDT",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 120,
+      "pair_id": "B-EUL_USDT",
+      "symbol": "EULUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 121,
+      "pair_id": "B-EVAA_USDT",
+      "symbol": "EVAAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 122,
+      "pair_id": "B-FARTCOIN_USDT",
+      "symbol": "FARTCOINUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 123,
+      "pair_id": "B-FET_USDT",
+      "symbol": "FETUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 124,
+      "pair_id": "B-FF_USDT",
+      "symbol": "FFUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 125,
+      "pair_id": "B-FIL_USDT",
+      "symbol": "FILUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 126,
+      "pair_id": "B-FLOCK_USDT",
+      "symbol": "FLOCKUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 127,
+      "pair_id": "B-FOGO_USDT",
+      "symbol": "FOGOUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 128,
+      "pair_id": "B-F_USDT",
+      "symbol": "FUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 129,
+      "pair_id": "B-GALA_USDT",
+      "symbol": "GALAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 130,
+      "pair_id": "B-GENIUS_USDT",
+      "symbol": "GENIUSUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 131,
+      "pair_id": "B-GIGGLE_USDT",
+      "symbol": "GIGGLEUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 132,
+      "pair_id": "B-GMX_USDT",
+      "symbol": "GMXUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 133,
+      "pair_id": "B-GPS_USDT",
+      "symbol": "GPSUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 134,
+      "pair_id": "B-GRAM_USDT",
+      "symbol": "GRAMUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 135,
+      "pair_id": "B-GRASS_USDT",
+      "symbol": "GRASSUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 136,
+      "pair_id": "B-GRIFFAIN_USDT",
+      "symbol": "GRIFFAINUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 137,
+      "pair_id": "B-GRT_USDT",
+      "symbol": "GRTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 138,
+      "pair_id": "B-GRVT_USDT",
+      "symbol": "GRVTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 139,
+      "pair_id": "B-GTC_USDT",
+      "symbol": "GTCUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 140,
+      "pair_id": "B-GWEI_USDT",
+      "symbol": "GWEIUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 141,
+      "pair_id": "B-G_USDT",
+      "symbol": "GUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 142,
+      "pair_id": "B-HAEDAL_USDT",
+      "symbol": "HAEDALUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 143,
+      "pair_id": "B-HANA_USDT",
+      "symbol": "HANAUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 144,
+      "pair_id": "B-HBAR_USDT",
+      "symbol": "HBARUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 145,
+      "pair_id": "B-HEMI_USDT",
+      "symbol": "HEMIUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 146,
+      "pair_id": "B-HOME_USDT",
+      "symbol": "HOMEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 147,
+      "pair_id": "B-HUMA_USDT",
+      "symbol": "HUMAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 148,
+      "pair_id": "B-HYPE_USDT",
+      "symbol": "HYPEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 149,
+      "pair_id": "B-H_USDT",
+      "symbol": "HUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 150,
+      "pair_id": "B-ICNT_USDT",
+      "symbol": "ICNTUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 151,
+      "pair_id": "B-ICP_USDT",
+      "symbol": "ICPUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 152,
+      "pair_id": "B-ID_USDT",
+      "symbol": "IDUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 153,
+      "pair_id": "B-INIT_USDT",
+      "symbol": "INITUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 154,
+      "pair_id": "B-INJ_USDT",
+      "symbol": "INJUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 155,
+      "pair_id": "B-INX_USDT",
+      "symbol": "INXUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 156,
+      "pair_id": "B-IN_USDT",
+      "symbol": "INUSDT"
+    },
+    {
+      "funding_hours": 1,
+      "id": 157,
+      "pair_id": "B-IOST_USDT",
+      "symbol": "IOSTUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 158,
+      "pair_id": "B-IOTA_USDT",
+      "symbol": "IOTAUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 159,
+      "pair_id": "B-IOTX_USDT",
+      "symbol": "IOTXUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 160,
+      "pair_id": "B-IO_USDT",
+      "symbol": "IOUSDT"
+    },
+    {
+      "funding_hours": 1,
+      "id": 161,
+      "pair_id": "B-IRYS_USDT",
+      "symbol": "IRYSUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 162,
+      "pair_id": "B-JASMY_USDT",
+      "symbol": "JASMYUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 163,
+      "pair_id": "B-JCT_USDT",
+      "symbol": "JCTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 164,
+      "pair_id": "B-JST_USDT",
+      "symbol": "JSTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 165,
+      "pair_id": "B-JTO_USDT",
+      "symbol": "JTOUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 166,
+      "pair_id": "B-JUP_USDT",
+      "symbol": "JUPUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 167,
+      "pair_id": "B-KAIA_USDT",
+      "symbol": "KAIAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 168,
+      "pair_id": "B-KAITO_USDT",
+      "symbol": "KAITOUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 169,
+      "pair_id": "B-KAS_USDT",
+      "symbol": "KASUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 170,
+      "pair_id": "B-KAT_USDT",
+      "symbol": "KATUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 171,
+      "pair_id": "B-KAVA_USDT",
+      "symbol": "KAVAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 172,
+      "pair_id": "B-KGEN_USDT",
+      "symbol": "KGENUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 173,
+      "pair_id": "B-KITE_USDT",
+      "symbol": "KITEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 174,
+      "pair_id": "B-KMNO_USDT",
+      "symbol": "KMNOUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 175,
+      "pair_id": "B-KOMA_USDT",
+      "symbol": "KOMAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 176,
+      "pair_id": "B-LAB_USDT",
+      "symbol": "LABUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 177,
+      "pair_id": "B-LA_USDT",
+      "symbol": "LAUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 178,
+      "pair_id": "B-LDO_USDT",
+      "symbol": "LDOUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 179,
+      "pair_id": "B-LIGHT_USDT",
+      "symbol": "LIGHTUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 180,
+      "pair_id": "B-LINK_USDT",
+      "symbol": "LINKUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 181,
+      "pair_id": "B-LIT_USDT",
+      "symbol": "LITUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 182,
+      "pair_id": "B-LPT_USDT",
+      "symbol": "LPTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 183,
+      "pair_id": "B-LSK_USDT",
+      "symbol": "LSKUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 184,
+      "pair_id": "B-LTC_USDT",
+      "symbol": "LTCUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 185,
+      "pair_id": "B-LUMIA_USDT",
+      "symbol": "LUMIAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 186,
+      "pair_id": "B-LYN_USDT",
+      "symbol": "LYNUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 187,
+      "pair_id": "B-MAGIC_USDT",
+      "symbol": "MAGICUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 188,
+      "pair_id": "B-MAGMA_USDT",
+      "symbol": "MAGMAUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 189,
+      "pair_id": "B-MANA_USDT",
+      "symbol": "MANAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 190,
+      "pair_id": "B-MANTA_USDT",
+      "symbol": "MANTAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 191,
+      "pair_id": "B-MANTRA_USDT",
+      "symbol": "MANTRAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 192,
+      "pair_id": "B-MARSCOIN_USDT",
+      "symbol": "MARSCOINUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 193,
+      "pair_id": "B-MASK_USDT",
+      "symbol": "MASKUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 194,
+      "pair_id": "B-MEGA_USDT",
+      "symbol": "MEGAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 195,
+      "pair_id": "B-MEME_USDT",
+      "symbol": "MEMEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 196,
+      "pair_id": "B-METIS_USDT",
+      "symbol": "METISUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 197,
+      "pair_id": "B-MET_USDT",
+      "symbol": "METUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 198,
+      "pair_id": "B-MEW_USDT",
+      "symbol": "MEWUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 199,
+      "pair_id": "B-MINA_USDT",
+      "symbol": "MINAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 200,
+      "pair_id": "B-MMT_USDT",
+      "symbol": "MMTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 201,
+      "pair_id": "B-MOCA_USDT",
+      "symbol": "MOCAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 202,
+      "pair_id": "B-MON_USDT",
+      "symbol": "MONUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 203,
+      "pair_id": "B-MOODENG_USDT",
+      "symbol": "MOODENGUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 204,
+      "pair_id": "B-MORPHO_USDT",
+      "symbol": "MORPHOUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 205,
+      "pair_id": "B-MOVR_USDT",
+      "symbol": "MOVRUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 206,
+      "pair_id": "B-MUBARAK_USDT",
+      "symbol": "MUBARAKUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 207,
+      "pair_id": "B-MYX_USDT",
+      "symbol": "MYXUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 208,
+      "pair_id": "B-M_USDT",
+      "symbol": "MUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 209,
+      "pair_id": "B-NATGAS_USDT",
+      "symbol": "NATGASUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 210,
+      "pair_id": "B-NEAR_USDT",
+      "symbol": "NEARUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 211,
+      "pair_id": "B-NEIRO_USDT",
+      "symbol": "NEIROUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 212,
+      "pair_id": "B-NEO_USDT",
+      "symbol": "NEOUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 213,
+      "pair_id": "B-NIGHT_USDT",
+      "symbol": "NIGHTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 214,
+      "pair_id": "B-NIL_USDT",
+      "symbol": "NILUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 215,
+      "pair_id": "B-NMR_USDT",
+      "symbol": "NMRUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 216,
+      "pair_id": "B-NOM_USDT",
+      "symbol": "NOMUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 217,
+      "pair_id": "B-OGN_USDT",
+      "symbol": "OGNUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 218,
+      "pair_id": "B-ONDO_USDT",
+      "symbol": "ONDOUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 219,
+      "pair_id": "B-ONE_USDT",
+      "symbol": "ONEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 220,
+      "pair_id": "B-ONG_USDT",
+      "symbol": "ONGUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 221,
+      "pair_id": "B-ON_USDT",
+      "symbol": "ONUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 222,
+      "pair_id": "B-OPEN_USDT",
+      "symbol": "OPENUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 223,
+      "pair_id": "B-OPG_USDT",
+      "symbol": "OPGUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 224,
+      "pair_id": "B-OPN_USDT",
+      "symbol": "OPNUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 225,
+      "pair_id": "B-OP_USDT",
+      "symbol": "OPUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 226,
+      "pair_id": "B-ORCA_USDT",
+      "symbol": "ORCAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 227,
+      "pair_id": "B-ORDER_USDT",
+      "symbol": "ORDERUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 228,
+      "pair_id": "B-ORDI_USDT",
+      "symbol": "ORDIUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 229,
+      "pair_id": "B-O_USDT",
+      "symbol": "OUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 230,
+      "pair_id": "B-PARTI_USDT",
+      "symbol": "PARTIUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 231,
+      "pair_id": "B-PAXG_USDT",
+      "symbol": "PAXGUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 232,
+      "pair_id": "B-PENDLE_USDT",
+      "symbol": "PENDLEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 233,
+      "pair_id": "B-PENGU_USDT",
+      "symbol": "PENGUUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 234,
+      "pair_id": "B-PEOPLE_USDT",
+      "symbol": "PEOPLEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 235,
+      "pair_id": "B-PHA_USDT",
+      "symbol": "PHAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 236,
+      "pair_id": "B-PIEVERSE_USDT",
+      "symbol": "PIEVERSEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 237,
+      "pair_id": "B-PIPPIN_USDT",
+      "symbol": "PIPPINUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 238,
+      "pair_id": "B-PIXEL_USDT",
+      "symbol": "PIXELUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 239,
+      "pair_id": "B-PLAY_USDT",
+      "symbol": "PLAYUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 240,
+      "pair_id": "B-PLUME_USDT",
+      "symbol": "PLUMEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 241,
+      "pair_id": "B-PNUT_USDT",
+      "symbol": "PNUTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 242,
+      "pair_id": "B-POLYX_USDT",
+      "symbol": "POLYXUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 243,
+      "pair_id": "B-POL_USDT",
+      "symbol": "POLUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 244,
+      "pair_id": "B-PONS_USDT",
+      "symbol": "PONSUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 245,
+      "pair_id": "B-POWER_USDT",
+      "symbol": "POWERUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 246,
+      "pair_id": "B-PROM_USDT",
+      "symbol": "PROMUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 247,
+      "pair_id": "B-PROVE_USDT",
+      "symbol": "PROVEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 248,
+      "pair_id": "B-PUMP_USDT",
+      "symbol": "PUMPUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 249,
+      "pair_id": "B-PYTH_USDT",
+      "symbol": "PYTHUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 250,
+      "pair_id": "B-QNT_USDT",
+      "symbol": "QNTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 251,
+      "pair_id": "B-Q_USDT",
+      "symbol": "QUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 252,
+      "pair_id": "B-RARE_USDT",
+      "symbol": "RAREUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 253,
+      "pair_id": "B-RAVE_USDT",
+      "symbol": "RAVEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 254,
+      "pair_id": "B-RAYSOL_USDT",
+      "symbol": "RAYSOLUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 255,
+      "pair_id": "B-RED_USDT",
+      "symbol": "REDUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 256,
+      "pair_id": "B-RENDER_USDT",
+      "symbol": "RENDERUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 257,
+      "pair_id": "B-REZ_USDT",
+      "symbol": "REZUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 258,
+      "pair_id": "B-RE_USDT",
+      "symbol": "REUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 259,
+      "pair_id": "B-RIVER_USDT",
+      "symbol": "RIVERUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 260,
+      "pair_id": "B-RLC_USDT",
+      "symbol": "RLCUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 261,
+      "pair_id": "B-ROBO_USDT",
+      "symbol": "ROBOUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 262,
+      "pair_id": "B-ROSE_USDT",
+      "symbol": "ROSEUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 263,
+      "pair_id": "B-RSR_USDT",
+      "symbol": "RSRUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 264,
+      "pair_id": "B-RUNE_USDT",
+      "symbol": "RUNEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 265,
+      "pair_id": "B-RVN_USDT",
+      "symbol": "RVNUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 266,
+      "pair_id": "B-SAGA_USDT",
+      "symbol": "SAGAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 267,
+      "pair_id": "B-SAHARA_USDT",
+      "symbol": "SAHARAUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 268,
+      "pair_id": "B-SAND_USDT",
+      "symbol": "SANDUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 269,
+      "pair_id": "B-SCR_USDT",
+      "symbol": "SCRUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 270,
+      "pair_id": "B-SEI_USDT",
+      "symbol": "SEIUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 271,
+      "pair_id": "B-SENT_USDT",
+      "symbol": "SENTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 272,
+      "pair_id": "B-SHELL_USDT",
+      "symbol": "SHELLUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 273,
+      "pair_id": "B-SIREN_USDT",
+      "symbol": "SIRENUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 274,
+      "pair_id": "B-SKL_USDT",
+      "symbol": "SKLUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 275,
+      "pair_id": "B-SKR_USDT",
+      "symbol": "SKRUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 276,
+      "pair_id": "B-SKYAI_USDT",
+      "symbol": "SKYAIUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 277,
+      "pair_id": "B-SKY_USDT",
+      "symbol": "SKYUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 278,
+      "pair_id": "B-SOLV_USDT",
+      "symbol": "SOLVUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 279,
+      "pair_id": "B-SOL_USDT",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 280,
+      "pair_id": "B-SOON_USDT",
+      "symbol": "SOONUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 281,
+      "pair_id": "B-SOPH_USDT",
+      "symbol": "SOPHUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 282,
+      "pair_id": "B-SPK_USDT",
+      "symbol": "SPKUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 283,
+      "pair_id": "B-SPX_USDT",
+      "symbol": "SPXUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 284,
+      "pair_id": "B-STABLE_USDT",
+      "symbol": "STABLEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 285,
+      "pair_id": "B-STBL_USDT",
+      "symbol": "STBLUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 286,
+      "pair_id": "B-STEEM_USDT",
+      "symbol": "STEEMUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 287,
+      "pair_id": "B-STRK_USDT",
+      "symbol": "STRKUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 288,
+      "pair_id": "B-STX_USDT",
+      "symbol": "STXUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 289,
+      "pair_id": "B-SUI_USDT",
+      "symbol": "SUIUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 290,
+      "pair_id": "B-SUSHI_USDT",
+      "symbol": "SUSHIUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 291,
+      "pair_id": "B-SWARMS_USDT",
+      "symbol": "SWARMSUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 292,
+      "pair_id": "B-SXT_USDT",
+      "symbol": "SXTUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 293,
+      "pair_id": "B-SYN_USDT",
+      "symbol": "SYNUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 294,
+      "pair_id": "B-SYRUP_USDT",
+      "symbol": "SYRUPUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 295,
+      "pair_id": "B-S_USDT",
+      "symbol": "SUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 296,
+      "pair_id": "B-TAC_USDT",
+      "symbol": "TACUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 297,
+      "pair_id": "B-TAG_USDT",
+      "symbol": "TAGUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 298,
+      "pair_id": "B-TAKE_USDT",
+      "symbol": "TAKEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 299,
+      "pair_id": "B-TAO_USDT",
+      "symbol": "TAOUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 300,
+      "pair_id": "B-TA_USDT",
+      "symbol": "TAUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 301,
+      "pair_id": "B-THETA_USDT",
+      "symbol": "THETAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 302,
+      "pair_id": "B-TIA_USDT",
+      "symbol": "TIAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 303,
+      "pair_id": "B-TRB_USDT",
+      "symbol": "TRBUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 304,
+      "pair_id": "B-TREE_USDT",
+      "symbol": "TREEUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 305,
+      "pair_id": "B-TRIA_USDT",
+      "symbol": "TRIAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 306,
+      "pair_id": "B-TRUMP_USDT",
+      "symbol": "TRUMPUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 307,
+      "pair_id": "B-TRUTH_USDT",
+      "symbol": "TRUTHUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 308,
+      "pair_id": "B-TRX_USDT",
+      "symbol": "TRXUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 309,
+      "pair_id": "B-TUT_USDT",
+      "symbol": "TUTUSDT"
+    },
+    {
+      "funding_hours": 1,
+      "id": 310,
+      "pair_id": "B-T_USDT",
+      "symbol": "TUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 311,
+      "pair_id": "B-UAI_USDT",
+      "symbol": "UAIUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 312,
+      "pair_id": "B-UB_USDT",
+      "symbol": "UBUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 313,
+      "pair_id": "B-UNI_USDT",
+      "symbol": "UNIUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 314,
+      "pair_id": "B-USDC_USDT",
+      "symbol": "USDCUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 315,
+      "pair_id": "B-USELESS_USDT",
+      "symbol": "USELESSUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 316,
+      "pair_id": "B-US_USDT",
+      "symbol": "USUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 317,
+      "pair_id": "B-VANA_USDT",
+      "symbol": "VANAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 318,
+      "pair_id": "B-VELVET_USDT",
+      "symbol": "VELVETUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 319,
+      "pair_id": "B-VET_USDT",
+      "symbol": "VETUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 320,
+      "pair_id": "B-VIRTUAL_USDT",
+      "symbol": "VIRTUALUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 321,
+      "pair_id": "B-VTHO_USDT",
+      "symbol": "VTHOUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 322,
+      "pair_id": "B-VVV_USDT",
+      "symbol": "VVVUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 323,
+      "pair_id": "B-WAL_USDT",
+      "symbol": "WALUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 324,
+      "pair_id": "B-WET_USDT",
+      "symbol": "WETUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 325,
+      "pair_id": "B-WIF_USDT",
+      "symbol": "WIFUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 326,
+      "pair_id": "B-WLD_USDT",
+      "symbol": "WLDUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 327,
+      "pair_id": "B-WLFI_USDT",
+      "symbol": "WLFIUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 328,
+      "pair_id": "B-W_USDT",
+      "symbol": "WUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 329,
+      "pair_id": "B-XAG_USDT",
+      "symbol": "XAGUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 330,
+      "pair_id": "B-XAN_USDT",
+      "symbol": "XANUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 331,
+      "pair_id": "B-XAU_USDT",
+      "symbol": "XAUUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 332,
+      "pair_id": "B-XLM_USDT",
+      "symbol": "XLMUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 333,
+      "pair_id": "B-XMR_USDT",
+      "symbol": "XMRUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 334,
+      "pair_id": "B-XNY_USDT",
+      "symbol": "XNYUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 335,
+      "pair_id": "B-XPL_USDT",
+      "symbol": "XPLUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 336,
+      "pair_id": "B-XRP_USDT",
+      "symbol": "XRPUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 337,
+      "pair_id": "B-YB_USDT",
+      "symbol": "YBUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 338,
+      "pair_id": "B-YFI_USDT",
+      "symbol": "YFIUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 339,
+      "pair_id": "B-ZAMA_USDT",
+      "symbol": "ZAMAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 340,
+      "pair_id": "B-ZBT_USDT",
+      "symbol": "ZBTUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 341,
+      "pair_id": "B-ZEC_USDT",
+      "symbol": "ZECUSDT"
+    },
+    {
+      "funding_hours": 8,
+      "id": 342,
+      "pair_id": "B-ZEN_USDT",
+      "symbol": "ZENUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 343,
+      "pair_id": "B-ZEREBRO_USDT",
+      "symbol": "ZEREBROUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 344,
+      "pair_id": "B-ZIL_USDT",
+      "symbol": "ZILUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 345,
+      "pair_id": "B-ZKC_USDT",
+      "symbol": "ZKCUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 346,
+      "pair_id": "B-ZKP_USDT",
+      "symbol": "ZKPUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 347,
+      "pair_id": "B-ZK_USDT",
+      "symbol": "ZKUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 348,
+      "pair_id": "B-ZORA_USDT",
+      "symbol": "ZORAUSDT"
+    },
+    {
+      "funding_hours": 4,
+      "id": 349,
+      "pair_id": "B-ZRO_USDT",
+      "symbol": "ZROUSDT"
+    }
+  ]
+}

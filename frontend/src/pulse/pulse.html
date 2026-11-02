@@ -1,0 +1,155 @@
+<main class="pulse-app" id="pulse-app">
+  <div class="metric-nav">
+    <nav class="metric-tabs" id="metric-tabs" aria-label="Market metric"></nav>
+    <details class="preview-controls" id="preview-controls">
+      <summary>
+        <span aria-hidden="true">ⓘ</span
+        ><span class="sr-only">Design preview information</span>
+      </summary>
+      <div class="preview-popover">
+        <strong>Illustrative data · not live</strong>
+        <p>
+          Layout and interaction review only. Levels are sample assignments, not
+          calibrated signals. Trading is disabled.
+        </p>
+        <label
+          >Preview state<select id="preview-state">
+            <option value="ready">Ready</option>
+            <option value="loading">Loading</option>
+            <option value="empty">Empty</option>
+            <option value="error">Error</option>
+            <option value="stale">Stale</option>
+            <option value="unavailable">Unavailable</option>
+          </select></label
+        >
+        <label
+          >Appearance<select id="preview-theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select></label
+        >
+      </div>
+    </details>
+  </div>
+  <section class="level-strip" aria-label="Metric levels">
+    <button
+      class="filter-button"
+      id="open-filters"
+      aria-label="Open filters"
+      type="button"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 6h16M7 12h10M10 18h4" />
+      </svg>
+      <span id="filter-count" class="filter-count" hidden>0</span>
+    </button>
+    <nav id="level-tabs" class="level-tabs" aria-label="Magnitude level"></nav>
+  </section>
+  <div id="applied-filters" class="applied-filters" hidden></div>
+  <div id="state-notice" class="state-notice" role="status" hidden></div>
+  <section class="table-scroll" aria-label="USDT perpetual markets">
+    <div class="table-content">
+      <div class="pulse-table-header">
+        <div>
+          <button type="button" data-sort="symbol">
+            Name<span class="sort-icon">▴<br />▾</span></button
+          ><span class="slash">/</span
+          ><button type="button" data-sort="volume">
+            24H Vol<span class="sort-icon">▴<br />▾</span>
+          </button>
+        </div>
+        <div>
+          <button type="button" data-sort="metric" id="metric-sort">
+            <span id="metric-column">Volatility</span
+            ><span class="sort-icon">▴<br />▾</span></button
+          ><span class="slash">/</span
+          ><button type="button" data-sort="price">
+            Price<span class="sort-icon">▴<br />▾</span>
+          </button>
+        </div>
+        <button type="button" data-sort="change">
+          <span id="change-column">24H % Chg</span
+          ><span class="sort-icon">▴<br />▾</span>
+        </button>
+        <span>Trade</span>
+      </div>
+      <div
+        class="market-viewport"
+        id="market-viewport"
+        tabindex="0"
+        aria-label="Scrollable markets"
+      >
+        <div class="virtual-space" id="virtual-space">
+          <div
+            id="row-pool"
+            class="row-pool"
+            role="list"
+            aria-label="Markets"
+          ></div>
+        </div>
+        <div id="market-state" class="market-state" hidden></div>
+      </div>
+    </div>
+  </section>
+  <footer class="pulse-dock">
+    <nav
+      class="window-control"
+      id="window-control"
+      aria-label="Price change and metric window"
+    >
+      <button type="button" data-window="1H" aria-pressed="false">1H Chg</button
+      ><button type="button" data-window="4H" aria-pressed="false">
+        4H Chg</button
+      ><button
+        type="button"
+        data-window="24H"
+        aria-pressed="true"
+        class="selected"
+      >
+        24H Chg
+      </button>
+    </nav>
+    <p class="risk-disclaimer" id="timeframe-risk-disclaimer">
+      Sample data · not live. Statistical estimates, not financial advice.
+    </p>
+  </footer>
+  <span class="sr-only" id="pulse-announcement" aria-live="polite"></span>
+</main>
+<dialog class="pulse-sheet" id="pulse-sheet" aria-labelledby="sheet-title">
+  <div class="sheet-grabber" aria-hidden="true"></div>
+  <header class="pulse-sheet-header">
+    <h2 id="sheet-title">Filters</h2>
+    <button
+      type="button"
+      class="close-button"
+      id="close-sheet"
+      aria-label="Close sheet"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 6l12 12M18 6L6 18" />
+      </svg>
+    </button>
+  </header>
+  <div class="pulse-sheet-body" id="sheet-content"></div>
+  <footer class="pulse-sheet-footer" id="filter-footer">
+    <button class="secondary-button" id="reset-filters" type="button">
+      Reset All</button
+    ><button class="primary-button" id="apply-filters" type="button">
+      Apply
+    </button>
+  </footer>
+  <footer class="pulse-detail-footer" id="detail-footer" hidden>
+    <p class="risk-disclaimer" id="detail-risk-disclaimer">
+      Disclaimer: Pulse signals are statistical estimates, not a financial advice.
+    </p>
+    <button
+      class="primary-button"
+      type="button"
+      disabled
+      aria-describedby="detail-risk-disclaimer"
+      id="pulse-trade"
+    >
+      Trade Now <span class="sr-only">Unavailable in design preview</span>
+    </button>
+  </footer>
+</dialog>

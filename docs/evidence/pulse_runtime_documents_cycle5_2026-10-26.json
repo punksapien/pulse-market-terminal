@@ -1,0 +1,2063 @@
+{
+  "status": "runtime_documents_canaries_verified_not_live_loop",
+  "production_access": false,
+  "deletions": 0,
+  "run_id": "8e3efabff1a5465d81b28ad9651f1125",
+  "keys": [
+    "pulse:stg:{62a294145193482a98e5484a733e6d48}:runtime:atomic:proof:data",
+    "pulse:stg:{62a294145193482a98e5484a733e6d48}:runtime:atomic:proof:lease",
+    "pulse:stg:{62a294145193482a98e5484a733e6d48}:runtime:atomic:proof:fence",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:btcusdt:data",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:btcusdt:lease",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:btcusdt:fence",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:ethusdt:data",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:ethusdt:lease",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:ethusdt:fence",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:dogeusdt:data",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:dogeusdt:lease",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:dogeusdt:fence",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:1000pepeusdt:data",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:1000pepeusdt:lease",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:1000pepeusdt:fence",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:xauusdt:data",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:xauusdt:lease",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:xauusdt:fence",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:arkusdt:data",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:arkusdt:lease",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:arkusdt:fence",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:bmtusdt:data",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:bmtusdt:lease",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:bmtusdt:fence",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:iostusdt:data",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:iostusdt:lease",
+    "pulse:stg:{8e3efabff1a5465d81b28ad9651f1125}:runtime:funding:iostusdt:fence"
+  ],
+  "funding": [
+    {
+      "symbol": "BTCUSDT",
+      "publish": [
+        "b'published'",
+        "b'3'"
+      ],
+      "verified_at_ms": 1793017928275,
+      "payload_bytes": 1614,
+      "gzip6_bytes": 487,
+      "encode_p95_us": 113.709
+    },
+    {
+      "symbol": "ETHUSDT",
+      "publish": [
+        "b'published'",
+        "b'3'"
+      ],
+      "verified_at_ms": 1793017931232,
+      "payload_bytes": 1616,
+      "gzip6_bytes": 487,
+      "encode_p95_us": 128.875
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "publish": [
+        "b'published'",
+        "b'3'"
+      ],
+      "verified_at_ms": 1793017934215,
+      "payload_bytes": 1618,
+      "gzip6_bytes": 487,
+      "encode_p95_us": 103.208
+    },
+    {
+      "symbol": "1000PEPEUSDT",
+      "publish": [
+        "b'published'",
+        "b'3'"
+      ],
+      "verified_at_ms": 1793017937982,
+      "payload_bytes": 1635,
+      "gzip6_bytes": 492,
+      "encode_p95_us": 94.167
+    },
+    {
+      "symbol": "XAUUSDT",
+      "publish": [
+        "b'published'",
+        "b'3'"
+      ],
+      "verified_at_ms": 1793017941595,
+      "payload_bytes": 1619,
+      "gzip6_bytes": 487,
+      "encode_p95_us": 118.209
+    },
+    {
+      "symbol": "ARKUSDT",
+      "publish": [
+        "b'published'",
+        "b'3'"
+      ],
+      "verified_at_ms": 1793017944660,
+      "payload_bytes": 1566,
+      "gzip6_bytes": 515,
+      "encode_p95_us": 96.625
+    },
+    {
+      "symbol": "BMTUSDT",
+      "publish": [
+        "b'published'",
+        "b'2'"
+      ],
+      "verified_at_ms": 1793017947935,
+      "payload_bytes": 1567,
+      "gzip6_bytes": 516,
+      "encode_p95_us": 94.75
+    },
+    {
+      "symbol": "IOSTUSDT",
+      "publish": [
+        "b'published'",
+        "b'2'"
+      ],
+      "verified_at_ms": 1793017950981,
+      "payload_bytes": 1568,
+      "gzip6_bytes": 519,
+      "encode_p95_us": 99.333
+    }
+  ],
+  "references": [
+    {
+      "symbol": "BTCUSDT",
+      "tick": {
+        "pair_id": "B-BTC_USDT",
+        "source_time_ms": 1793017953446,
+        "price": "80488.4"
+      },
+      "raw_ticker": {
+        "fr": "0.00007945",
+        "h": 80920,
+        "l": "79321.8",
+        "v": "7486017498.05",
+        "ls": "80488.4",
+        "pc": "0.183",
+        "mkt": "BTCUSDT",
+        "btST": 1793017953446,
+        "ctRT": 1793017953545,
+        "skw": 32,
+        "mp": "80489.78480435",
+        "efr": "0.00008423",
+        "bmST": 1793017953004,
+        "cmRT": 1793017953166
+      },
+      "view": {
+        "pair_id": "B-BTC_USDT",
+        "mapping_version": "ea9a141dec491014eb13b078ea1b9419",
+        "definition_version": "price_change.v1",
+        "generation_id": "1793017954745",
+        "built_at_ms": 1793017954745,
+        "start_ms": 1793017920000,
+        "slots": [
+          [
+            {
+              "pair_id": "B-BTC_USDT",
+              "open_time_ms": 1793014320000,
+              "price": "80241.4"
+            },
+            {
+              "pair_id": "B-BTC_USDT",
+              "open_time_ms": 1793003520000,
+              "price": "80123.8"
+            },
+            {
+              "pair_id": "B-BTC_USDT",
+              "open_time_ms": 1792931520000,
+              "price": "80341.1"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-BTC_USDT",
+              "open_time_ms": 1793014380000,
+              "price": "80281.2"
+            },
+            {
+              "pair_id": "B-BTC_USDT",
+              "open_time_ms": 1793003580000,
+              "price": "80162.4"
+            },
+            {
+              "pair_id": "B-BTC_USDT",
+              "open_time_ms": 1792931580000,
+              "price": "80314.5"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-BTC_USDT",
+              "open_time_ms": 1793014440000,
+              "price": "80311.5"
+            },
+            {
+              "pair_id": "B-BTC_USDT",
+              "open_time_ms": 1793003640000,
+              "price": "80182.4"
+            },
+            {
+              "pair_id": "B-BTC_USDT",
+              "open_time_ms": 1792931640000,
+              "price": "80316.9"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-BTC_USDT",
+              "open_time_ms": 1793014500000,
+              "price": "80330"
+            },
+            {
+              "pair_id": "B-BTC_USDT",
+              "open_time_ms": 1793003700000,
+              "price": "80122.5"
+            },
+            {
+              "pair_id": "B-BTC_USDT",
+              "open_time_ms": 1792931700000,
+              "price": "80319.9"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-BTC_USDT",
+              "open_time_ms": 1793014560000,
+              "price": "80295.1"
+            },
+            {
+              "pair_id": "B-BTC_USDT",
+              "open_time_ms": 1793003760000,
+              "price": "80176.8"
+            },
+            {
+              "pair_id": "B-BTC_USDT",
+              "open_time_ms": 1792931760000,
+              "price": "80337.6"
+            }
+          ]
+        ]
+      },
+      "fallback": {
+        "tick": {
+          "pair_id": "B-BTC_USDT",
+          "source_time_ms": 1793017953446,
+          "price": "80488.4"
+        },
+        "mapping_version": "ea9a141dec491014eb13b078ea1b9419",
+        "definition_version": "price_change.v1",
+        "generation_id": "1793017954745",
+        "built_at_ms": 1793017954745,
+        "references": [
+          {
+            "pair_id": "B-BTC_USDT",
+            "open_time_ms": 1793014320000,
+            "price": "80241.4"
+          },
+          {
+            "pair_id": "B-BTC_USDT",
+            "open_time_ms": 1793003520000,
+            "price": "80123.8"
+          },
+          {
+            "pair_id": "B-BTC_USDT",
+            "open_time_ms": 1792931520000,
+            "price": "80341.1"
+          }
+        ]
+      },
+      "changes": {
+        "1H": {
+          "status": "available",
+          "reason": null,
+          "value_fraction": "0.003078211496808380711203942104699071",
+          "numerator_asof_ms": 1793017953446,
+          "reference_asof_ms": 1793014320000,
+          "numerator_age_ms": 1299,
+          "delayed": false,
+          "pair_id": "B-BTC_USDT"
+        },
+        "4H": {
+          "status": "available",
+          "reason": null,
+          "value_fraction": "0.004550458165988133363619798362034751",
+          "numerator_asof_ms": 1793017953446,
+          "reference_asof_ms": 1793003520000,
+          "numerator_age_ms": 1299,
+          "delayed": false,
+          "pair_id": "B-BTC_USDT"
+        },
+        "24H": {
+          "status": "available",
+          "reason": null,
+          "value_fraction": "0.001833432701319747924785694992973708",
+          "numerator_asof_ms": 1793017953446,
+          "reference_asof_ms": 1792931520000,
+          "numerator_age_ms": 1299,
+          "delayed": false,
+          "pair_id": "B-BTC_USDT"
+        }
+      },
+      "requests": 3,
+      "selected_open_count": 15
+    },
+    {
+      "symbol": "ETHUSDT",
+      "tick": {
+        "pair_id": "B-ETH_USDT",
+        "source_time_ms": 1793017953418,
+        "price": "2333.11"
+      },
+      "raw_ticker": {
+        "fr": "0.00004911",
+        "h": "2364.39",
+        "l": 2292,
+        "v": "5950097796.79",
+        "ls": "2333.11",
+        "pc": "0.193",
+        "mkt": "ETHUSDT",
+        "btST": 1793017953418,
+        "ctRT": 1793017953545,
+        "skw": 32,
+        "mp": "2333.22670543",
+        "efr": "0.00006912",
+        "bmST": 1793017953004,
+        "cmRT": 1793017953166
+      },
+      "view": {
+        "pair_id": "B-ETH_USDT",
+        "mapping_version": "ea9a141dec491014eb13b078ea1b9419",
+        "definition_version": "price_change.v1",
+        "generation_id": "1793017957075",
+        "built_at_ms": 1793017957075,
+        "start_ms": 1793017920000,
+        "slots": [
+          [
+            {
+              "pair_id": "B-ETH_USDT",
+              "open_time_ms": 1793014320000,
+              "price": "2326.78"
+            },
+            {
+              "pair_id": "B-ETH_USDT",
+              "open_time_ms": 1793003520000,
+              "price": "2322.46"
+            },
+            {
+              "pair_id": "B-ETH_USDT",
+              "open_time_ms": 1792931520000,
+              "price": "2328.61"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-ETH_USDT",
+              "open_time_ms": 1793014380000,
+              "price": "2328.27"
+            },
+            {
+              "pair_id": "B-ETH_USDT",
+              "open_time_ms": 1793003580000,
+              "price": "2325.15"
+            },
+            {
+              "pair_id": "B-ETH_USDT",
+              "open_time_ms": 1792931580000,
+              "price": "2327.75"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-ETH_USDT",
+              "open_time_ms": 1793014440000,
+              "price": "2328.3"
+            },
+            {
+              "pair_id": "B-ETH_USDT",
+              "open_time_ms": 1793003640000,
+              "price": "2325.31"
+            },
+            {
+              "pair_id": "B-ETH_USDT",
+              "open_time_ms": 1792931640000,
+              "price": "2327.45"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-ETH_USDT",
+              "open_time_ms": 1793014500000,
+              "price": "2329.33"
+            },
+            {
+              "pair_id": "B-ETH_USDT",
+              "open_time_ms": 1793003700000,
+              "price": "2322.58"
+            },
+            {
+              "pair_id": "B-ETH_USDT",
+              "open_time_ms": 1792931700000,
+              "price": "2327.37"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-ETH_USDT",
+              "open_time_ms": 1793014560000,
+              "price": "2327.72"
+            },
+            {
+              "pair_id": "B-ETH_USDT",
+              "open_time_ms": 1793003760000,
+              "price": "2325.39"
+            },
+            {
+              "pair_id": "B-ETH_USDT",
+              "open_time_ms": 1792931760000,
+              "price": "2328.49"
+            }
+          ]
+        ]
+      },
+      "fallback": {
+        "tick": {
+          "pair_id": "B-ETH_USDT",
+          "source_time_ms": 1793017953418,
+          "price": "2333.11"
+        },
+        "mapping_version": "ea9a141dec491014eb13b078ea1b9419",
+        "definition_version": "price_change.v1",
+        "generation_id": "1793017957075",
+        "built_at_ms": 1793017957075,
+        "references": [
+          {
+            "pair_id": "B-ETH_USDT",
+            "open_time_ms": 1793014320000,
+            "price": "2326.78"
+          },
+          {
+            "pair_id": "B-ETH_USDT",
+            "open_time_ms": 1793003520000,
+            "price": "2322.46"
+          },
+          {
+            "pair_id": "B-ETH_USDT",
+            "open_time_ms": 1792931520000,
+            "price": "2328.61"
+          }
+        ]
+      },
+      "changes": {
+        "1H": {
+          "status": "available",
+          "reason": null,
+          "value_fraction": "0.002720497855405324095960941730632032",
+          "numerator_asof_ms": 1793017953418,
+          "reference_asof_ms": 1793014320000,
+          "numerator_age_ms": 3657,
+          "delayed": false,
+          "pair_id": "B-ETH_USDT"
+        },
+        "4H": {
+          "status": "available",
+          "reason": null,
+          "value_fraction": "0.004585654865961092978996408980133135",
+          "numerator_asof_ms": 1793017953418,
+          "reference_asof_ms": 1793003520000,
+          "numerator_age_ms": 3657,
+          "delayed": false,
+          "pair_id": "B-ETH_USDT"
+        },
+        "24H": {
+          "status": "available",
+          "reason": null,
+          "value_fraction": "0.001932483326963295700009877137004479",
+          "numerator_asof_ms": 1793017953418,
+          "reference_asof_ms": 1792931520000,
+          "numerator_age_ms": 3657,
+          "delayed": false,
+          "pair_id": "B-ETH_USDT"
+        }
+      },
+      "requests": 3,
+      "selected_open_count": 15
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "tick": {
+        "pair_id": "B-DOGE_USDT",
+        "source_time_ms": 1793017953022,
+        "price": "0.0774"
+      },
+      "raw_ticker": {
+        "fr": "0.00003795",
+        "h": "0.07766",
+        "l": "0.07594",
+        "v": "210120686.33048",
+        "ls": "0.0774",
+        "pc": "1.243",
+        "mkt": "DOGEUSDT",
+        "btST": 1793017953022,
+        "ctRT": 1793017953545,
+        "skw": 32,
+        "mp": "0.07740306",
+        "efr": "0.00007242",
+        "bmST": 1793017953004,
+        "cmRT": 1793017953166
+      },
+      "view": {
+        "pair_id": "B-DOGE_USDT",
+        "mapping_version": "ea9a141dec491014eb13b078ea1b9419",
+        "definition_version": "price_change.v1",
+        "generation_id": "1793017959477",
+        "built_at_ms": 1793017959477,
+        "start_ms": 1793017920000,
+        "slots": [
+          [
+            {
+              "pair_id": "B-DOGE_USDT",
+              "open_time_ms": 1793014320000,
+              "price": "0.07697"
+            },
+            {
+              "pair_id": "B-DOGE_USDT",
+              "open_time_ms": 1793003520000,
+              "price": "0.07687"
+            },
+            {
+              "pair_id": "B-DOGE_USDT",
+              "open_time_ms": 1792931520000,
+              "price": "0.07645"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-DOGE_USDT",
+              "open_time_ms": 1793014380000,
+              "price": "0.07702"
+            },
+            {
+              "pair_id": "B-DOGE_USDT",
+              "open_time_ms": 1793003580000,
+              "price": "0.07693"
+            },
+            {
+              "pair_id": "B-DOGE_USDT",
+              "open_time_ms": 1792931580000,
+              "price": "0.07643"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-DOGE_USDT",
+              "open_time_ms": 1793014440000,
+              "price": "0.07705"
+            },
+            {
+              "pair_id": "B-DOGE_USDT",
+              "open_time_ms": 1793003640000,
+              "price": "0.07695"
+            },
+            {
+              "pair_id": "B-DOGE_USDT",
+              "open_time_ms": 1792931640000,
+              "price": "0.07642"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-DOGE_USDT",
+              "open_time_ms": 1793014500000,
+              "price": "0.07712"
+            },
+            {
+              "pair_id": "B-DOGE_USDT",
+              "open_time_ms": 1793003700000,
+              "price": "0.07689"
+            },
+            {
+              "pair_id": "B-DOGE_USDT",
+              "open_time_ms": 1792931700000,
+              "price": "0.07643"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-DOGE_USDT",
+              "open_time_ms": 1793014560000,
+              "price": "0.07707"
+            },
+            {
+              "pair_id": "B-DOGE_USDT",
+              "open_time_ms": 1793003760000,
+              "price": "0.077"
+            },
+            {
+              "pair_id": "B-DOGE_USDT",
+              "open_time_ms": 1792931760000,
+              "price": "0.07647"
+            }
+          ]
+        ]
+      },
+      "fallback": {
+        "tick": {
+          "pair_id": "B-DOGE_USDT",
+          "source_time_ms": 1793017953022,
+          "price": "0.0774"
+        },
+        "mapping_version": "ea9a141dec491014eb13b078ea1b9419",
+        "definition_version": "price_change.v1",
+        "generation_id": "1793017959477",
+        "built_at_ms": 1793017959477,
+        "references": [
+          {
+            "pair_id": "B-DOGE_USDT",
+            "open_time_ms": 1793014320000,
+            "price": "0.07697"
+          },
+          {
+            "pair_id": "B-DOGE_USDT",
+            "open_time_ms": 1793003520000,
+            "price": "0.07687"
+          },
+          {
+            "pair_id": "B-DOGE_USDT",
+            "open_time_ms": 1792931520000,
+            "price": "0.07645"
+          }
+        ]
+      },
+      "changes": {
+        "1H": {
+          "status": "available",
+          "reason": null,
+          "value_fraction": "0.005586592178770949720670391061452514",
+          "numerator_asof_ms": 1793017953022,
+          "reference_asof_ms": 1793014320000,
+          "numerator_age_ms": 6455,
+          "delayed": false,
+          "pair_id": "B-DOGE_USDT"
+        },
+        "4H": {
+          "status": "available",
+          "reason": null,
+          "value_fraction": "0.006894757382593989852998569012618707",
+          "numerator_asof_ms": 1793017953022,
+          "reference_asof_ms": 1793003520000,
+          "numerator_age_ms": 6455,
+          "delayed": false,
+          "pair_id": "B-DOGE_USDT"
+        },
+        "24H": {
+          "status": "available",
+          "reason": null,
+          "value_fraction": "0.01242642249836494440810987573577502",
+          "numerator_asof_ms": 1793017953022,
+          "reference_asof_ms": 1792931520000,
+          "numerator_age_ms": 6455,
+          "delayed": false,
+          "pair_id": "B-DOGE_USDT"
+        }
+      },
+      "requests": 3,
+      "selected_open_count": 15
+    },
+    {
+      "symbol": "1000PEPEUSDT",
+      "tick": {
+        "pair_id": "B-1000PEPE_USDT",
+        "source_time_ms": 1793017953240,
+        "price": "0.0043526"
+      },
+      "raw_ticker": {
+        "fr": "-0.00011126",
+        "h": "0.0044662",
+        "l": "0.0042068",
+        "v": "249877581.9915534",
+        "ls": "0.0043526",
+        "pc": "-2.294",
+        "mkt": "1000PEPEUSDT",
+        "btST": 1793017953240,
+        "ctRT": 1793017953545,
+        "skw": 32,
+        "mp": "0.00435172",
+        "efr": "0.0001",
+        "bmST": 1793017953004,
+        "cmRT": 1793017953166
+      },
+      "view": {
+        "pair_id": "B-1000PEPE_USDT",
+        "mapping_version": "ea9a141dec491014eb13b078ea1b9419",
+        "definition_version": "price_change.v1",
+        "generation_id": "1793017961910",
+        "built_at_ms": 1793017961910,
+        "start_ms": 1793017920000,
+        "slots": [
+          [
+            {
+              "pair_id": "B-1000PEPE_USDT",
+              "open_time_ms": 1793014320000,
+              "price": "0.0043731"
+            },
+            {
+              "pair_id": "B-1000PEPE_USDT",
+              "open_time_ms": 1793003520000,
+              "price": "0.0043827"
+            },
+            {
+              "pair_id": "B-1000PEPE_USDT",
+              "open_time_ms": 1792931520000,
+              "price": "0.0044548"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-1000PEPE_USDT",
+              "open_time_ms": 1793014380000,
+              "price": "0.0043792"
+            },
+            {
+              "pair_id": "B-1000PEPE_USDT",
+              "open_time_ms": 1793003580000,
+              "price": "0.0043917"
+            },
+            {
+              "pair_id": "B-1000PEPE_USDT",
+              "open_time_ms": 1792931580000,
+              "price": "0.0044501"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-1000PEPE_USDT",
+              "open_time_ms": 1793014440000,
+              "price": "0.004386"
+            },
+            {
+              "pair_id": "B-1000PEPE_USDT",
+              "open_time_ms": 1793003640000,
+              "price": "0.0043874"
+            },
+            {
+              "pair_id": "B-1000PEPE_USDT",
+              "open_time_ms": 1792931640000,
+              "price": "0.0044428"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-1000PEPE_USDT",
+              "open_time_ms": 1793014500000,
+              "price": "0.0043897"
+            },
+            {
+              "pair_id": "B-1000PEPE_USDT",
+              "open_time_ms": 1793003700000,
+              "price": "0.0043806"
+            },
+            {
+              "pair_id": "B-1000PEPE_USDT",
+              "open_time_ms": 1792931700000,
+              "price": "0.0044421"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-1000PEPE_USDT",
+              "open_time_ms": 1793014560000,
+              "price": "0.0043811"
+            },
+            {
+              "pair_id": "B-1000PEPE_USDT",
+              "open_time_ms": 1793003760000,
+              "price": "0.0043889"
+            },
+            {
+              "pair_id": "B-1000PEPE_USDT",
+              "open_time_ms": 1792931760000,
+              "price": "0.0044446"
+            }
+          ]
+        ]
+      },
+      "fallback": {
+        "tick": {
+          "pair_id": "B-1000PEPE_USDT",
+          "source_time_ms": 1793017953240,
+          "price": "0.0043526"
+        },
+        "mapping_version": "ea9a141dec491014eb13b078ea1b9419",
+        "definition_version": "price_change.v1",
+        "generation_id": "1793017961910",
+        "built_at_ms": 1793017961910,
+        "references": [
+          {
+            "pair_id": "B-1000PEPE_USDT",
+            "open_time_ms": 1793014320000,
+            "price": "0.0043731"
+          },
+          {
+            "pair_id": "B-1000PEPE_USDT",
+            "open_time_ms": 1793003520000,
+            "price": "0.0043827"
+          },
+          {
+            "pair_id": "B-1000PEPE_USDT",
+            "open_time_ms": 1792931520000,
+            "price": "0.0044548"
+          }
+        ]
+      },
+      "changes": {
+        "1H": {
+          "status": "available",
+          "reason": null,
+          "value_fraction": "-0.004687750108618600077748050581967026",
+          "numerator_asof_ms": 1793017953240,
+          "reference_asof_ms": 1793014320000,
+          "numerator_age_ms": 8670,
+          "delayed": false,
+          "pair_id": "B-1000PEPE_USDT"
+        },
+        "4H": {
+          "status": "available",
+          "reason": null,
+          "value_fraction": "-0.006867912474045679603897141031784060",
+          "numerator_asof_ms": 1793017953240,
+          "reference_asof_ms": 1793003520000,
+          "numerator_age_ms": 8670,
+          "delayed": false,
+          "pair_id": "B-1000PEPE_USDT"
+        },
+        "24H": {
+          "status": "available",
+          "reason": null,
+          "value_fraction": "-0.02294154619736015084852294154619736",
+          "numerator_asof_ms": 1793017953240,
+          "reference_asof_ms": 1792931520000,
+          "numerator_age_ms": 8670,
+          "delayed": false,
+          "pair_id": "B-1000PEPE_USDT"
+        }
+      },
+      "requests": 3,
+      "selected_open_count": 15
+    },
+    {
+      "symbol": "XAUUSDT",
+      "tick": {
+        "pair_id": "B-XAU_USDT",
+        "source_time_ms": 1793017953191,
+        "price": "4032.69"
+      },
+      "raw_ticker": {
+        "fr": "0.00004598",
+        "h": "4032.86",
+        "l": "3986.13",
+        "v": "1045509963.06",
+        "ls": "4032.69",
+        "pc": "0.978",
+        "mkt": "XAUUSDT",
+        "btST": 1793017953191,
+        "ctRT": 1793017953545,
+        "skw": 32,
+        "mp": "4032.56046011",
+        "efr": "0.00003301",
+        "bmST": 1793017953844,
+        "cmRT": 1793017953952
+      },
+      "view": {
+        "pair_id": "B-XAU_USDT",
+        "mapping_version": "ea9a141dec491014eb13b078ea1b9419",
+        "definition_version": "price_change.v1",
+        "generation_id": "1793017964336",
+        "built_at_ms": 1793017964336,
+        "start_ms": 1793017920000,
+        "slots": [
+          [
+            {
+              "pair_id": "B-XAU_USDT",
+              "open_time_ms": 1793014320000,
+              "price": "4022.46"
+            },
+            {
+              "pair_id": "B-XAU_USDT",
+              "open_time_ms": 1793003520000,
+              "price": "4022.38"
+            },
+            {
+              "pair_id": "B-XAU_USDT",
+              "open_time_ms": 1792931520000,
+              "price": "3993.65"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-XAU_USDT",
+              "open_time_ms": 1793014380000,
+              "price": "4023.28"
+            },
+            {
+              "pair_id": "B-XAU_USDT",
+              "open_time_ms": 1793003580000,
+              "price": "4022.9"
+            },
+            {
+              "pair_id": "B-XAU_USDT",
+              "open_time_ms": 1792931580000,
+              "price": "3993.64"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-XAU_USDT",
+              "open_time_ms": 1793014440000,
+              "price": "4023.8"
+            },
+            {
+              "pair_id": "B-XAU_USDT",
+              "open_time_ms": 1793003640000,
+              "price": "4023.21"
+            },
+            {
+              "pair_id": "B-XAU_USDT",
+              "open_time_ms": 1792931640000,
+              "price": "3993.65"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-XAU_USDT",
+              "open_time_ms": 1793014500000,
+              "price": "4023.71"
+            },
+            {
+              "pair_id": "B-XAU_USDT",
+              "open_time_ms": 1793003700000,
+              "price": "4022.92"
+            },
+            {
+              "pair_id": "B-XAU_USDT",
+              "open_time_ms": 1792931700000,
+              "price": "3993.65"
+            }
+          ],
+          [
+            {
+              "pair_id": "B-XAU_USDT",
+              "open_time_ms": 1793014560000,
+              "price": "4022.27"
+            },
+            {
+              "pair_id": "B-XAU_USDT",
+              "open_time_ms": 1793003760000,
+              "price": "4024.36"
+            },
+            {
+              "pair_id": "B-XAU_USDT",
+              "open_time_ms": 1792931760000,
+              "price": "3993.65"
+            }
+          ]
+        ]
+      },
+      "fallback": {
+        "tick": {
+          "pair_id": "B-XAU_USDT",
+          "source_time_ms": 1793017953191,
+          "price": "4032.69"
+        },
+        "mapping_version": "ea9a141dec491014eb13b078ea1b9419",
+        "definition_version": "price_change.v1",
+        "generation_id": "1793017964336",
+        "built_at_ms": 1793017964336,
+        "references": [
+          {
+            "pair_id": "B-XAU_USDT",
+            "open_time_ms": 1793014320000,
+            "price": "4022.46"
+          },
+          {
+            "pair_id": "B-XAU_USDT",
+            "open_time_ms": 1793003520000,
+            "price": "4022.38"
+          },
+          {
+            "pair_id": "B-XAU_USDT",
+            "open_time_ms": 1792931520000,
+            "price": "3993.65"
+          }
+        ]
+      },
+      "changes": {
+        "1H": {
+          "status": "available",
+          "reason": null,
+          "value_fraction": "0.002543219820706731701496099401858564",
+          "numerator_asof_ms": 1793017953191,
+          "reference_asof_ms": 1793014320000,
+          "numerator_age_ms": 11145,
+          "delayed": false,
+          "pair_id": "B-XAU_USDT"
+        },
+        "4H": {
+          "status": "available",
+          "reason": null,
+          "value_fraction": "0.002563159124697318502975850118586508",
+          "numerator_asof_ms": 1793017953191,
+          "reference_asof_ms": 1793003520000,
+          "numerator_age_ms": 11145,
+          "delayed": false,
+          "pair_id": "B-XAU_USDT"
+        },
+        "24H": {
+          "status": "available",
+          "reason": null,
+          "value_fraction": "0.009775518635834387089504588534298198",
+          "numerator_asof_ms": 1793017953191,
+          "reference_asof_ms": 1792931520000,
+          "numerator_age_ms": 11145,
+          "delayed": false,
+          "pair_id": "B-XAU_USDT"
+        }
+      },
+      "requests": 3,
+      "selected_open_count": 15
+    }
+  ],
+  "reference_sources": [
+    {
+      "params": {
+        "pair": "B-BTC_USDT",
+        "from": 1793014320,
+        "to": 1793014620,
+        "resolution": "1",
+        "pcode": "f"
+      },
+      "payload": {
+        "s": "ok",
+        "data": [
+          {
+            "open": "80241.4",
+            "high": "80290.5",
+            "low": "80241.3",
+            "volume": "40.159",
+            "close": "80281.2",
+            "time": 1793014320000
+          },
+          {
+            "open": "80281.2",
+            "high": "80321.8",
+            "low": "80281.1",
+            "volume": "52.122",
+            "close": "80311.4",
+            "time": 1793014380000
+          },
+          {
+            "open": "80311.5",
+            "high": 80330,
+            "low": "80308.3",
+            "volume": "23.983",
+            "close": "80329.9",
+            "time": 1793014440000
+          },
+          {
+            "open": 80330,
+            "high": 80330,
+            "low": "80295.1",
+            "volume": "25.476",
+            "close": "80295.1",
+            "time": 1793014500000
+          },
+          {
+            "open": "80295.1",
+            "high": 80340,
+            "low": "80290.4",
+            "volume": "16.103",
+            "close": "80332.4",
+            "time": 1793014560000
+          },
+          {
+            "open": "80332.4",
+            "high": "80340.2",
+            "low": "80317.1",
+            "volume": "31.038",
+            "close": "80338.1",
+            "time": 1793014620000
+          }
+        ]
+      }
+    },
+    {
+      "params": {
+        "pair": "B-BTC_USDT",
+        "from": 1793003520,
+        "to": 1793003820,
+        "resolution": "1",
+        "pcode": "f"
+      },
+      "payload": {
+        "s": "ok",
+        "data": [
+          {
+            "open": "80123.8",
+            "high": "80182.4",
+            "low": "80123.7",
+            "volume": "64.197",
+            "close": "80162.3",
+            "time": 1793003520000
+          },
+          {
+            "open": "80162.4",
+            "high": "80182.5",
+            "low": "80139.9",
+            "volume": "130.119",
+            "close": "80182.4",
+            "time": 1793003580000
+          },
+          {
+            "open": "80182.4",
+            "high": "80182.5",
+            "low": "80120.1",
+            "volume": "28.582",
+            "close": "80123.8",
+            "time": 1793003640000
+          },
+          {
+            "open": "80122.5",
+            "high": "80187.7",
+            "low": "80109.7",
+            "volume": "44.643",
+            "close": "80176.7",
+            "time": 1793003700000
+          },
+          {
+            "open": "80176.8",
+            "high": 80199,
+            "low": "80161.7",
+            "volume": "69.583",
+            "close": "80198.6",
+            "time": 1793003760000
+          },
+          {
+            "open": "80198.5",
+            "high": "80227.9",
+            "low": 80193,
+            "volume": "89.235",
+            "close": "80218.5",
+            "time": 1793003820000
+          }
+        ]
+      }
+    },
+    {
+      "params": {
+        "pair": "B-BTC_USDT",
+        "from": 1792931520,
+        "to": 1792931820,
+        "resolution": "1",
+        "pcode": "f"
+      },
+      "payload": {
+        "s": "ok",
+        "data": [
+          {
+            "open": "80341.1",
+            "high": "80341.2",
+            "low": "80310.5",
+            "volume": "22.564",
+            "close": "80314.5",
+            "time": 1792931520000
+          },
+          {
+            "open": "80314.5",
+            "high": 80320,
+            "low": "80313.7",
+            "volume": "15.087",
+            "close": "80316.8",
+            "time": 1792931580000
+          },
+          {
+            "open": "80316.9",
+            "high": 80320,
+            "low": "80316.8",
+            "volume": "9.009",
+            "close": "80319.9",
+            "time": 1792931640000
+          },
+          {
+            "open": "80319.9",
+            "high": "80337.6",
+            "low": "80316.9",
+            "volume": "11.373",
+            "close": "80337.6",
+            "time": 1792931700000
+          },
+          {
+            "open": "80337.6",
+            "high": 80393,
+            "low": "80337.5",
+            "volume": "70.197",
+            "close": "80380.5",
+            "time": 1792931760000
+          },
+          {
+            "open": "80380.5",
+            "high": "80411.4",
+            "low": "80380.4",
+            "volume": "61.219",
+            "close": "80396.7",
+            "time": 1792931820000
+          }
+        ]
+      }
+    },
+    {
+      "params": {
+        "pair": "B-ETH_USDT",
+        "from": 1793014320,
+        "to": 1793014620,
+        "resolution": "1",
+        "pcode": "f"
+      },
+      "payload": {
+        "s": "ok",
+        "data": [
+          {
+            "open": "2326.78",
+            "high": "2328.78",
+            "low": "2326.62",
+            "volume": "1228.525",
+            "close": "2328.28",
+            "time": 1793014320000
+          },
+          {
+            "open": "2328.27",
+            "high": "2328.92",
+            "low": "2327.88",
+            "volume": "895.55",
+            "close": "2328.3",
+            "time": 1793014380000
+          },
+          {
+            "open": "2328.3",
+            "high": "2329.99",
+            "low": "2328.18",
+            "volume": "757.093",
+            "close": "2329.32",
+            "time": 1793014440000
+          },
+          {
+            "open": "2329.33",
+            "high": "2329.33",
+            "low": "2327.72",
+            "volume": "432.87",
+            "close": "2327.73",
+            "time": 1793014500000
+          },
+          {
+            "open": "2327.72",
+            "high": "2329.54",
+            "low": "2327.33",
+            "volume": "383.014",
+            "close": "2329.21",
+            "time": 1793014560000
+          },
+          {
+            "open": "2329.21",
+            "high": "2330.31",
+            "low": "2328.4",
+            "volume": "734.571",
+            "close": "2330.31",
+            "time": 1793014620000
+          }
+        ]
+      }
+    },
+    {
+      "params": {
+        "pair": "B-ETH_USDT",
+        "from": 1793003520,
+        "to": 1793003820,
+        "resolution": "1",
+        "pcode": "f"
+      },
+      "payload": {
+        "s": "ok",
+        "data": [
+          {
+            "open": "2322.46",
+            "high": "2326.55",
+            "low": "2322.26",
+            "volume": "4699.081",
+            "close": "2325.15",
+            "time": 1793003520000
+          },
+          {
+            "open": "2325.15",
+            "high": "2325.32",
+            "low": "2323.34",
+            "volume": "2825.468",
+            "close": "2325.31",
+            "time": 1793003580000
+          },
+          {
+            "open": "2325.31",
+            "high": "2325.31",
+            "low": "2322.44",
+            "volume": "1684.702",
+            "close": "2322.59",
+            "time": 1793003640000
+          },
+          {
+            "open": "2322.58",
+            "high": "2326.12",
+            "low": "2322.12",
+            "volume": "1769.927",
+            "close": "2325.39",
+            "time": 1793003700000
+          },
+          {
+            "open": "2325.39",
+            "high": "2326.33",
+            "low": "2324.15",
+            "volume": "3376.65",
+            "close": "2325.53",
+            "time": 1793003760000
+          },
+          {
+            "open": "2325.54",
+            "high": "2327.38",
+            "low": "2325.53",
+            "volume": "2567.042",
+            "close": "2326.48",
+            "time": 1793003820000
+          }
+        ]
+      }
+    },
+    {
+      "params": {
+        "pair": "B-ETH_USDT",
+        "from": 1792931520,
+        "to": 1792931820,
+        "resolution": "1",
+        "pcode": "f"
+      },
+      "payload": {
+        "s": "ok",
+        "data": [
+          {
+            "open": "2328.61",
+            "high": "2328.62",
+            "low": "2327.5",
+            "volume": "637.985",
+            "close": "2327.75",
+            "time": 1792931520000
+          },
+          {
+            "open": "2327.75",
+            "high": 2328,
+            "low": "2326.78",
+            "volume": "1044.052",
+            "close": "2327.46",
+            "time": 1792931580000
+          },
+          {
+            "open": "2327.45",
+            "high": "2327.88",
+            "low": "2327.29",
+            "volume": "472.711",
+            "close": "2327.37",
+            "time": 1792931640000
+          },
+          {
+            "open": "2327.37",
+            "high": "2328.53",
+            "low": "2326.7",
+            "volume": "582.531",
+            "close": "2328.49",
+            "time": 1792931700000
+          },
+          {
+            "open": "2328.49",
+            "high": "2330.76",
+            "low": "2328.48",
+            "volume": "3688.736",
+            "close": "2330.12",
+            "time": 1792931760000
+          },
+          {
+            "open": "2330.12",
+            "high": "2331.35",
+            "low": "2330.11",
+            "volume": "1137.541",
+            "close": "2330.82",
+            "time": 1792931820000
+          }
+        ]
+      }
+    },
+    {
+      "params": {
+        "pair": "B-DOGE_USDT",
+        "from": 1793014320,
+        "to": 1793014620,
+        "resolution": "1",
+        "pcode": "f"
+      },
+      "payload": {
+        "s": "ok",
+        "data": [
+          {
+            "open": "0.07697",
+            "high": "0.07704",
+            "low": "0.07696",
+            "volume": 726061,
+            "close": "0.07703",
+            "time": 1793014320000
+          },
+          {
+            "open": "0.07702",
+            "high": "0.07706",
+            "low": "0.07701",
+            "volume": 825147,
+            "close": "0.07705",
+            "time": 1793014380000
+          },
+          {
+            "open": "0.07705",
+            "high": "0.07713",
+            "low": "0.07703",
+            "volume": 1079301,
+            "close": "0.07712",
+            "time": 1793014440000
+          },
+          {
+            "open": "0.07712",
+            "high": "0.07712",
+            "low": "0.07707",
+            "volume": 723509,
+            "close": "0.07707",
+            "time": 1793014500000
+          },
+          {
+            "open": "0.07707",
+            "high": "0.07714",
+            "low": "0.07704",
+            "volume": 732881,
+            "close": "0.07713",
+            "time": 1793014560000
+          },
+          {
+            "open": "0.07712",
+            "high": "0.07719",
+            "low": "0.07712",
+            "volume": 1167104,
+            "close": "0.07719",
+            "time": 1793014620000
+          }
+        ]
+      }
+    },
+    {
+      "params": {
+        "pair": "B-DOGE_USDT",
+        "from": 1793003520,
+        "to": 1793003820,
+        "resolution": "1",
+        "pcode": "f"
+      },
+      "payload": {
+        "s": "ok",
+        "data": [
+          {
+            "open": "0.07687",
+            "high": "0.07696",
+            "low": "0.07686",
+            "volume": 3268120,
+            "close": "0.07694",
+            "time": 1793003520000
+          },
+          {
+            "open": "0.07693",
+            "high": "0.07695",
+            "low": "0.07687",
+            "volume": 1124891,
+            "close": "0.07695",
+            "time": 1793003580000
+          },
+          {
+            "open": "0.07695",
+            "high": "0.07695",
+            "low": "0.07688",
+            "volume": 834817,
+            "close": "0.0769",
+            "time": 1793003640000
+          },
+          {
+            "open": "0.07689",
+            "high": "0.07701",
+            "low": "0.07688",
+            "volume": 6595693,
+            "close": "0.077",
+            "time": 1793003700000
+          },
+          {
+            "open": "0.077",
+            "high": "0.07701",
+            "low": "0.07695",
+            "volume": 1873287,
+            "close": "0.07699",
+            "time": 1793003760000
+          },
+          {
+            "open": "0.077",
+            "high": "0.07711",
+            "low": "0.077",
+            "volume": 3432973,
+            "close": "0.07709",
+            "time": 1793003820000
+          }
+        ]
+      }
+    },
+    {
+      "params": {
+        "pair": "B-DOGE_USDT",
+        "from": 1792931520,
+        "to": 1792931820,
+        "resolution": "1",
+        "pcode": "f"
+      },
+      "payload": {
+        "s": "ok",
+        "data": [
+          {
+            "open": "0.07645",
+            "high": "0.07645",
+            "low": "0.07641",
+            "volume": 983616,
+            "close": "0.07643",
+            "time": 1792931520000
+          },
+          {
+            "open": "0.07643",
+            "high": "0.07644",
+            "low": "0.07641",
+            "volume": 533974,
+            "close": "0.07641",
+            "time": 1792931580000
+          },
+          {
+            "open": "0.07642",
+            "high": "0.07644",
+            "low": "0.07642",
+            "volume": 1055267,
+            "close": "0.07644",
+            "time": 1792931640000
+          },
+          {
+            "open": "0.07643",
+            "high": "0.07647",
+            "low": "0.07641",
+            "volume": 1602022,
+            "close": "0.07647",
+            "time": 1792931700000
+          },
+          {
+            "open": "0.07647",
+            "high": "0.07654",
+            "low": "0.07646",
+            "volume": 1986718,
+            "close": "0.07652",
+            "time": 1792931760000
+          },
+          {
+            "open": "0.07651",
+            "high": "0.07658",
+            "low": "0.07651",
+            "volume": 740437,
+            "close": "0.07656",
+            "time": 1792931820000
+          }
+        ]
+      }
+    },
+    {
+      "params": {
+        "pair": "B-1000PEPE_USDT",
+        "from": 1793014320,
+        "to": 1793014620,
+        "resolution": "1",
+        "pcode": "f"
+      },
+      "payload": {
+        "s": "ok",
+        "data": [
+          {
+            "open": "0.0043731",
+            "high": "0.0043816",
+            "low": "0.0043731",
+            "volume": 22347640,
+            "close": "0.0043793",
+            "time": 1793014320000
+          },
+          {
+            "open": "0.0043792",
+            "high": "0.0043879",
+            "low": "0.0043789",
+            "volume": 25130933,
+            "close": "0.004386",
+            "time": 1793014380000
+          },
+          {
+            "open": "0.004386",
+            "high": "0.0043911",
+            "low": "0.0043843",
+            "volume": 18627666,
+            "close": "0.0043898",
+            "time": 1793014440000
+          },
+          {
+            "open": "0.0043897",
+            "high": "0.0043897",
+            "low": "0.0043811",
+            "volume": 14701204,
+            "close": "0.0043811",
+            "time": 1793014500000
+          },
+          {
+            "open": "0.0043811",
+            "high": "0.0043893",
+            "low": "0.0043777",
+            "volume": 52600543,
+            "close": "0.0043876",
+            "time": 1793014560000
+          },
+          {
+            "open": "0.0043876",
+            "high": "0.0043899",
+            "low": "0.0043846",
+            "volume": 10192138,
+            "close": "0.0043891",
+            "time": 1793014620000
+          }
+        ]
+      }
+    },
+    {
+      "params": {
+        "pair": "B-1000PEPE_USDT",
+        "from": 1793003520,
+        "to": 1793003820,
+        "resolution": "1",
+        "pcode": "f"
+      },
+      "payload": {
+        "s": "ok",
+        "data": [
+          {
+            "open": "0.0043827",
+            "high": "0.0043944",
+            "low": "0.0043827",
+            "volume": 32538135,
+            "close": "0.0043918",
+            "time": 1793003520000
+          },
+          {
+            "open": "0.0043917",
+            "high": "0.0043917",
+            "low": "0.0043843",
+            "volume": 56658304,
+            "close": "0.0043875",
+            "time": 1793003580000
+          },
+          {
+            "open": "0.0043874",
+            "high": "0.0043874",
+            "low": "0.0043807",
+            "volume": 26076515,
+            "close": "0.0043807",
+            "time": 1793003640000
+          },
+          {
+            "open": "0.0043806",
+            "high": "0.0043908",
+            "low": "0.0043786",
+            "volume": 36292465,
+            "close": "0.0043888",
+            "time": 1793003700000
+          },
+          {
+            "open": "0.0043889",
+            "high": "0.0043952",
+            "low": "0.0043859",
+            "volume": 58701568,
+            "close": "0.004395",
+            "time": 1793003760000
+          },
+          {
+            "open": "0.0043951",
+            "high": "0.0044085",
+            "low": "0.0043949",
+            "volume": 86529181,
+            "close": "0.0044051",
+            "time": 1793003820000
+          }
+        ]
+      }
+    },
+    {
+      "params": {
+        "pair": "B-1000PEPE_USDT",
+        "from": 1792931520,
+        "to": 1792931820,
+        "resolution": "1",
+        "pcode": "f"
+      },
+      "payload": {
+        "s": "ok",
+        "data": [
+          {
+            "open": "0.0044548",
+            "high": "0.004455",
+            "low": "0.0044474",
+            "volume": 40206691,
+            "close": "0.0044501",
+            "time": 1792931520000
+          },
+          {
+            "open": "0.0044501",
+            "high": "0.0044503",
+            "low": "0.0044427",
+            "volume": 23705225,
+            "close": "0.0044427",
+            "time": 1792931580000
+          },
+          {
+            "open": "0.0044428",
+            "high": "0.0044452",
+            "low": "0.0044402",
+            "volume": 31999093,
+            "close": "0.0044422",
+            "time": 1792931640000
+          },
+          {
+            "open": "0.0044421",
+            "high": "0.0044463",
+            "low": "0.004438",
+            "volume": 33468166,
+            "close": "0.0044446",
+            "time": 1792931700000
+          },
+          {
+            "open": "0.0044446",
+            "high": "0.0044494",
+            "low": "0.00444",
+            "volume": 29136527,
+            "close": "0.0044403",
+            "time": 1792931760000
+          },
+          {
+            "open": "0.0044403",
+            "high": "0.0044479",
+            "low": "0.0044403",
+            "volume": 20227410,
+            "close": "0.0044469",
+            "time": 1792931820000
+          }
+        ]
+      }
+    },
+    {
+      "params": {
+        "pair": "B-XAU_USDT",
+        "from": 1793014320,
+        "to": 1793014620,
+        "resolution": "1",
+        "pcode": "f"
+      },
+      "payload": {
+        "s": "ok",
+        "data": [
+          {
+            "open": "4022.46",
+            "high": "4023.29",
+            "low": "4022.46",
+            "volume": "126.017",
+            "close": "4023.29",
+            "time": 1793014320000
+          },
+          {
+            "open": "4023.28",
+            "high": "4023.81",
+            "low": "4023.01",
+            "volume": "124.289",
+            "close": "4023.81",
+            "time": 1793014380000
+          },
+          {
+            "open": "4023.8",
+            "high": "4023.81",
+            "low": "4023.01",
+            "volume": "66.602",
+            "close": "4023.72",
+            "time": 1793014440000
+          },
+          {
+            "open": "4023.71",
+            "high": "4023.79",
+            "low": "4022.26",
+            "volume": "92.608",
+            "close": "4022.27",
+            "time": 1793014500000
+          },
+          {
+            "open": "4022.27",
+            "high": "4022.28",
+            "low": "4021.48",
+            "volume": "105.806",
+            "close": "4021.48",
+            "time": 1793014560000
+          },
+          {
+            "open": "4021.48",
+            "high": "4021.56",
+            "low": "4021.18",
+            "volume": "77.719",
+            "close": "4021.18",
+            "time": 1793014620000
+          }
+        ]
+      }
+    },
+    {
+      "params": {
+        "pair": "B-XAU_USDT",
+        "from": 1793003520,
+        "to": 1793003820,
+        "resolution": "1",
+        "pcode": "f"
+      },
+      "payload": {
+        "s": "ok",
+        "data": [
+          {
+            "open": "4022.38",
+            "high": "4023.23",
+            "low": "4022.35",
+            "volume": "236.314",
+            "close": "4022.91",
+            "time": 1793003520000
+          },
+          {
+            "open": "4022.9",
+            "high": "4023.24",
+            "low": "4022.68",
+            "volume": "142.701",
+            "close": "4023.21",
+            "time": 1793003580000
+          },
+          {
+            "open": "4023.21",
+            "high": "4023.99",
+            "low": "4022.91",
+            "volume": "119.451",
+            "close": "4022.91",
+            "time": 1793003640000
+          },
+          {
+            "open": "4022.92",
+            "high": "4024.36",
+            "low": "4022.91",
+            "volume": "465.698",
+            "close": "4024.28",
+            "time": 1793003700000
+          },
+          {
+            "open": "4024.36",
+            "high": "4024.47",
+            "low": "4023.49",
+            "volume": "141.9",
+            "close": "4024.4",
+            "time": 1793003760000
+          },
+          {
+            "open": "4024.4",
+            "high": "4025.6",
+            "low": "4024.4",
+            "volume": "207.428",
+            "close": "4024.81",
+            "time": 1793003820000
+          }
+        ]
+      }
+    },
+    {
+      "params": {
+        "pair": "B-XAU_USDT",
+        "from": 1792931520,
+        "to": 1792931820,
+        "resolution": "1",
+        "pcode": "f"
+      },
+      "payload": {
+        "s": "ok",
+        "data": [
+          {
+            "open": "3993.65",
+            "high": "3993.65",
+            "low": "3993.64",
+            "volume": "5.381",
+            "close": "3993.64",
+            "time": 1792931520000
+          },
+          {
+            "open": "3993.64",
+            "high": "3993.65",
+            "low": "3993.64",
+            "volume": "8.051",
+            "close": "3993.64",
+            "time": 1792931580000
+          },
+          {
+            "open": "3993.65",
+            "high": "3993.65",
+            "low": "3993.64",
+            "volume": "2.44",
+            "close": "3993.65",
+            "time": 1792931640000
+          },
+          {
+            "open": "3993.65",
+            "high": "3993.65",
+            "low": "3993.64",
+            "volume": "10.564",
+            "close": "3993.64",
+            "time": 1792931700000
+          },
+          {
+            "open": "3993.65",
+            "high": "3993.65",
+            "low": "3993.64",
+            "volume": "5.297",
+            "close": "3993.65",
+            "time": 1792931760000
+          },
+          {
+            "open": "3993.64",
+            "high": "3993.65",
+            "low": "3993.64",
+            "volume": "12.303",
+            "close": "3993.64",
+            "time": 1792931820000
+          }
+        ]
+      }
+    }
+  ],
+  "checks": [
+    "initial_publish",
+    "duplicate_no_revision",
+    "stale_revision",
+    "same_source_conflict",
+    "source_regression",
+    "future_refused",
+    "expired_refused",
+    "stale_owner_refused",
+    "failure_retains_payload",
+    "failure_does_not_freshen",
+    "expired_owner_still_refused",
+    "handoff_publish",
+    "previous_generation_preserved",
+    "BTCUSDT_exact_roundtrip",
+    "BTCUSDT_failed_refresh_retained",
+    "BTCUSDT_due_pending",
+    "BTCUSDT_r6_expired",
+    "BTCUSDT_successful_retry_clears_failure",
+    "ETHUSDT_exact_roundtrip",
+    "ETHUSDT_failed_refresh_retained",
+    "ETHUSDT_due_pending",
+    "ETHUSDT_r6_expired",
+    "ETHUSDT_successful_retry_clears_failure",
+    "DOGEUSDT_exact_roundtrip",
+    "DOGEUSDT_failed_refresh_retained",
+    "DOGEUSDT_due_pending",
+    "DOGEUSDT_r6_expired",
+    "DOGEUSDT_successful_retry_clears_failure",
+    "1000PEPEUSDT_exact_roundtrip",
+    "1000PEPEUSDT_failed_refresh_retained",
+    "1000PEPEUSDT_due_pending",
+    "1000PEPEUSDT_r6_expired",
+    "1000PEPEUSDT_successful_retry_clears_failure",
+    "XAUUSDT_exact_roundtrip",
+    "XAUUSDT_failed_refresh_retained",
+    "XAUUSDT_due_pending",
+    "XAUUSDT_r6_expired",
+    "XAUUSDT_successful_retry_clears_failure",
+    "ARKUSDT_exact_roundtrip",
+    "ARKUSDT_failed_refresh_retained",
+    "ARKUSDT_due_pending",
+    "ARKUSDT_r6_expired",
+    "ARKUSDT_successful_retry_clears_failure",
+    "BMTUSDT_exact_roundtrip",
+    "BMTUSDT_failed_refresh_retained",
+    "BMTUSDT_due_pending",
+    "BMTUSDT_r6_expired",
+    "BMTUSDT_successful_retry_clears_failure",
+    "IOSTUSDT_exact_roundtrip",
+    "IOSTUSDT_failed_refresh_retained",
+    "IOSTUSDT_due_pending",
+    "IOSTUSDT_r6_expired",
+    "IOSTUSDT_successful_retry_clears_failure",
+    "funding_source_cycle",
+    "BTCUSDT_1H_fraction",
+    "BTCUSDT_4H_fraction",
+    "BTCUSDT_24H_fraction",
+    "ETHUSDT_1H_fraction",
+    "ETHUSDT_4H_fraction",
+    "ETHUSDT_24H_fraction",
+    "DOGEUSDT_1H_fraction",
+    "DOGEUSDT_4H_fraction",
+    "DOGEUSDT_24H_fraction",
+    "1000PEPEUSDT_1H_fraction",
+    "1000PEPEUSDT_4H_fraction",
+    "1000PEPEUSDT_24H_fraction",
+    "XAUUSDT_1H_fraction",
+    "XAUUSDT_4H_fraction",
+    "XAUUSDT_24H_fraction"
+  ],
+  "transport": "plaintext_approved_staging_exception",
+  "synthetic_id": "62a294145193482a98e5484a733e6d48",
+  "memory_before": {
+    "used_memory": 15698464,
+    "used_memory_human": "14.97M",
+    "used_memory_rss": 15698464,
+    "used_memory_peak": 16711504,
+    "used_memory_peak_human": "15.93M",
+    "used_memory_lua": 540672,
+    "maxmemory_policy": "noeviction",
+    "mem_fragmentation_ratio": 1,
+    "mem_allocator": "jemalloc-5.3.0"
+  },
+  "reference_dispatches": 17,
+  "reference_status_counts": {
+    "200": 17
+  },
+  "memory_after": {
+    "used_memory": 15833216,
+    "used_memory_human": "15.9M",
+    "used_memory_rss": 15833216,
+    "used_memory_peak": 16711504,
+    "used_memory_peak_human": "15.93M",
+    "used_memory_lua": 577536,
+    "maxmemory_policy": "noeviction",
+    "mem_fragmentation_ratio": 1,
+    "mem_allocator": "jemalloc-5.3.0"
+  }
+}

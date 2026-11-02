@@ -1,0 +1,16 @@
+{
+ "symbol": "XAUUSDT",
+ "ticker": {
+  "lastPrice": "3988.50",
+  "openPrice": "4003.58",
+  "priceChangePercent": "-0.377",
+  "openTime": 1792769880000,
+  "closeTime": 1792856313111
+ },
+ "kline_1m_at_openTime": {
+  "openTime": 1792769880000,
+  "open": "4003.58"
+ },
+ "computed_percent": -0.377,
+ "matches": true
+}

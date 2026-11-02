@@ -1,0 +1,257 @@
+{
+  "status": "measured_not_scale_acceptance",
+  "namespace": "pulse:stg:",
+  "transport": "plaintext_approved_staging_exception",
+  "capacity_source": "verified_plan_staging_exception",
+  "raw_capsule_bytes": 25152,
+  "stages": [
+    {
+      "frames": 8,
+      "used_memory_median": 6725760,
+      "used_memory_samples": [
+        6725760,
+        6725760,
+        6725760,
+        6725760,
+        6725760
+      ],
+      "samples": [
+        {
+          "used_memory": 6725760,
+          "used_memory_lua": 223232,
+          "used_memory_rss": 6725760,
+          "dbsize": 9
+        },
+        {
+          "used_memory": 6725760,
+          "used_memory_lua": 223232,
+          "used_memory_rss": 6725760,
+          "dbsize": 9
+        },
+        {
+          "used_memory": 6725760,
+          "used_memory_lua": 223232,
+          "used_memory_rss": 6725760,
+          "dbsize": 9
+        },
+        {
+          "used_memory": 6725760,
+          "used_memory_lua": 223232,
+          "used_memory_rss": 6725760,
+          "dbsize": 9
+        },
+        {
+          "used_memory": 6725760,
+          "used_memory_lua": 223232,
+          "used_memory_rss": 6725760,
+          "dbsize": 9
+        }
+      ],
+      "memory_usage_by_frame": [
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752
+      ]
+    },
+    {
+      "frames": 16,
+      "used_memory_median": 7841632,
+      "used_memory_samples": [
+        7841632,
+        7841632,
+        7841632,
+        7841632,
+        7841632
+      ],
+      "samples": [
+        {
+          "used_memory": 7841632,
+          "used_memory_lua": 223232,
+          "used_memory_rss": 7841632,
+          "dbsize": 17
+        },
+        {
+          "used_memory": 7841632,
+          "used_memory_lua": 223232,
+          "used_memory_rss": 7841632,
+          "dbsize": 17
+        },
+        {
+          "used_memory": 7841632,
+          "used_memory_lua": 223232,
+          "used_memory_rss": 7841632,
+          "dbsize": 17
+        },
+        {
+          "used_memory": 7841632,
+          "used_memory_lua": 223232,
+          "used_memory_rss": 7841632,
+          "dbsize": 17
+        },
+        {
+          "used_memory": 7841632,
+          "used_memory_lua": 223232,
+          "used_memory_rss": 7841632,
+          "dbsize": 17
+        }
+      ],
+      "memory_usage_by_frame": [
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752
+      ]
+    },
+    {
+      "frames": 32,
+      "used_memory_median": 9547824,
+      "used_memory_samples": [
+        9547824,
+        9547824,
+        9547824,
+        9541680,
+        9541680
+      ],
+      "samples": [
+        {
+          "used_memory": 9547824,
+          "used_memory_lua": 223232,
+          "used_memory_rss": 9547824,
+          "dbsize": 33
+        },
+        {
+          "used_memory": 9547824,
+          "used_memory_lua": 223232,
+          "used_memory_rss": 9547824,
+          "dbsize": 33
+        },
+        {
+          "used_memory": 9547824,
+          "used_memory_lua": 223232,
+          "used_memory_rss": 9547824,
+          "dbsize": 33
+        },
+        {
+          "used_memory": 9541680,
+          "used_memory_lua": 223232,
+          "used_memory_rss": 9541680,
+          "dbsize": 33
+        },
+        {
+          "used_memory": 9541680,
+          "used_memory_lua": 223232,
+          "used_memory_rss": 9541680,
+          "dbsize": 33
+        }
+      ],
+      "memory_usage_by_frame": [
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752,
+        28752
+      ]
+    }
+  ],
+  "slopes": [
+    {
+      "from": 8,
+      "to": 16,
+      "delta_bytes": 1115872,
+      "bytes_per_added_frame": 139484.0,
+      "raw_ratio": 5.545642493638677,
+      "lower_per_frame": 139484.0,
+      "upper_per_frame": 139484.0,
+      "conclusive": true,
+      "passes_1_3x": false
+    },
+    {
+      "from": 16,
+      "to": 32,
+      "delta_bytes": 1706192,
+      "bytes_per_added_frame": 106637.0,
+      "raw_ratio": 4.239702608142494,
+      "lower_per_frame": 106253.0,
+      "upper_per_frame": 106637.0,
+      "conclusive": true,
+      "passes_1_3x": false
+    }
+  ],
+  "strict_1_3x_gate_passed": false,
+  "new_persistent_frames": 24,
+  "new_frame_keys": [
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:8",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:9",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:10",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:11",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:12",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:13",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:14",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:15",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:16",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:17",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:18",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:19",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:20",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:21",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:22",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:23",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:24",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:25",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:26",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:27",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:28",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:29",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:30",
+    "pulse:stg:{ad0b222680144d47b24ac610a5513e79}:memory:31"
+  ],
+  "exchange_calls": 0,
+  "deletions": 0,
+  "script_loads": 0,
+  "quiet_instance_proven": false,
+  "fifty_pair_run_authorised_by_result": false
+}

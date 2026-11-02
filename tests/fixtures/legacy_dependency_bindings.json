@@ -1,0 +1,251 @@
+{
+  "bootstrap_cache": {
+    "module": "cache",
+    "bindings": {
+      "ROOT": "root"
+    }
+  },
+  "load_precomputed_report": {
+    "module": "cache",
+    "bindings": {
+      "ROOT": "root"
+    }
+  },
+  "_tmp_cache_path": {
+    "module": "cache",
+    "bindings": {}
+  },
+  "_try_serve_from_cache": {
+    "module": "cache",
+    "bindings": {
+      "_CACHE": "cache_state",
+      "VercelStorage": "storage",
+      "CACHE_TTL": "cache_ttl",
+      "_tmp_cache_path": "cache_path"
+    }
+  },
+  "_serve_stale_or_fallback": {
+    "module": "cache",
+    "bindings": {
+      "_CACHE": "cache_state",
+      "VercelStorage": "storage",
+      "_tmp_cache_path": "cache_path",
+      "load_precomputed_report": "fallback"
+    }
+  },
+  "_save_to_local_cache_layers": {
+    "module": "cache",
+    "bindings": {
+      "_CACHE": "cache_state",
+      "_tmp_cache_path": "cache_path"
+    }
+  },
+  "_save_to_cache_layers": {
+    "module": "cache",
+    "bindings": {
+      "_save_to_local_cache_layers": "save_local",
+      "VercelStorage": "storage"
+    }
+  },
+  "ReportUnavailableError": {
+    "module": "generation",
+    "bindings": {}
+  },
+  "_epoch_seconds": {
+    "module": "generation",
+    "bindings": {}
+  },
+  "_report_model_timestamp": {
+    "module": "generation",
+    "bindings": {}
+  },
+  "_report_age_seconds": {
+    "module": "generation",
+    "bindings": {}
+  },
+  "_generation_manifest_key": {
+    "module": "generation",
+    "bindings": {}
+  },
+  "_generation_report_key": {
+    "module": "generation",
+    "bindings": {}
+  },
+  "_manifest_combinations": {
+    "module": "generation",
+    "bindings": {}
+  },
+  "_validate_manifest": {
+    "module": "generation",
+    "bindings": {}
+  },
+  "_validate_generated_report": {
+    "module": "generation",
+    "bindings": {}
+  },
+  "_serving_metadata": {
+    "module": "generation",
+    "bindings": {}
+  },
+  "_validate_generation_set": {
+    "module": "generation",
+    "bindings": {}
+  },
+  "_load_json_redis": {
+    "module": "generation",
+    "bindings": {
+      "VercelStorage": "storage"
+    }
+  },
+  "_generation_candidate_ids": {
+    "module": "generation",
+    "bindings": {
+      "VercelStorage": "storage"
+    }
+  },
+  "_read_generation_report": {
+    "module": "generation",
+    "bindings": {
+      "_load_json_redis": "load_json"
+    }
+  },
+  "_publish_generation": {
+    "module": "publisher",
+    "bindings": {
+      "VercelStorage": "storage",
+      "_save_to_local_cache_layers": "save_local",
+      "_best_effort_reconcile_generation_signal_states": "reconcile_signals"
+    }
+  },
+  "_record_refresh_status": {
+    "module": "publisher",
+    "bindings": {
+      "VercelStorage": "storage"
+    },
+    "details_dict": true
+  },
+  "_set_refresh_backoff": {
+    "module": "publisher",
+    "bindings": {
+      "VercelStorage": "storage"
+    }
+  },
+  "_refresh_backoff_status": {
+    "module": "publisher",
+    "bindings": {
+      "VercelStorage": "storage",
+      "_load_json_redis": "load_json"
+    }
+  },
+  "_signal_state_key": {
+    "module": "signal_state",
+    "bindings": {}
+  },
+  "_positive_finite_number": {
+    "module": "signal_state",
+    "bindings": {}
+  },
+  "_matching_signal_state_fields": {
+    "module": "signal_state",
+    "bindings": {}
+  },
+  "_signal_observations": {
+    "module": "signal_state",
+    "bindings": {}
+  },
+  "_reconcile_report_signal_states": {
+    "module": "signal_state",
+    "bindings": {
+      "VercelStorage": "storage"
+    }
+  },
+  "_attach_signal_states": {
+    "module": "signal_state",
+    "bindings": {
+      "VercelStorage": "storage"
+    }
+  },
+  "_best_effort_reconcile_generation_signal_states": {
+    "module": "signal_state",
+    "bindings": {
+      "_reconcile_report_signal_states": "reconcile_report"
+    }
+  },
+  "_resolve_target_report": {
+    "module": "reader",
+    "bindings": {
+      "VercelStorage": "storage",
+      "_generation_candidate_ids": "candidate_ids",
+      "_read_generation_report": "read_report",
+      "_save_to_local_cache_layers": "save_local",
+      "_attach_signal_states": "attach_states",
+      "load_precomputed_report": "fallback"
+    }
+  },
+  "_generation_health_snapshot": {
+    "module": "health",
+    "bindings": {
+      "VercelStorage": "storage",
+      "_load_json_redis": "load_json",
+      "_read_generation_report": "read_report"
+    }
+  },
+  "scale_and_score_report": {
+    "module": "scaling",
+    "bindings": {
+      "score_cross_section": "score"
+    }
+  },
+  "_get_cached_oi": {
+    "module": "enrichment",
+    "bindings": {
+      "_OI_CACHE": "cache_state",
+      "fetch_oi_metrics": "fetch",
+      "unavailable_oi_metrics": "unavailable"
+    }
+  },
+  "_enrich_with_signals": {
+    "module": "enrichment",
+    "bindings": {
+      "requests": "http",
+      "_get_cached_oi": "get_oi",
+      "enrich_token": "classify",
+      "compute_market_context": "market_context",
+      "get_oi_provider_order": "provider_order",
+      "unavailable_oi_metrics": "unavailable"
+    }
+  },
+  "_perform_optimized_pipeline": {
+    "module": "pipeline",
+    "bindings": {
+      "bootstrap_cache": "bootstrap",
+      "_try_serve_from_cache": "try_cache",
+      "_default_start_date": "start_date",
+      "run_lightweight_analysis": "analyse",
+      "_save_to_cache_layers": "save",
+      "load_precomputed_report": "fallback",
+      "scale_and_score_report": "scale",
+      "_enrich_with_signals": "enrich"
+    }
+  },
+  "_fast_hydrate": {
+    "module": "fast_hydrate",
+    "bindings": {
+      "_resolve_target_report": "resolve_report",
+      "requests": "http",
+      "VercelStorage": "storage"
+    }
+  },
+  "_get_cached_or_compute": {
+    "module": "dispatch",
+    "bindings": {
+      "_fast_hydrate": "hydrate",
+      "_resolve_target_report": "resolve_report",
+      "normalize_instruments_lw": "normalize",
+      "VercelStorage": "storage",
+      "_serve_stale_or_fallback": "stale_fallback",
+      "_try_serve_from_cache": "try_cache",
+      "_perform_optimized_pipeline": "build"
+    }
+  }
+}

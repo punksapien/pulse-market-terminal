@@ -1,0 +1,269 @@
+{
+  "schema": "pulse.columns.v1",
+  "part": "oi",
+  "count": 1,
+  "mapping_version": "sha256:f6bf9e306fa2314c7de7d6b58d2796fb1b9322cd88d737e6e6728733bb510ca9",
+  "generation": "sha256:636ecee719b1e06d0446152442456bbe63673cc618311d7e4274aa62a56f44b7",
+  "horizon": "1H",
+  "generated_ms": 1800000000000,
+  "expires_ms": 1800000060000,
+  "metadata": [
+    {
+      "unit": "fraction",
+      "assurance": null,
+      "definition_version": "open_interest.v1",
+      "classification_status": "classified",
+      "level": 1,
+      "level_basis": "0.005",
+      "level_basis_unit": "fraction",
+      "baseline_asof_ms": 1799996399000,
+      "actual_duration_ms": 3600000,
+      "baseline_error_ms": 0,
+      "mode": "own",
+      "classification_version": "open_interest.v1.l2.1H.fictional_fixture"
+    },
+    {
+      "unit": "fraction",
+      "assurance": null,
+      "definition_version": "open_interest.v1",
+      "classification_status": "classified",
+      "level": 3,
+      "level_basis": "5",
+      "level_basis_unit": "fraction",
+      "baseline_asof_ms": 1799913599000,
+      "actual_duration_ms": 86400000,
+      "baseline_error_ms": 0,
+      "mode": "own",
+      "classification_version": "open_interest.v1.l2.24H.fictional_fixture"
+    },
+    {
+      "unit": "fraction",
+      "assurance": null,
+      "definition_version": "open_interest.v1",
+      "classification_status": "classified",
+      "level": 2,
+      "level_basis": "0.5",
+      "level_basis_unit": "fraction",
+      "baseline_asof_ms": 1799985599000,
+      "actual_duration_ms": 14400000,
+      "baseline_error_ms": 0,
+      "mode": "own",
+      "classification_version": "open_interest.v1.l2.4H.fictional_fixture"
+    },
+    {
+      "unit": "quantity",
+      "assurance": null,
+      "definition_version": "open_interest.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    }
+  ],
+  "groups": [
+    {
+      "asof_ms": 1799999999000,
+      "expires_ms": 1800000060000,
+      "input_refs": [
+        "fixture:source"
+      ]
+    }
+  ],
+  "columns": [
+    [
+      [
+        "history",
+        "oi",
+        "definition_version"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "history.fixture.v1"
+      ]
+    ],
+    [
+      [
+        "history",
+        "oi",
+        "input_refs"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        []
+      ]
+    ],
+    [
+      [
+        "history",
+        "oi",
+        "points"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        []
+      ]
+    ],
+    [
+      [
+        "history",
+        "oi",
+        "reason"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "not_retained"
+      ]
+    ],
+    [
+      [
+        "history",
+        "oi",
+        "status"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "unsupported"
+      ]
+    ],
+    [
+      [
+        "history",
+        "oi",
+        "unit"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "fraction"
+      ]
+    ],
+    [
+      [
+        "oi",
+        "change_1h"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.005"
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "oi",
+        "change_24h"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "5"
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "oi",
+        "change_4h"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.5"
+      ],
+      [
+        "c",
+        2
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "oi",
+        "quantity"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "112000"
+      ],
+      [
+        "c",
+        3
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ]
+  ],
+  "inputs": {
+    "fixture:source": {
+      "version": "fixture.input.v1",
+      "source_ms": 1799999999000,
+      "verified_at_ms": 1800000000000,
+      "expires_ms": 1800029699000,
+      "definition_version": "fixture.source.v1"
+    }
+  }
+}

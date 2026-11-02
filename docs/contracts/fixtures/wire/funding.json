@@ -1,0 +1,416 @@
+{
+  "schema": "pulse.columns.v1",
+  "part": "funding",
+  "count": 3,
+  "mapping_version": "sha256:164d44a50b3cab7acdf37ccf32dd2b2034feac1fcbc33428f071c920ecfdae6c",
+  "generation": "sha256:34259a080c314fa1cccac16c50ffd028c731a7cecba17fa94ba3f3db7cc4fae2",
+  "horizon": "1H",
+  "generated_ms": 1800000000000,
+  "expires_ms": 1800000060000,
+  "metadata": [
+    {
+      "unit": "boolean",
+      "assurance": null,
+      "definition_version": "funding.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "fraction",
+      "assurance": null,
+      "definition_version": "funding.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "fraction",
+      "assurance": "window_consistent_provisional",
+      "definition_version": "funding.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    }
+  ],
+  "groups": [
+    {
+      "asof_ms": 1799999999000,
+      "expires_ms": 1800000060000,
+      "input_refs": [
+        "fixture:source"
+      ]
+    },
+    {
+      "asof_ms": 1799999999000,
+      "expires_ms": 1800000119000,
+      "input_refs": [
+        "fixture:source"
+      ]
+    },
+    {
+      "asof_ms": 1799999999000,
+      "expires_ms": 1800028799000,
+      "input_refs": [
+        "fixture:source"
+      ]
+    },
+    {
+      "asof_ms": 1799999999000,
+      "expires_ms": 1800014399000,
+      "input_refs": [
+        "fixture:source"
+      ]
+    },
+    {
+      "asof_ms": 1799999999000,
+      "expires_ms": 1800003599000,
+      "input_refs": [
+        "fixture:source"
+      ]
+    },
+    {
+      "asof_ms": null,
+      "expires_ms": null,
+      "input_refs": []
+    }
+  ],
+  "columns": [
+    [
+      [
+        "funding",
+        "at_cap"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        false
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "funding",
+        "at_floor"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        false
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "funding",
+        "cap"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.003"
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "funding",
+        "cumulative_1d"
+      ],
+      null,
+      "f",
+      [
+        "d",
+        [
+          "0.00035",
+          "0.00065",
+          "0.00245"
+        ]
+      ],
+      [
+        "c",
+        2
+      ],
+      [
+        "d",
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "funding",
+        "cumulative_7d"
+      ],
+      null,
+      "f",
+      [
+        "d",
+        [
+          "0.00215",
+          "0.00425",
+          null
+        ]
+      ],
+      [
+        "c",
+        2
+      ],
+      [
+        "d",
+        [
+          2,
+          3,
+          5
+        ]
+      ],
+      [
+        "s",
+        {
+          "reason": null,
+          "status": "available"
+        },
+        [
+          [
+            2,
+            {
+              "status": "unavailable",
+              "reason": "insufficient_history"
+            }
+          ]
+        ]
+      ]
+    ],
+    [
+      [
+        "funding",
+        "floor"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "-0.003"
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "funding",
+        "h"
+      ],
+      null,
+      "j",
+      [
+        "d",
+        [
+          8,
+          4,
+          1
+        ]
+      ]
+    ],
+    [
+      [
+        "funding",
+        "native_estimate"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.0002"
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "funding",
+        "nft"
+      ],
+      null,
+      "j",
+      [
+        "d",
+        [
+          1800028799000,
+          1800014399000,
+          1800003599000
+        ]
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding",
+        "definition_version"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "history.fixture.v1"
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding",
+        "input_refs"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        []
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding",
+        "points"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        []
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding",
+        "reason"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "not_retained"
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding",
+        "status"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "unsupported"
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding",
+        "unit"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "fraction"
+      ]
+    ]
+  ],
+  "inputs": {
+    "fixture:source": {
+      "version": "fixture.input.v1",
+      "source_ms": 1799999999000,
+      "verified_at_ms": 1800000000000,
+      "expires_ms": 1800029699000,
+      "definition_version": "fixture.source.v1"
+    }
+  }
+}

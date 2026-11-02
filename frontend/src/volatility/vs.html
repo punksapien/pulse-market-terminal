@@ -1,0 +1,186 @@
+<main class="app-shell" id="app">
+  <span class="sr-only live-dot" id="live-dot"></span>
+  <span class="sr-only" id="freshness-label" aria-live="polite">Loading market scan</span>
+
+  <nav class="regime-tabs" id="regime-tabs" aria-label="Volatility regime">
+    <button class="regime-tab active" type="button" data-regime-group="all" aria-pressed="true">All</button>
+    <button class="regime-tab" type="button" data-regime-group="extreme" aria-pressed="false">Extreme</button>
+    <button class="regime-tab" type="button" data-regime-group="hot" aria-pressed="false">Hot</button>
+    <button class="regime-tab" type="button" data-regime-group="active" aria-pressed="false">Active</button>
+    <button class="regime-tab" type="button" data-regime-group="calm" aria-pressed="false">Calm</button>
+  </nav>
+
+  <section class="signal-strip-wrap" aria-label="Signal filters">
+    <div class="signal-strip" id="signal-strip">
+      <button class="filter-trigger" id="btn-filters" type="button" aria-label="Open advanced filters">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 6h16M7 12h10M10 18h4"/>
+        </svg>
+        <span class="filter-count" id="filter-badge" hidden>0</span>
+      </button>
+      <button class="signal-chip active" type="button" data-signal="all" aria-pressed="true">All Signals</button>
+      <button class="signal-chip" type="button" data-signal="MomentumLong" aria-pressed="false">Uptrend</button>
+      <button class="signal-chip" type="button" data-signal="MomentumShort" aria-pressed="false">Downtrend</button>
+      <button class="signal-chip" type="button" data-signal="BreakoutWatch" aria-pressed="false">Breakout</button>
+      <button class="signal-chip" type="button" data-signal="Range" aria-pressed="false">Range</button>
+      <div class="applied-filter-chips" id="applied-filter-chips"></div>
+    </div>
+  </section>
+
+  <span class="sr-only" id="result-count" aria-live="polite">Loading markets</span>
+
+  <div class="market-header" id="col-header-row" role="row">
+    <div class="market-heading-group identity-heading">
+      <button class="market-heading name-heading" type="button" data-field="symbol" aria-label="Sort by name">
+        <span>Name</span><span class="sort-chevrons" aria-hidden="true"><i></i><i></i></span>
+      </button>
+      <span class="heading-slash">/</span>
+      <button class="market-heading volume-heading" type="button" data-field="dollar_vol_24h" aria-label="Sort by 24 hour volume">
+        <span id="timeframe-volume-label">24H Vol</span><span class="sort-chevrons" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+    <div class="market-heading-group metric-heading">
+      <button class="market-heading vol-heading active desc" type="button" data-field="volatility_score" aria-label="Sort by volatility">
+        <span>Volatility</span><span class="sort-chevrons" aria-hidden="true"><i></i><i></i></span>
+      </button>
+      <span class="heading-slash">/</span>
+      <button class="market-heading price-heading" type="button" data-field="price_last" aria-label="Sort by price">
+        <span>Price</span><span class="sort-chevrons" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+    <button class="market-heading change-heading" type="button" data-field="price_change_24h" aria-label="Sort by 24 hour change">
+      <span id="timeframe-change-label">24H % Chg</span><span class="sort-chevrons" aria-hidden="true"><i></i><i></i></span>
+    </button>
+    <span class="market-heading trade-heading" aria-hidden="true">Trade</span>
+  </div>
+
+  <section class="token-list-container" id="token-list-container" aria-label="Volatility markets">
+    <div id="token-list"></div>
+  </section>
+
+  <nav class="timeframe-dock" id="timeframe-control" aria-label="Volatility timeframe">
+    <button class="timeframe-btn" type="button" data-timeframe="60" aria-pressed="false">1H Chg</button>
+    <button class="timeframe-btn" type="button" data-timeframe="240" aria-pressed="false">4H Chg</button>
+    <button class="timeframe-btn active" type="button" data-timeframe="1D" aria-pressed="true">24H Chg</button>
+    <p class="risk-disclaimer timeframe-disclaimer" id="timeframe-risk-disclaimer">Disclaimer: Volatility signals are statistical estimates, not financial advice.</p>
+  </nav>
+</main>
+
+<div class="sheet-overlay" id="filter-overlay" hidden></div>
+<section class="bottom-sheet filter-sheet" id="filter-sheet" role="dialog" aria-modal="true" aria-labelledby="filter-title" aria-hidden="true">
+  <div class="sheet-handle" aria-hidden="true"></div>
+  <header class="sheet-header">
+    <h2 id="filter-title">Filters</h2>
+    <button class="sheet-close" id="btn-filter-close" type="button" aria-label="Close filters">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </header>
+  <div class="filter-body">
+    <fieldset class="filter-section">
+      <legend>Trend direction</legend>
+      <div class="choice-grid trend-grid" id="filter-trend-row">
+        <button class="choice-chip active" type="button" data-trend="all">All Trends</button>
+        <button class="choice-chip" type="button" data-trend="surging">Surging</button>
+        <button class="choice-chip" type="button" data-trend="rising">Rising</button>
+        <button class="choice-chip" type="button" data-trend="stable">Steady</button>
+        <button class="choice-chip" type="button" data-trend="falling">Falling</button>
+        <button class="choice-chip" type="button" data-trend="contracting">Contracting</button>
+      </div>
+    </fieldset>
+    <fieldset class="filter-section">
+      <legend>Minimum Volume</legend>
+      <div class="choice-grid volume-grid" id="filter-volume-row">
+        <button class="choice-chip active" type="button" data-volume="all">Any</button>
+        <button class="choice-chip" type="button" data-volume="1M">&gt; 1M</button>
+        <button class="choice-chip" type="button" data-volume="5M">&gt; 5M</button>
+        <button class="choice-chip" type="button" data-volume="10M">&gt; 10M</button>
+        <button class="choice-chip" type="button" data-volume="50M">&gt; 50M</button>
+        <button class="choice-chip" type="button" data-volume="100M">&gt; 100M</button>
+      </div>
+    </fieldset>
+  </div>
+  <footer class="sheet-actions">
+    <button class="secondary-button" id="btn-filter-reset" type="button">Reset All</button>
+    <button class="primary-button" id="btn-filter-apply" type="button">Apply</button>
+  </footer>
+</section>
+
+<div class="sheet-overlay detail-overlay" id="detail-overlay" hidden></div>
+<section class="bottom-sheet detail-sheet" id="detail-sheet" role="dialog" aria-modal="true" aria-labelledby="detail-symbol" aria-hidden="true">
+  <div class="sheet-handle" aria-hidden="true"></div>
+  <header class="detail-header">
+    <div class="detail-top-row">
+      <span class="detail-token-icon" id="detail-token-icon" aria-hidden="true">B</span>
+      <h2 id="detail-symbol">BTC</h2>
+      <span class="detail-divider" aria-hidden="true"></span>
+      <span class="detail-price" id="detail-price">$0.00</span>
+      <span class="detail-change" id="detail-change">0.00%</span>
+    </div>
+    <button class="sheet-close" id="btn-detail-close" type="button" aria-label="Close token detail">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </header>
+
+  <div class="detail-scroll-area">
+    <section class="detail-overview">
+      <div class="detail-score-block">
+        <span class="detail-score-label">Volatility score</span>
+        <div class="detail-score-line">
+          <span class="detail-meter-slot" id="detail-vol-meter" aria-hidden="true"></span>
+          <strong id="detail-vol-score">0.00%</strong>
+          <span class="state-pill" id="detail-dir-badge">Steady</span>
+        </div>
+      </div>
+      <div class="window-metrics">
+        <div><span>1H Volatility</span><strong id="comp-1h">—</strong></div>
+        <div><span>4H Volatility</span><strong id="comp-4h">—</strong></div>
+        <div><span>24H Volatility</span><strong id="comp-24h">—</strong></div>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <h3>Market metrics</h3>
+      <div class="metric-grid">
+        <div class="metric"><span>Open Interest 24H</span><strong id="metric-oi-val">—</strong></div>
+        <div class="metric"><span>Funding Rate (8H)</span><strong id="metric-funding-val">—</strong></div>
+        <div class="metric"><span>RSI-14 momentum</span><strong id="metric-rsi-val">—</strong></div>
+        <div class="metric"><span>Volatility momentum</span><strong id="metric-vol-mom-val">—</strong></div>
+        <div class="metric"><span>Volatility velocity</span><strong id="metric-velocity-val">—</strong></div>
+        <div class="metric"><span>24H dollar volume</span><strong id="metric-volume-val">—</strong></div>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <h3>24H Volatility history</h3>
+      <canvas class="detail-chart" id="detail-chart" aria-label="24 hour volatility history"></canvas>
+    </section>
+
+    <section class="detail-section why-section">
+      <h3>Why this volatility</h3>
+      <div class="reason-list" id="detail-why-box"></div>
+    </section>
+
+    <section class="detail-section detail-outlook">
+      <div class="section-title-row">
+        <h3>Volatility outlook</h3>
+        <strong id="outlook-status">—</strong>
+      </div>
+      <p id="outlook-text">No outlook available.</p>
+      <p class="signal-since-line" id="signal-since-line" aria-live="polite" hidden></p>
+      <div class="confidence-track"><span id="outlook-bar-fill"></span></div>
+    </section>
+
+    <details class="methodology">
+      <summary>Methodology and risk disclosure</summary>
+      <p>Volatility scores combine multiple statistical estimates with a jump-risk adjustment, scaled to the selected horizon. Signals are deterministic statistical classifications, not financial advice.</p>
+    </details>
+  </div>
+
+  <footer class="detail-actions">
+    <div class="detail-disclaimer" id="detail-risk-disclaimer">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 10v7"/><circle class="disclaimer-info-dot" cx="12" cy="6.5" r="1"/></svg>
+      <p class="risk-disclaimer">Disclaimer: Volatility signals are statistical estimates, not financial advice.</p>
+    </div>
+    <button class="primary-button" id="btn-detail-trade" type="button" aria-describedby="detail-risk-disclaimer">Trade Now</button>
+  </footer>
+</section>

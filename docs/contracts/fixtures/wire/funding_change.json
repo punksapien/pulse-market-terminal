@@ -1,0 +1,460 @@
+{
+  "schema": "pulse.columns.v1",
+  "part": "funding_change",
+  "count": 3,
+  "mapping_version": "sha256:164d44a50b3cab7acdf37ccf32dd2b2034feac1fcbc33428f071c920ecfdae6c",
+  "generation": "sha256:34259a080c314fa1cccac16c50ffd028c731a7cecba17fa94ba3f3db7cc4fae2",
+  "horizon": "1H",
+  "generated_ms": 1800000000000,
+  "expires_ms": 1800000060000,
+  "metadata": [
+    {
+      "unit": "bps",
+      "assurance": null,
+      "definition_version": "funding_change.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "fraction",
+      "assurance": null,
+      "definition_version": "funding_change.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "fraction",
+      "assurance": "consecutive_verified",
+      "definition_version": "funding_change.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": "0.50000",
+      "level_basis_unit": "bps"
+    },
+    {
+      "unit": "fraction",
+      "assurance": "consecutive_verified",
+      "definition_version": "funding_change.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": "1.00000",
+      "level_basis_unit": "bps"
+    },
+    {
+      "unit": "fraction",
+      "assurance": "consecutive_verified",
+      "definition_version": "funding_change.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": "4.00000",
+      "level_basis_unit": "bps"
+    }
+  ],
+  "groups": [
+    {
+      "asof_ms": 1799999999000,
+      "expires_ms": 1800000060000,
+      "input_refs": [
+        "fixture:source"
+      ]
+    },
+    {
+      "asof_ms": 1799999999000,
+      "expires_ms": 1800028799000,
+      "input_refs": [
+        "fixture:source"
+      ]
+    },
+    {
+      "asof_ms": 1799999999000,
+      "expires_ms": 1800014399000,
+      "input_refs": [
+        "fixture:source"
+      ]
+    },
+    {
+      "asof_ms": 1799999999000,
+      "expires_ms": 1800003599000,
+      "input_refs": [
+        "fixture:source"
+      ]
+    },
+    {
+      "asof_ms": null,
+      "expires_ms": null,
+      "input_refs": []
+    }
+  ],
+  "columns": [
+    [
+      [
+        "funding_change",
+        "basis_bps"
+      ],
+      null,
+      "f",
+      [
+        "d",
+        [
+          "0.50000",
+          "1.00000",
+          "4.00000"
+        ]
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "funding_change",
+        "expires_ms"
+      ],
+      null,
+      "j",
+      [
+        "d",
+        [
+          1800029699000,
+          1800015299000,
+          1800004499000
+        ]
+      ]
+    ],
+    [
+      [
+        "funding_change",
+        "h"
+      ],
+      null,
+      "j",
+      [
+        "d",
+        [
+          8,
+          4,
+          1
+        ]
+      ]
+    ],
+    [
+      [
+        "funding_change",
+        "id"
+      ],
+      null,
+      "j",
+      [
+        "d",
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    ],
+    [
+      [
+        "funding_change",
+        "mapping_version"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "sha256:164d44a50b3cab7acdf37ccf32dd2b2034feac1fcbc33428f071c920ecfdae6c"
+      ]
+    ],
+    [
+      [
+        "funding_change",
+        "nft"
+      ],
+      null,
+      "j",
+      [
+        "d",
+        [
+          1800028799000,
+          1800014399000,
+          1800003599000
+        ]
+      ]
+    ],
+    [
+      [
+        "funding_change",
+        "reason"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        null
+      ]
+    ],
+    [
+      [
+        "funding_change",
+        "settled_1d"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.00005"
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "d",
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "funding_change",
+        "settled_7d"
+      ],
+      null,
+      "f",
+      [
+        "s",
+        "0.00005",
+        [
+          [
+            2,
+            null
+          ]
+        ]
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "d",
+        [
+          1,
+          2,
+          4
+        ]
+      ],
+      [
+        "s",
+        {
+          "reason": null,
+          "status": "available"
+        },
+        [
+          [
+            2,
+            {
+              "status": "unavailable",
+              "reason": "insufficient_history"
+            }
+          ]
+        ]
+      ]
+    ],
+    [
+      [
+        "funding_change",
+        "settled_last"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.00005"
+      ],
+      [
+        "d",
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      [
+        "d",
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "funding_change",
+        "settled_rate"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "0.00015"
+      ]
+    ],
+    [
+      [
+        "funding_change",
+        "settlement_ms"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        1799999999000
+      ]
+    ],
+    [
+      [
+        "funding_change",
+        "status"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "available"
+      ]
+    ],
+    [
+      [
+        "funding_change",
+        "verified_at_ms"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        1800000000000
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding_change",
+        "definition_version"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "history.fixture.v1"
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding_change",
+        "input_refs"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        []
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding_change",
+        "points"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        []
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding_change",
+        "reason"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "not_retained"
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding_change",
+        "status"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "unsupported"
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding_change",
+        "unit"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "fraction"
+      ]
+    ]
+  ],
+  "inputs": {
+    "fixture:source": {
+      "version": "fixture.input.v1",
+      "source_ms": 1799999999000,
+      "verified_at_ms": 1800000000000,
+      "expires_ms": 1800029699000,
+      "definition_version": "fixture.source.v1"
+    }
+  }
+}

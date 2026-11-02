@@ -1,0 +1,179 @@
+{
+  "status": "synthetic_shared_capsule_parity_passed",
+  "transport": "plaintext_approved_staging_exception",
+  "exchange_calls": 0,
+  "deletions": 0,
+  "namespace": "pulse:stg:",
+  "cases": [
+    {
+      "pair_id": "B-ETH_USDT",
+      "metric": "oi",
+      "columns": 1,
+      "frame_key": "pulse:stg:{ea7991fc8be14fa7a3c1a18caa9ef806}:B-ETH_USDT:oi:frame",
+      "bytes": 25152,
+      "statuses": [
+        "written",
+        "duplicate",
+        "exact_timestamp_conflict",
+        "written",
+        "dropped_older",
+        "written"
+      ],
+      "bounded_baseline_and_discard_guard": true,
+      "ttl": -1,
+      "sha256": "d4dbbadbe9a6f345ebe385bb3e848356976014925c05004dcde2e82dd75cd3a6",
+      "stale_owner_refused": true,
+      "memory": {
+        "used_memory": 13930048,
+        "used_memory_rss": 13930048,
+        "mem_fragmentation_ratio": 1,
+        "used_memory_peak": 14876976,
+        "used_memory_lua": 206848,
+        "maxmemory": null,
+        "maxmemory_policy": "noeviction"
+      }
+    },
+    {
+      "pair_id": "B-DOGE_USDT",
+      "metric": "oi_cold",
+      "columns": 1,
+      "frame_key": "pulse:stg:{79604045fd134889a6c68e5335dc0842}:B-DOGE_USDT:oi_cold:frame",
+      "bytes": 5392,
+      "statuses": [
+        "written",
+        "duplicate",
+        "exact_timestamp_conflict",
+        "written",
+        "dropped_older",
+        "written"
+      ],
+      "bounded_baseline_and_discard_guard": true,
+      "ttl": -1,
+      "sha256": "c5f75d4ef9e7eb7aec6602503bf970e214cc059a3ff2db280013021877c1b8a9",
+      "stale_owner_refused": true,
+      "memory": {
+        "used_memory": 13930048,
+        "used_memory_rss": 13930048,
+        "mem_fragmentation_ratio": 1,
+        "used_memory_peak": 14876976,
+        "used_memory_lua": 206848,
+        "maxmemory": null,
+        "maxmemory_policy": "noeviction"
+      }
+    },
+    {
+      "pair_id": "B-1000PEPE_USDT",
+      "metric": "ls_global",
+      "columns": 3,
+      "frame_key": "pulse:stg:{6e5a385a9faa49568c076d6345cfd5b9}:B-1000PEPE_USDT:ls_global:frame",
+      "bytes": 10656,
+      "statuses": [
+        "written",
+        "duplicate",
+        "exact_timestamp_conflict",
+        "written",
+        "dropped_older",
+        "written"
+      ],
+      "bounded_baseline_and_discard_guard": true,
+      "ttl": -1,
+      "sha256": "54f0e5dcdb59029717adf699c37f44f7d0247e0ed6704e08dab32f21c358d793",
+      "stale_owner_refused": true,
+      "memory": {
+        "used_memory": 14236752,
+        "used_memory_rss": 14236752,
+        "mem_fragmentation_ratio": 1,
+        "used_memory_peak": 14876976,
+        "used_memory_lua": 430080,
+        "maxmemory": null,
+        "maxmemory_policy": "noeviction"
+      }
+    },
+    {
+      "pair_id": "B-BTC_USDT",
+      "metric": "funding_settled",
+      "columns": 1,
+      "frame_key": "pulse:stg:{fb40f9cf7ca74037aa705f206e02503c}:B-BTC_USDT:funding_settled:frame",
+      "bytes": 340,
+      "statuses": [
+        "written",
+        "duplicate",
+        "exact_timestamp_conflict",
+        "written",
+        "dropped_older",
+        "written"
+      ],
+      "bounded_baseline_and_discard_guard": true,
+      "ttl": -1,
+      "sha256": "e192af8a207d0f5cf78d59139399a87bf03b63e0d1d1e7dceb2f12db410c5b7f",
+      "stale_owner_refused": true,
+      "memory": {
+        "used_memory": 14093168,
+        "used_memory_rss": 14093168,
+        "mem_fragmentation_ratio": 1,
+        "used_memory_peak": 14876976,
+        "used_memory_lua": 243712,
+        "maxmemory": null,
+        "maxmemory_policy": "noeviction"
+      }
+    },
+    {
+      "pair_id": "B-XAU_USDT",
+      "metric": "funding_estimate",
+      "columns": 1,
+      "frame_key": "pulse:stg:{74094ae1327c4b799e4de43d9326712b}:B-XAU_USDT:funding_estimate:frame",
+      "bytes": 340,
+      "statuses": [
+        "written",
+        "duplicate",
+        "exact_timestamp_conflict",
+        "written",
+        "dropped_older",
+        "written"
+      ],
+      "bounded_baseline_and_discard_guard": true,
+      "ttl": -1,
+      "sha256": "d80b23f1b31e42bee69706337e0dc40d0ad9e70bba87426df1d77cba9ea26d7a",
+      "stale_owner_refused": true,
+      "memory": {
+        "used_memory": 14054144,
+        "used_memory_rss": 14054144,
+        "mem_fragmentation_ratio": 1,
+        "used_memory_peak": 14876976,
+        "used_memory_lua": 284672,
+        "maxmemory": null,
+        "maxmemory_policy": "noeviction"
+      }
+    },
+    {
+      "pair_id": "B-ETH_USDT",
+      "metric": "volatility",
+      "columns": 3,
+      "frame_key": "pulse:stg:{fd30a335c72343eeac0cbb29a9f762cb}:B-ETH_USDT:volatility:frame",
+      "bytes": 628,
+      "statuses": [
+        "written",
+        "duplicate",
+        "exact_timestamp_conflict",
+        "written",
+        "dropped_older",
+        "written"
+      ],
+      "bounded_baseline_and_discard_guard": true,
+      "ttl": -1,
+      "sha256": "c94d876b312f07c0d150827880235d8b3fa8f6a572c8098c152022a998ff8d50",
+      "stale_owner_refused": true,
+      "memory": {
+        "used_memory": 14134528,
+        "used_memory_rss": 14134528,
+        "mem_fragmentation_ratio": 1,
+        "used_memory_peak": 14876976,
+        "used_memory_lua": 315392,
+        "maxmemory": null,
+        "maxmemory_policy": "noeviction"
+      }
+    }
+  ],
+  "staging_complete": false,
+  "hosted": false
+}

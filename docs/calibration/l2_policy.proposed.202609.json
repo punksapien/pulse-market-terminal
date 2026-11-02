@@ -1,0 +1,16 @@
+{
+  "status": "proposal_only_not_activated",
+  "approved_by": null,
+  "adr": "ADR-0111",
+  "period": "2026-09-01/2026-09-30",
+  "source_report_sha256": "0ffc28525c7affc3858f0523068ee8e5868303a656abffbf5b34696fbb945a1c",
+  "tie_rule": "equal_enters_higher_band",
+  "scales": {
+    "long_short.v1": {"unit": "log_ratio", "cuts": ["0.4054651081081643819780131154643491", "0.5877866649021190081897311406188638", "1.098612288668109691395245236922526"]},
+    "funding.v1": {"unit": "bps", "cuts": ["2", "4", "9"]},
+    "funding_change.v1": {"unit": "bps", "cuts": ["1", "5", "10"]},
+    "open_interest.v1.1H": {"unit": "fraction", "cuts": ["0.0021892268575653064", "0.00644786351113563", "0.01809633530028809"]},
+    "open_interest.v1.4H": {"unit": "fraction", "cuts": ["0.005962467457612412", "0.017008081168762176", "0.04531352098019557"]},
+    "open_interest.v1.24H": {"unit": "fraction", "cuts": ["0.01973519707248923", "0.05423174107303511", "0.1633681103861554"]}
+  }
+}

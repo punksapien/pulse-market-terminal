@@ -1,0 +1,1389 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pulse:schema:v1:common",
+  "title": "Pulse v1 field primitives",
+  "$defs": {
+    "decimal": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+    },
+    "time": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "token": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9_.:-]+$"
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "numericField": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "available",
+            "unavailable",
+            "settlement_pending",
+            "unsupported"
+          ]
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[a-z][a-z0-9_]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unit": {
+          "enum": [
+            "fraction",
+            "pp",
+            "ratio",
+            "percent",
+            "quantity",
+            "USDT",
+            "price",
+            "bps",
+            "score",
+            "log_ratio"
+          ]
+        },
+        "asof_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "expires_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "assurance": {
+          "enum": [
+            null,
+            "consecutive_verified",
+            "window_consistent_provisional",
+            "estimate_minus_verified_settlement",
+            "legacy_v1"
+          ]
+        },
+        "definition_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_.:-]+$"
+        },
+        "input_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "pattern": "^[A-Za-z0-9_.:-]+$"
+          },
+          "maxItems": 8,
+          "uniqueItems": true
+        },
+        "classification_status": {
+          "enum": [
+            "uncalibrated",
+            "classified",
+            "unclassified",
+            "not_applicable"
+          ]
+        },
+        "level": {
+          "enum": [
+            null,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "level_basis": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "level_basis_unit": {
+          "anyOf": [
+            {
+              "enum": [
+                "fraction",
+                "pp",
+                "ratio",
+                "percent",
+                "quantity",
+                "USDT",
+                "price",
+                "bps",
+                "score",
+                "log_ratio"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "classification_version": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9_.:-]+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "direction": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 40
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "baseline_asof_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "baseline_error_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "actual_duration_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "mode": {
+          "enum": [
+            null,
+            "own",
+            "cold-start"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "reason",
+        "value",
+        "unit",
+        "asof_ms",
+        "expires_ms",
+        "assurance",
+        "definition_version",
+        "input_refs",
+        "classification_status",
+        "level",
+        "level_basis",
+        "level_basis_unit"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "available"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64,
+                "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+              },
+              "reason": {
+                "type": "null"
+              },
+              "asof_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "expires_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "input_refs": {
+                "minItems": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "value": {
+                "type": "null"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64,
+                "pattern": "^[a-z][a-z0-9_]*$"
+              },
+              "level": {
+                "type": "null"
+              },
+              "level_basis": {
+                "type": "null"
+              },
+              "level_basis_unit": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "classification_status": {
+                "const": "classified"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "classification_version"
+            ],
+            "properties": {
+              "status": {
+                "const": "available"
+              },
+              "level": {
+                "enum": [
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              "classification_version": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128,
+                "pattern": "^[A-Za-z0-9_.:-]+$"
+              }
+            },
+            "oneOf": [
+              {
+                "properties": {
+                  "definition_version": {
+                    "const": "volatility.v1"
+                  },
+                  "unit": {
+                    "const": "fraction"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "definition_version": {
+                    "const": "long_short.v1"
+                  },
+                  "unit": {
+                    "const": "ratio"
+                  },
+                  "level_basis": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                  },
+                  "level_basis_unit": {
+                    "const": "log_ratio"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "definition_version": {
+                    "const": "funding.v1"
+                  },
+                  "unit": {
+                    "const": "fraction"
+                  },
+                  "level_basis": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                  },
+                  "level_basis_unit": {
+                    "const": "bps"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "definition_version": {
+                    "const": "funding_change.v1"
+                  },
+                  "unit": {
+                    "const": "fraction"
+                  },
+                  "level_basis": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                  },
+                  "level_basis_unit": {
+                    "const": "bps"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "definition_version": {
+                    "const": "open_interest.v1"
+                  },
+                  "unit": {
+                    "const": "fraction"
+                  },
+                  "level_basis": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                  },
+                  "level_basis_unit": {
+                    "const": "fraction"
+                  }
+                }
+              }
+            ]
+          },
+          "else": {
+            "properties": {
+              "level": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "level_basis": {
+                "type": "null"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "level_basis_unit": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "status": {
+                "const": "available"
+              },
+              "level_basis_unit": {
+                "enum": [
+                  "fraction",
+                  "pp",
+                  "ratio",
+                  "percent",
+                  "quantity",
+                  "USDT",
+                  "price",
+                  "bps",
+                  "score",
+                  "log_ratio"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "textField": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "available",
+            "unavailable",
+            "settlement_pending",
+            "unsupported"
+          ]
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[a-z][a-z0-9_]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 512
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unit": {
+          "enum": [
+            "state",
+            "text"
+          ]
+        },
+        "asof_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "expires_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "assurance": {
+          "enum": [
+            null,
+            "consecutive_verified",
+            "window_consistent_provisional",
+            "estimate_minus_verified_settlement",
+            "legacy_v1"
+          ]
+        },
+        "definition_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_.:-]+$"
+        },
+        "input_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "pattern": "^[A-Za-z0-9_.:-]+$"
+          },
+          "maxItems": 8,
+          "uniqueItems": true
+        },
+        "classification_status": {
+          "enum": [
+            "uncalibrated",
+            "classified",
+            "unclassified",
+            "not_applicable"
+          ]
+        },
+        "level": {
+          "enum": [
+            null,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "level_basis": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "level_basis_unit": {
+          "anyOf": [
+            {
+              "enum": [
+                "fraction",
+                "pp",
+                "ratio",
+                "percent",
+                "quantity",
+                "USDT",
+                "price",
+                "bps",
+                "score",
+                "log_ratio"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "classification_version": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9_.:-]+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "direction": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 40
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "baseline_asof_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "baseline_error_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "actual_duration_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "mode": {
+          "enum": [
+            null,
+            "own",
+            "cold-start"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "reason",
+        "value",
+        "unit",
+        "asof_ms",
+        "expires_ms",
+        "assurance",
+        "definition_version",
+        "input_refs",
+        "classification_status",
+        "level",
+        "level_basis",
+        "level_basis_unit"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "available"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 512
+              },
+              "reason": {
+                "type": "null"
+              },
+              "asof_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "expires_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "input_refs": {
+                "minItems": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "value": {
+                "type": "null"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64,
+                "pattern": "^[a-z][a-z0-9_]*$"
+              },
+              "level": {
+                "type": "null"
+              },
+              "level_basis": {
+                "type": "null"
+              },
+              "level_basis_unit": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "classification_status": {
+                "const": "classified"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "classification_version"
+            ],
+            "properties": {
+              "status": {
+                "const": "available"
+              },
+              "level": {
+                "enum": [
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              "classification_version": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128,
+                "pattern": "^[A-Za-z0-9_.:-]+$"
+              }
+            },
+            "oneOf": [
+              {
+                "properties": {
+                  "definition_version": {
+                    "const": "volatility.v1"
+                  },
+                  "unit": {
+                    "const": "fraction"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "definition_version": {
+                    "const": "long_short.v1"
+                  },
+                  "unit": {
+                    "const": "ratio"
+                  },
+                  "level_basis": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                  },
+                  "level_basis_unit": {
+                    "const": "log_ratio"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "definition_version": {
+                    "const": "funding.v1"
+                  },
+                  "unit": {
+                    "const": "fraction"
+                  },
+                  "level_basis": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                  },
+                  "level_basis_unit": {
+                    "const": "bps"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "definition_version": {
+                    "const": "funding_change.v1"
+                  },
+                  "unit": {
+                    "const": "fraction"
+                  },
+                  "level_basis": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                  },
+                  "level_basis_unit": {
+                    "const": "bps"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "definition_version": {
+                    "const": "open_interest.v1"
+                  },
+                  "unit": {
+                    "const": "fraction"
+                  },
+                  "level_basis": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                  },
+                  "level_basis_unit": {
+                    "const": "fraction"
+                  }
+                }
+              }
+            ]
+          },
+          "else": {
+            "properties": {
+              "level": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "level_basis": {
+                "type": "null"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "level_basis_unit": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "status": {
+                "const": "available"
+              },
+              "level_basis_unit": {
+                "enum": [
+                  "fraction",
+                  "pp",
+                  "ratio",
+                  "percent",
+                  "quantity",
+                  "USDT",
+                  "price",
+                  "bps",
+                  "score",
+                  "log_ratio"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "flagField": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "available",
+            "unavailable",
+            "settlement_pending",
+            "unsupported"
+          ]
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^[a-z][a-z0-9_]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unit": {
+          "const": "boolean"
+        },
+        "asof_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "expires_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "assurance": {
+          "enum": [
+            null,
+            "consecutive_verified",
+            "window_consistent_provisional",
+            "estimate_minus_verified_settlement",
+            "legacy_v1"
+          ]
+        },
+        "definition_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_.:-]+$"
+        },
+        "input_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "pattern": "^[A-Za-z0-9_.:-]+$"
+          },
+          "maxItems": 8,
+          "uniqueItems": true
+        },
+        "classification_status": {
+          "enum": [
+            "uncalibrated",
+            "classified",
+            "unclassified",
+            "not_applicable"
+          ]
+        },
+        "level": {
+          "enum": [
+            null,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "level_basis": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "level_basis_unit": {
+          "anyOf": [
+            {
+              "enum": [
+                "fraction",
+                "pp",
+                "ratio",
+                "percent",
+                "quantity",
+                "USDT",
+                "price",
+                "bps",
+                "score",
+                "log_ratio"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "classification_version": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9_.:-]+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "direction": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 40
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "baseline_asof_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "baseline_error_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "actual_duration_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "mode": {
+          "enum": [
+            null,
+            "own",
+            "cold-start"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "reason",
+        "value",
+        "unit",
+        "asof_ms",
+        "expires_ms",
+        "assurance",
+        "definition_version",
+        "input_refs",
+        "classification_status",
+        "level",
+        "level_basis",
+        "level_basis_unit"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "available"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "boolean"
+              },
+              "reason": {
+                "type": "null"
+              },
+              "asof_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "expires_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "input_refs": {
+                "minItems": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "value": {
+                "type": "null"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64,
+                "pattern": "^[a-z][a-z0-9_]*$"
+              },
+              "level": {
+                "type": "null"
+              },
+              "level_basis": {
+                "type": "null"
+              },
+              "level_basis_unit": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "classification_status": {
+                "const": "classified"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "classification_version"
+            ],
+            "properties": {
+              "status": {
+                "const": "available"
+              },
+              "level": {
+                "enum": [
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              "classification_version": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128,
+                "pattern": "^[A-Za-z0-9_.:-]+$"
+              }
+            },
+            "oneOf": [
+              {
+                "properties": {
+                  "definition_version": {
+                    "const": "volatility.v1"
+                  },
+                  "unit": {
+                    "const": "fraction"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "definition_version": {
+                    "const": "long_short.v1"
+                  },
+                  "unit": {
+                    "const": "ratio"
+                  },
+                  "level_basis": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                  },
+                  "level_basis_unit": {
+                    "const": "log_ratio"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "definition_version": {
+                    "const": "funding.v1"
+                  },
+                  "unit": {
+                    "const": "fraction"
+                  },
+                  "level_basis": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                  },
+                  "level_basis_unit": {
+                    "const": "bps"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "definition_version": {
+                    "const": "funding_change.v1"
+                  },
+                  "unit": {
+                    "const": "fraction"
+                  },
+                  "level_basis": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                  },
+                  "level_basis_unit": {
+                    "const": "bps"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "definition_version": {
+                    "const": "open_interest.v1"
+                  },
+                  "unit": {
+                    "const": "fraction"
+                  },
+                  "level_basis": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                  },
+                  "level_basis_unit": {
+                    "const": "fraction"
+                  }
+                }
+              }
+            ]
+          },
+          "else": {
+            "properties": {
+              "level": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "level_basis": {
+                "type": "null"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "level_basis_unit": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "status": {
+                "const": "available"
+              },
+              "level_basis_unit": {
+                "enum": [
+                  "fraction",
+                  "pp",
+                  "ratio",
+                  "percent",
+                  "quantity",
+                  "USDT",
+                  "price",
+                  "bps",
+                  "score",
+                  "log_ratio"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

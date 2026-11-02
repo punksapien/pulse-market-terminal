@@ -1,0 +1,6 @@
+numpy>=1.26
+pandas>=2.2
+requests>=2.31
+redis>=5.0
+jsonschema==4.23.0
+Brotli==1.2.1

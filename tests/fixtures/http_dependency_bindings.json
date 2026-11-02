@@ -1,0 +1,46 @@
+{
+  "_send_json": {
+    "module": "handlers",
+    "module_path": "pulse.api.handlers",
+    "alias": "http_handlers",
+    "bindings": {
+      "_serialise": "serialise"
+    }
+  },
+  "do_OPTIONS": {
+    "module": "handlers",
+    "module_path": "pulse.api.handlers",
+    "alias": "http_handlers",
+    "bindings": {}
+  },
+  "_report_headers": {
+    "module": "handlers",
+    "module_path": "pulse.api.handlers",
+    "alias": "http_handlers",
+    "bindings": {},
+    "static": true
+  },
+  "do_GET": {
+    "module": "handlers",
+    "module_path": "pulse.api.handlers",
+    "alias": "http_handlers",
+    "bindings": {
+      "_generation_health_snapshot": "health_snapshot",
+      "_authorise_secret": "authorise",
+      "VercelStorage": "storage",
+      "_CACHE": "cache_state",
+      "_vol_signal_shell_template": "shell",
+      "vol_signal_template": "render"
+    }
+  },
+  "do_POST": {
+    "module": "handlers",
+    "module_path": "pulse.api.handlers",
+    "alias": "http_handlers",
+    "bindings": {
+      "sanitize_utm_string": "sanitize",
+      "_now_utc": "now_utc",
+      "VercelStorage": "storage"
+    }
+  }
+}

@@ -1,0 +1,3038 @@
+{
+  "schema": "pulse.snapshot.v1",
+  "mapping_version": "sha256:164d44a50b3cab7acdf37ccf32dd2b2034feac1fcbc33428f071c920ecfdae6c",
+  "generation": "sha256:34259a080c314fa1cccac16c50ffd028c731a7cecba17fa94ba3f3db7cc4fae2",
+  "horizon": "1H",
+  "generated_ms": 1800000000000,
+  "expires_ms": 1800000060000,
+  "universe": [
+    {
+      "id": 0,
+      "pair_id": "B-BTC_USDT",
+      "symbol": "BTCUSDT",
+      "funding_hours": 8
+    },
+    {
+      "id": 1,
+      "pair_id": "B-ETH_USDT",
+      "symbol": "ETHUSDT",
+      "funding_hours": 4
+    },
+    {
+      "id": 2,
+      "pair_id": "B-DOGE_USDT",
+      "symbol": "DOGEUSDT",
+      "funding_hours": 1
+    }
+  ],
+  "rows": [
+    {
+      "id": 0,
+      "price": {
+        "status": "available",
+        "reason": null,
+        "value": "102",
+        "unit": "price",
+        "asof_ms": 1799999999000,
+        "expires_ms": 1800000060000,
+        "assurance": null,
+        "definition_version": "price_change.v1",
+        "input_refs": [
+          "fixture:source"
+        ],
+        "classification_status": "uncalibrated",
+        "level": null,
+        "level_basis": null,
+        "level_basis_unit": null
+      },
+      "changes": {
+        "1H": {
+          "status": "available",
+          "reason": null,
+          "value": "0.02",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "price_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "4H": {
+          "status": "available",
+          "reason": null,
+          "value": "0.02",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "price_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "24H": {
+          "status": "available",
+          "reason": null,
+          "value": "0.02",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "price_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "volume": {
+        "quote_24h": {
+          "status": "available",
+          "reason": null,
+          "value": "1000000",
+          "unit": "USDT",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "volume.rt.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "venue": "Binance_USDT_perpetual"
+      },
+      "oi": {
+        "quantity": {
+          "status": "available",
+          "reason": null,
+          "value": "112000",
+          "unit": "quantity",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "open_interest.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "change_1h": {
+          "status": "available",
+          "reason": null,
+          "value": "0.12",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "open_interest.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null,
+          "baseline_asof_ms": 1799996399000,
+          "actual_duration_ms": 3600000,
+          "baseline_error_ms": 0,
+          "mode": "own"
+        },
+        "change_4h": {
+          "status": "available",
+          "reason": null,
+          "value": "0.12",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "open_interest.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null,
+          "baseline_asof_ms": 1799985599000,
+          "actual_duration_ms": 14400000,
+          "baseline_error_ms": 0,
+          "mode": "own"
+        },
+        "change_24h": {
+          "status": "available",
+          "reason": null,
+          "value": "0.12",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "open_interest.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null,
+          "baseline_asof_ms": 1799913599000,
+          "actual_duration_ms": 86400000,
+          "baseline_error_ms": 0,
+          "mode": "own"
+        }
+      },
+      "ls": {
+        "global_ratio": {
+          "status": "available",
+          "reason": null,
+          "value": "1.5",
+          "unit": "ratio",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "long_short.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "top_ratio": {
+          "status": "available",
+          "reason": null,
+          "value": "1.5",
+          "unit": "ratio",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "long_short.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "global_long_share": {
+          "status": "available",
+          "reason": null,
+          "value": "0.6",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "long_short.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "top_long_share": {
+          "status": "available",
+          "reason": null,
+          "value": "0.6",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "long_short.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "global_share_change": {
+          "1H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "4H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "24H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          }
+        },
+        "top_share_change": {
+          "1H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "4H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "24H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          }
+        },
+        "divergence": {
+          "status": "available",
+          "reason": null,
+          "value": "0",
+          "unit": "pp",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "long_short.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "funding": {
+        "h": 8,
+        "nft": 1800028799000,
+        "native_estimate": {
+          "status": "available",
+          "reason": null,
+          "value": "0.0002",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000119000,
+          "assurance": null,
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "cumulative_1d": {
+          "status": "available",
+          "reason": null,
+          "value": "0.00035",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800028799000,
+          "assurance": "window_consistent_provisional",
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "cumulative_7d": {
+          "status": "available",
+          "reason": null,
+          "value": "0.00215",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800028799000,
+          "assurance": "window_consistent_provisional",
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "cap": {
+          "status": "available",
+          "reason": null,
+          "value": "0.003",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000119000,
+          "assurance": null,
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "floor": {
+          "status": "available",
+          "reason": null,
+          "value": "-0.003",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000119000,
+          "assurance": null,
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "at_cap": {
+          "status": "available",
+          "reason": null,
+          "value": false,
+          "unit": "boolean",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "at_floor": {
+          "status": "available",
+          "reason": null,
+          "value": false,
+          "unit": "boolean",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "funding_change": {
+        "id": 0,
+        "mapping_version": "sha256:164d44a50b3cab7acdf37ccf32dd2b2034feac1fcbc33428f071c920ecfdae6c",
+        "status": "available",
+        "reason": null,
+        "h": 8,
+        "nft": 1800028799000,
+        "settled_rate": "0.00015",
+        "settlement_ms": 1799999999000,
+        "verified_at_ms": 1800000000000,
+        "expires_ms": 1800029699000,
+        "settled_last": {
+          "status": "available",
+          "reason": null,
+          "value": "0.00005",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800028799000,
+          "assurance": "consecutive_verified",
+          "definition_version": "funding_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": "0.50000",
+          "level_basis_unit": "bps"
+        },
+        "settled_1d": {
+          "status": "available",
+          "reason": null,
+          "value": "0.00005",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800028799000,
+          "assurance": null,
+          "definition_version": "funding_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "settled_7d": {
+          "status": "available",
+          "reason": null,
+          "value": "0.00005",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800028799000,
+          "assurance": null,
+          "definition_version": "funding_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "basis_bps": {
+          "status": "available",
+          "reason": null,
+          "value": "0.50000",
+          "unit": "bps",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "funding_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "volatility": {
+        "score": {
+          "status": "available",
+          "reason": null,
+          "value": "0.01",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "volatility.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "windows": {
+          "1H": {
+            "status": "available",
+            "reason": null,
+            "value": "0.01",
+            "unit": "fraction",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "volatility.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "4H": {
+            "status": "available",
+            "reason": null,
+            "value": "0.02",
+            "unit": "fraction",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "volatility.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "24H": {
+            "status": "available",
+            "reason": null,
+            "value": "0.03",
+            "unit": "fraction",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "volatility.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          }
+        },
+        "direction": {
+          "status": "available",
+          "reason": null,
+          "value": "Rising",
+          "unit": "state",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "volatility.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "signal": {
+        "code": {
+          "status": "available",
+          "reason": null,
+          "value": "MomentumLong",
+          "unit": "state",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "signal.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "category": {
+          "status": "available",
+          "reason": null,
+          "value": "Uptrend",
+          "unit": "state",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "signal.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "signal_since": {
+        "status": "available",
+        "reason": null,
+        "state": "MomentumLong",
+        "price": "100",
+        "at_ms": 1799999990000,
+        "asof_ms": 1799999999000,
+        "expires_ms": 1800000060000,
+        "definition_version": "signal_state.v1",
+        "input_refs": [
+          "fixture:source"
+        ]
+      },
+      "context": {
+        "rsi_14": {
+          "status": "available",
+          "reason": null,
+          "value": "55",
+          "unit": "score",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_context.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "volatility_momentum": {
+          "status": "available",
+          "reason": null,
+          "value": "0.189",
+          "unit": "log_ratio",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_context.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "volatility_velocity": {
+          "status": "available",
+          "reason": null,
+          "value": "Accelerating",
+          "unit": "state",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_context.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "outlook": {
+        "label": {
+          "status": "available",
+          "reason": null,
+          "value": "Fade",
+          "unit": "state",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_outlook.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "confidence": {
+          "status": "available",
+          "reason": null,
+          "value": "0.45",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_outlook.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "description": {
+          "status": "available",
+          "reason": null,
+          "value": "Fictional protocol fixture; not a market outlook.",
+          "unit": "text",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_outlook.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "history": {
+        "volatility": {
+          "status": "unsupported",
+          "reason": "not_retained",
+          "unit": "fraction",
+          "definition_version": "history.fixture.v1",
+          "input_refs": [],
+          "points": []
+        },
+        "ls": {
+          "status": "unsupported",
+          "reason": "not_retained",
+          "unit": "ratio",
+          "definition_version": "history.fixture.v1",
+          "input_refs": [],
+          "points": []
+        },
+        "funding": {
+          "status": "unsupported",
+          "reason": "not_retained",
+          "unit": "fraction",
+          "definition_version": "history.fixture.v1",
+          "input_refs": [],
+          "points": []
+        },
+        "funding_change": {
+          "status": "unsupported",
+          "reason": "not_retained",
+          "unit": "fraction",
+          "definition_version": "history.fixture.v1",
+          "input_refs": [],
+          "points": []
+        },
+        "oi": {
+          "status": "unsupported",
+          "reason": "not_retained",
+          "unit": "fraction",
+          "definition_version": "history.fixture.v1",
+          "input_refs": [],
+          "points": []
+        }
+      },
+      "references": {
+        "status": "available",
+        "reason": null,
+        "mapping_version": "sha256:164d44a50b3cab7acdf37ccf32dd2b2034feac1fcbc33428f071c920ecfdae6c",
+        "definition_version": "price_change.v1",
+        "generation_id": "sha256:34259a080c314fa1cccac16c50ffd028c731a7cecba17fa94ba3f3db7cc4fae2",
+        "ladder": {
+          "built_at_ms": 1800000000000,
+          "start_ms": 1800000000000,
+          "valid_until_ms": 1800000300000,
+          "windows": [
+            "1H",
+            "4H",
+            "24H"
+          ],
+          "slots": [
+            [
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799996400000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799985600000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799913600000,
+                "open_price": "100"
+              }
+            ],
+            [
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799996460000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799985660000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799913660000,
+                "open_price": "100"
+              }
+            ],
+            [
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799996520000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799985720000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799913720000,
+                "open_price": "100"
+              }
+            ],
+            [
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799996580000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799985780000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799913780000,
+                "open_price": "100"
+              }
+            ],
+            [
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799996640000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799985840000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799913840000,
+                "open_price": "100"
+              }
+            ]
+          ]
+        },
+        "fallback": {
+          "source_ms": 1799999999000,
+          "price": "102",
+          "expires_ms": 1800000060000,
+          "references": {
+            "1H": {
+              "status": "available",
+              "reason": null,
+              "reference_minute_ms": 1799996340000,
+              "open_price": "100"
+            },
+            "4H": {
+              "status": "available",
+              "reason": null,
+              "reference_minute_ms": 1799985540000,
+              "open_price": "100"
+            },
+            "24H": {
+              "status": "available",
+              "reason": null,
+              "reference_minute_ms": 1799913540000,
+              "open_price": "100"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 1,
+      "price": {
+        "status": "available",
+        "reason": null,
+        "value": "102",
+        "unit": "price",
+        "asof_ms": 1799999999000,
+        "expires_ms": 1800000060000,
+        "assurance": null,
+        "definition_version": "price_change.v1",
+        "input_refs": [
+          "fixture:source"
+        ],
+        "classification_status": "uncalibrated",
+        "level": null,
+        "level_basis": null,
+        "level_basis_unit": null
+      },
+      "changes": {
+        "1H": {
+          "status": "available",
+          "reason": null,
+          "value": "0.02",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "price_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "4H": {
+          "status": "available",
+          "reason": null,
+          "value": "0.02",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "price_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "24H": {
+          "status": "available",
+          "reason": null,
+          "value": "0.02",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "price_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "volume": {
+        "quote_24h": {
+          "status": "available",
+          "reason": null,
+          "value": "1000000",
+          "unit": "USDT",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "volume.rt.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "venue": "Binance_USDT_perpetual"
+      },
+      "oi": {
+        "quantity": {
+          "status": "available",
+          "reason": null,
+          "value": "112000",
+          "unit": "quantity",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "open_interest.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "change_1h": {
+          "status": "available",
+          "reason": null,
+          "value": "0.12",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "open_interest.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null,
+          "baseline_asof_ms": 1799996399000,
+          "actual_duration_ms": 3600000,
+          "baseline_error_ms": 0,
+          "mode": "own"
+        },
+        "change_4h": {
+          "status": "available",
+          "reason": null,
+          "value": "0.12",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "open_interest.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null,
+          "baseline_asof_ms": 1799985599000,
+          "actual_duration_ms": 14400000,
+          "baseline_error_ms": 0,
+          "mode": "own"
+        },
+        "change_24h": {
+          "status": "available",
+          "reason": null,
+          "value": "0.12",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "open_interest.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null,
+          "baseline_asof_ms": 1799913599000,
+          "actual_duration_ms": 86400000,
+          "baseline_error_ms": 0,
+          "mode": "own"
+        }
+      },
+      "ls": {
+        "global_ratio": {
+          "status": "available",
+          "reason": null,
+          "value": "1.5",
+          "unit": "ratio",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "long_short.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "top_ratio": {
+          "status": "available",
+          "reason": null,
+          "value": "1.5",
+          "unit": "ratio",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "long_short.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "global_long_share": {
+          "status": "available",
+          "reason": null,
+          "value": "0.6",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "long_short.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "top_long_share": {
+          "status": "available",
+          "reason": null,
+          "value": "0.6",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "long_short.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "global_share_change": {
+          "1H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "4H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "24H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          }
+        },
+        "top_share_change": {
+          "1H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "4H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "24H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          }
+        },
+        "divergence": {
+          "status": "available",
+          "reason": null,
+          "value": "0",
+          "unit": "pp",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "long_short.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "funding": {
+        "h": 4,
+        "nft": 1800014399000,
+        "native_estimate": {
+          "status": "available",
+          "reason": null,
+          "value": "0.0002",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000119000,
+          "assurance": null,
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "cumulative_1d": {
+          "status": "available",
+          "reason": null,
+          "value": "0.00065",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800014399000,
+          "assurance": "window_consistent_provisional",
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "cumulative_7d": {
+          "status": "available",
+          "reason": null,
+          "value": "0.00425",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800014399000,
+          "assurance": "window_consistent_provisional",
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "cap": {
+          "status": "available",
+          "reason": null,
+          "value": "0.003",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000119000,
+          "assurance": null,
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "floor": {
+          "status": "available",
+          "reason": null,
+          "value": "-0.003",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000119000,
+          "assurance": null,
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "at_cap": {
+          "status": "available",
+          "reason": null,
+          "value": false,
+          "unit": "boolean",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "at_floor": {
+          "status": "available",
+          "reason": null,
+          "value": false,
+          "unit": "boolean",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "funding_change": {
+        "id": 1,
+        "mapping_version": "sha256:164d44a50b3cab7acdf37ccf32dd2b2034feac1fcbc33428f071c920ecfdae6c",
+        "status": "available",
+        "reason": null,
+        "h": 4,
+        "nft": 1800014399000,
+        "settled_rate": "0.00015",
+        "settlement_ms": 1799999999000,
+        "verified_at_ms": 1800000000000,
+        "expires_ms": 1800015299000,
+        "settled_last": {
+          "status": "available",
+          "reason": null,
+          "value": "0.00005",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800014399000,
+          "assurance": "consecutive_verified",
+          "definition_version": "funding_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": "1.00000",
+          "level_basis_unit": "bps"
+        },
+        "settled_1d": {
+          "status": "available",
+          "reason": null,
+          "value": "0.00005",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800014399000,
+          "assurance": null,
+          "definition_version": "funding_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "settled_7d": {
+          "status": "available",
+          "reason": null,
+          "value": "0.00005",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800014399000,
+          "assurance": null,
+          "definition_version": "funding_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "basis_bps": {
+          "status": "available",
+          "reason": null,
+          "value": "1.00000",
+          "unit": "bps",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "funding_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "volatility": {
+        "score": {
+          "status": "available",
+          "reason": null,
+          "value": "0.01",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "volatility.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "windows": {
+          "1H": {
+            "status": "available",
+            "reason": null,
+            "value": "0.01",
+            "unit": "fraction",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "volatility.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "4H": {
+            "status": "available",
+            "reason": null,
+            "value": "0.02",
+            "unit": "fraction",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "volatility.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "24H": {
+            "status": "available",
+            "reason": null,
+            "value": "0.03",
+            "unit": "fraction",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "volatility.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          }
+        },
+        "direction": {
+          "status": "available",
+          "reason": null,
+          "value": "Rising",
+          "unit": "state",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "volatility.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "signal": {
+        "code": {
+          "status": "available",
+          "reason": null,
+          "value": "MomentumLong",
+          "unit": "state",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "signal.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "category": {
+          "status": "available",
+          "reason": null,
+          "value": "Uptrend",
+          "unit": "state",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "signal.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "signal_since": {
+        "status": "available",
+        "reason": null,
+        "state": "MomentumLong",
+        "price": "100",
+        "at_ms": 1799999990000,
+        "asof_ms": 1799999999000,
+        "expires_ms": 1800000060000,
+        "definition_version": "signal_state.v1",
+        "input_refs": [
+          "fixture:source"
+        ]
+      },
+      "context": {
+        "rsi_14": {
+          "status": "available",
+          "reason": null,
+          "value": "55",
+          "unit": "score",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_context.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "volatility_momentum": {
+          "status": "available",
+          "reason": null,
+          "value": "0.189",
+          "unit": "log_ratio",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_context.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "volatility_velocity": {
+          "status": "available",
+          "reason": null,
+          "value": "Accelerating",
+          "unit": "state",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_context.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "outlook": {
+        "label": {
+          "status": "available",
+          "reason": null,
+          "value": "Fade",
+          "unit": "state",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_outlook.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "confidence": {
+          "status": "available",
+          "reason": null,
+          "value": "0.45",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_outlook.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "description": {
+          "status": "available",
+          "reason": null,
+          "value": "Fictional protocol fixture; not a market outlook.",
+          "unit": "text",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_outlook.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "history": {
+        "volatility": {
+          "status": "unsupported",
+          "reason": "not_retained",
+          "unit": "fraction",
+          "definition_version": "history.fixture.v1",
+          "input_refs": [],
+          "points": []
+        },
+        "ls": {
+          "status": "unsupported",
+          "reason": "not_retained",
+          "unit": "ratio",
+          "definition_version": "history.fixture.v1",
+          "input_refs": [],
+          "points": []
+        },
+        "funding": {
+          "status": "unsupported",
+          "reason": "not_retained",
+          "unit": "fraction",
+          "definition_version": "history.fixture.v1",
+          "input_refs": [],
+          "points": []
+        },
+        "funding_change": {
+          "status": "unsupported",
+          "reason": "not_retained",
+          "unit": "fraction",
+          "definition_version": "history.fixture.v1",
+          "input_refs": [],
+          "points": []
+        },
+        "oi": {
+          "status": "unsupported",
+          "reason": "not_retained",
+          "unit": "fraction",
+          "definition_version": "history.fixture.v1",
+          "input_refs": [],
+          "points": []
+        }
+      },
+      "references": {
+        "status": "available",
+        "reason": null,
+        "mapping_version": "sha256:164d44a50b3cab7acdf37ccf32dd2b2034feac1fcbc33428f071c920ecfdae6c",
+        "definition_version": "price_change.v1",
+        "generation_id": "sha256:34259a080c314fa1cccac16c50ffd028c731a7cecba17fa94ba3f3db7cc4fae2",
+        "ladder": {
+          "built_at_ms": 1800000000000,
+          "start_ms": 1800000000000,
+          "valid_until_ms": 1800000300000,
+          "windows": [
+            "1H",
+            "4H",
+            "24H"
+          ],
+          "slots": [
+            [
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799996400000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799985600000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799913600000,
+                "open_price": "100"
+              }
+            ],
+            [
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799996460000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799985660000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799913660000,
+                "open_price": "100"
+              }
+            ],
+            [
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799996520000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799985720000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799913720000,
+                "open_price": "100"
+              }
+            ],
+            [
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799996580000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799985780000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799913780000,
+                "open_price": "100"
+              }
+            ],
+            [
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799996640000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799985840000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799913840000,
+                "open_price": "100"
+              }
+            ]
+          ]
+        },
+        "fallback": {
+          "source_ms": 1799999999000,
+          "price": "102",
+          "expires_ms": 1800000060000,
+          "references": {
+            "1H": {
+              "status": "available",
+              "reason": null,
+              "reference_minute_ms": 1799996340000,
+              "open_price": "100"
+            },
+            "4H": {
+              "status": "available",
+              "reason": null,
+              "reference_minute_ms": 1799985540000,
+              "open_price": "100"
+            },
+            "24H": {
+              "status": "available",
+              "reason": null,
+              "reference_minute_ms": 1799913540000,
+              "open_price": "100"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "price": {
+        "status": "available",
+        "reason": null,
+        "value": "102",
+        "unit": "price",
+        "asof_ms": 1799999999000,
+        "expires_ms": 1800000060000,
+        "assurance": null,
+        "definition_version": "price_change.v1",
+        "input_refs": [
+          "fixture:source"
+        ],
+        "classification_status": "uncalibrated",
+        "level": null,
+        "level_basis": null,
+        "level_basis_unit": null
+      },
+      "changes": {
+        "1H": {
+          "status": "available",
+          "reason": null,
+          "value": "0.02",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "price_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "4H": {
+          "status": "available",
+          "reason": null,
+          "value": "0.02",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "price_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "24H": {
+          "status": "available",
+          "reason": null,
+          "value": "0.02",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "price_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "volume": {
+        "quote_24h": {
+          "status": "available",
+          "reason": null,
+          "value": "1000000",
+          "unit": "USDT",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "volume.rt.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "venue": "Binance_USDT_perpetual"
+      },
+      "oi": {
+        "quantity": {
+          "status": "available",
+          "reason": null,
+          "value": "112000",
+          "unit": "quantity",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "open_interest.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "change_1h": {
+          "status": "available",
+          "reason": null,
+          "value": "0.12",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "open_interest.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null,
+          "baseline_asof_ms": 1799996399000,
+          "actual_duration_ms": 3600000,
+          "baseline_error_ms": 0,
+          "mode": "own"
+        },
+        "change_4h": {
+          "status": "available",
+          "reason": null,
+          "value": "0.12",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "open_interest.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null,
+          "baseline_asof_ms": 1799985599000,
+          "actual_duration_ms": 14400000,
+          "baseline_error_ms": 0,
+          "mode": "own"
+        },
+        "change_24h": {
+          "status": "available",
+          "reason": null,
+          "value": "0.12",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "open_interest.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null,
+          "baseline_asof_ms": 1799913599000,
+          "actual_duration_ms": 86400000,
+          "baseline_error_ms": 0,
+          "mode": "own"
+        }
+      },
+      "ls": {
+        "global_ratio": {
+          "status": "available",
+          "reason": null,
+          "value": "1.5",
+          "unit": "ratio",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "long_short.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "top_ratio": {
+          "status": "available",
+          "reason": null,
+          "value": "1.5",
+          "unit": "ratio",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "long_short.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "global_long_share": {
+          "status": "available",
+          "reason": null,
+          "value": "0.6",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "long_short.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "top_long_share": {
+          "status": "available",
+          "reason": null,
+          "value": "0.6",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "long_short.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "global_share_change": {
+          "1H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "4H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "24H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          }
+        },
+        "top_share_change": {
+          "1H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "4H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "24H": {
+            "status": "available",
+            "reason": null,
+            "value": "1.0",
+            "unit": "pp",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "long_short.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          }
+        },
+        "divergence": {
+          "status": "available",
+          "reason": null,
+          "value": "0",
+          "unit": "pp",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "long_short.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "funding": {
+        "h": 1,
+        "nft": 1800003599000,
+        "native_estimate": {
+          "status": "available",
+          "reason": null,
+          "value": "0.0002",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000119000,
+          "assurance": null,
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "cumulative_1d": {
+          "status": "available",
+          "reason": null,
+          "value": "0.00245",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800003599000,
+          "assurance": "window_consistent_provisional",
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "cumulative_7d": {
+          "status": "unavailable",
+          "reason": "insufficient_history",
+          "value": null,
+          "unit": "fraction",
+          "asof_ms": null,
+          "expires_ms": null,
+          "assurance": "window_consistent_provisional",
+          "definition_version": "funding.v1",
+          "input_refs": [],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "cap": {
+          "status": "available",
+          "reason": null,
+          "value": "0.003",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000119000,
+          "assurance": null,
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "floor": {
+          "status": "available",
+          "reason": null,
+          "value": "-0.003",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000119000,
+          "assurance": null,
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "at_cap": {
+          "status": "available",
+          "reason": null,
+          "value": false,
+          "unit": "boolean",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "at_floor": {
+          "status": "available",
+          "reason": null,
+          "value": false,
+          "unit": "boolean",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "funding.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "funding_change": {
+        "id": 2,
+        "mapping_version": "sha256:164d44a50b3cab7acdf37ccf32dd2b2034feac1fcbc33428f071c920ecfdae6c",
+        "status": "available",
+        "reason": null,
+        "h": 1,
+        "nft": 1800003599000,
+        "settled_rate": "0.00015",
+        "settlement_ms": 1799999999000,
+        "verified_at_ms": 1800000000000,
+        "expires_ms": 1800004499000,
+        "settled_last": {
+          "status": "available",
+          "reason": null,
+          "value": "0.00005",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800003599000,
+          "assurance": "consecutive_verified",
+          "definition_version": "funding_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": "4.00000",
+          "level_basis_unit": "bps"
+        },
+        "settled_1d": {
+          "status": "available",
+          "reason": null,
+          "value": "0.00005",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800003599000,
+          "assurance": null,
+          "definition_version": "funding_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "settled_7d": {
+          "status": "unavailable",
+          "reason": "insufficient_history",
+          "value": null,
+          "unit": "fraction",
+          "asof_ms": null,
+          "expires_ms": null,
+          "assurance": null,
+          "definition_version": "funding_change.v1",
+          "input_refs": [],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "basis_bps": {
+          "status": "available",
+          "reason": null,
+          "value": "4.00000",
+          "unit": "bps",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "funding_change.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "volatility": {
+        "score": {
+          "status": "available",
+          "reason": null,
+          "value": "0.01",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "volatility.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "windows": {
+          "1H": {
+            "status": "available",
+            "reason": null,
+            "value": "0.01",
+            "unit": "fraction",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "volatility.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "4H": {
+            "status": "available",
+            "reason": null,
+            "value": "0.02",
+            "unit": "fraction",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "volatility.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          },
+          "24H": {
+            "status": "available",
+            "reason": null,
+            "value": "0.03",
+            "unit": "fraction",
+            "asof_ms": 1799999999000,
+            "expires_ms": 1800000060000,
+            "assurance": null,
+            "definition_version": "volatility.v1",
+            "input_refs": [
+              "fixture:source"
+            ],
+            "classification_status": "uncalibrated",
+            "level": null,
+            "level_basis": null,
+            "level_basis_unit": null
+          }
+        },
+        "direction": {
+          "status": "available",
+          "reason": null,
+          "value": "Rising",
+          "unit": "state",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "volatility.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "signal": {
+        "code": {
+          "status": "available",
+          "reason": null,
+          "value": "MomentumLong",
+          "unit": "state",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "signal.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "category": {
+          "status": "available",
+          "reason": null,
+          "value": "Uptrend",
+          "unit": "state",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "signal.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "signal_since": {
+        "status": "available",
+        "reason": null,
+        "state": "MomentumLong",
+        "price": "100",
+        "at_ms": 1799999990000,
+        "asof_ms": 1799999999000,
+        "expires_ms": 1800000060000,
+        "definition_version": "signal_state.v1",
+        "input_refs": [
+          "fixture:source"
+        ]
+      },
+      "context": {
+        "rsi_14": {
+          "status": "available",
+          "reason": null,
+          "value": "55",
+          "unit": "score",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_context.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "volatility_momentum": {
+          "status": "available",
+          "reason": null,
+          "value": "0.189",
+          "unit": "log_ratio",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_context.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "volatility_velocity": {
+          "status": "available",
+          "reason": null,
+          "value": "Accelerating",
+          "unit": "state",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_context.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "outlook": {
+        "label": {
+          "status": "available",
+          "reason": null,
+          "value": "Fade",
+          "unit": "state",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_outlook.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "confidence": {
+          "status": "available",
+          "reason": null,
+          "value": "0.45",
+          "unit": "fraction",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_outlook.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        },
+        "description": {
+          "status": "available",
+          "reason": null,
+          "value": "Fictional protocol fixture; not a market outlook.",
+          "unit": "text",
+          "asof_ms": 1799999999000,
+          "expires_ms": 1800000060000,
+          "assurance": null,
+          "definition_version": "legacy_outlook.v1",
+          "input_refs": [
+            "fixture:source"
+          ],
+          "classification_status": "uncalibrated",
+          "level": null,
+          "level_basis": null,
+          "level_basis_unit": null
+        }
+      },
+      "history": {
+        "volatility": {
+          "status": "unsupported",
+          "reason": "not_retained",
+          "unit": "fraction",
+          "definition_version": "history.fixture.v1",
+          "input_refs": [],
+          "points": []
+        },
+        "ls": {
+          "status": "unsupported",
+          "reason": "not_retained",
+          "unit": "ratio",
+          "definition_version": "history.fixture.v1",
+          "input_refs": [],
+          "points": []
+        },
+        "funding": {
+          "status": "unsupported",
+          "reason": "not_retained",
+          "unit": "fraction",
+          "definition_version": "history.fixture.v1",
+          "input_refs": [],
+          "points": []
+        },
+        "funding_change": {
+          "status": "unsupported",
+          "reason": "not_retained",
+          "unit": "fraction",
+          "definition_version": "history.fixture.v1",
+          "input_refs": [],
+          "points": []
+        },
+        "oi": {
+          "status": "unsupported",
+          "reason": "not_retained",
+          "unit": "fraction",
+          "definition_version": "history.fixture.v1",
+          "input_refs": [],
+          "points": []
+        }
+      },
+      "references": {
+        "status": "available",
+        "reason": null,
+        "mapping_version": "sha256:164d44a50b3cab7acdf37ccf32dd2b2034feac1fcbc33428f071c920ecfdae6c",
+        "definition_version": "price_change.v1",
+        "generation_id": "sha256:34259a080c314fa1cccac16c50ffd028c731a7cecba17fa94ba3f3db7cc4fae2",
+        "ladder": {
+          "built_at_ms": 1800000000000,
+          "start_ms": 1800000000000,
+          "valid_until_ms": 1800000300000,
+          "windows": [
+            "1H",
+            "4H",
+            "24H"
+          ],
+          "slots": [
+            [
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799996400000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799985600000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799913600000,
+                "open_price": "100"
+              }
+            ],
+            [
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799996460000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799985660000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799913660000,
+                "open_price": "100"
+              }
+            ],
+            [
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799996520000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799985720000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799913720000,
+                "open_price": "100"
+              }
+            ],
+            [
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799996580000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799985780000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799913780000,
+                "open_price": "100"
+              }
+            ],
+            [
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799996640000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799985840000,
+                "open_price": "100"
+              },
+              {
+                "status": "available",
+                "reason": null,
+                "reference_minute_ms": 1799913840000,
+                "open_price": "100"
+              }
+            ]
+          ]
+        },
+        "fallback": {
+          "source_ms": 1799999999000,
+          "price": "102",
+          "expires_ms": 1800000060000,
+          "references": {
+            "1H": {
+              "status": "available",
+              "reason": null,
+              "reference_minute_ms": 1799996340000,
+              "open_price": "100"
+            },
+            "4H": {
+              "status": "available",
+              "reason": null,
+              "reference_minute_ms": 1799985540000,
+              "open_price": "100"
+            },
+            "24H": {
+              "status": "available",
+              "reason": null,
+              "reference_minute_ms": 1799913540000,
+              "open_price": "100"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "inputs": {
+    "fixture:source": {
+      "version": "fixture.input.v1",
+      "source_ms": 1799999999000,
+      "verified_at_ms": 1800000000000,
+      "expires_ms": 1800029699000,
+      "definition_version": "fixture.source.v1"
+    }
+  }
+}

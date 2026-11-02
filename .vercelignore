@@ -1,0 +1,37 @@
+node_modules/
+.git/
+.vercel/
+__pycache__/
+api/__pycache__/
+.DS_Store
+scratch/
+tests/
+design_context_svg_vol_terminal.txt
+design_context_vol_terminal.css
+temp_test.js
+test_vol_api.py
+volatility_cache/
+volatility_dashboard.html
+volatility_lw_dashboard.html
+vol_signal_preview.html
+*.csv
+*.json
+!vercel.json
+!package.json
+!package-lock.json
+!api/volatility_lw_report.json
+!api/volatility_lw_report_*.json
+
+# R0+R1 (ADR-0016): internal docs, agent rules and tooling are never deployed.
+# Canonical backend, frontend/src/volatility and private API fallbacks stay included.
+docs/
+tools/
+*.md
+git_user_backup.txt
+data/
+public/
+
+# ADR-0190: dedicated Pulse project; the original project/branch keeps legacy.
+api/index.py
+api/pulse_release.py
+api/pulse_retired_state.py

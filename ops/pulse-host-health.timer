@@ -1,0 +1,11 @@
+[Unit]
+Description=Sample Pulse host pressure without a resident daemon
+
+[Timer]
+OnBootSec=2min
+OnUnitInactiveSec=30s
+AccuracySec=1s
+Unit=pulse-host-health.service
+
+[Install]
+WantedBy=timers.target

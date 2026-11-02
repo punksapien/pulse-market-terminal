@@ -1,0 +1,68 @@
+{
+  "export_kind": "archived_allowlisted_sample",
+  "prepared_on": "2026-10-23",
+  "is_live": false,
+  "warning": "Archived packaged values for onboarding only. Do not use for trading, freshness validation, or current production claims.",
+  "source": {
+    "repository_file": "volatility_lw_report_1D.json",
+    "local_git_commit": "2be9658",
+    "source_created_at_utc": "2026-07-23 13:01:06.186767+00:00",
+    "resolution": "1D",
+    "scale_horizon": "24H",
+    "target_seconds": 86400,
+    "source_summary_rows": 444
+  },
+  "units": {
+    "price_last": "USDT",
+    "volatility_score": "horizon_scaled_fraction",
+    "sigma_yz": "horizon_scaled_fraction",
+    "sigma_ewma": "horizon_scaled_fraction",
+    "sigma_base": "horizon_scaled_fraction",
+    "jump_fraction": "dimensionless_variance_fraction",
+    "price_change_24h": "fraction_after_quote_enrichment",
+    "price_change_1h": "legacy_candle_log_return",
+    "oi_24h_change": "legacy_log_change_provider_dependent_basis",
+    "funding_rate": "fraction",
+    "dollar_vol_24h": "USDT_notional_as_stored"
+  },
+  "rows": [
+    {
+      "instrument": "B-ETH_USDT",
+      "price_last": 1905.01,
+      "volatility_score": 0.02492350957499253,
+      "sigma_yz": 0.023252586704966938,
+      "sigma_ewma": 0.023393214336612678,
+      "sigma_base": 0.023301806376042948,
+      "jump_fraction": 0.12590067574427038,
+      "quality_score": 1.0,
+      "price_change_24h": -0.0060799999999999995,
+      "price_change_1h": 0.0,
+      "trade_signal": "Range",
+      "vol_direction": "Surging",
+      "oi_available": true,
+      "oi_source": "binance",
+      "oi_24h_change": 0.0148,
+      "funding_rate": -0.00004504,
+      "dollar_vol_24h": 7171004130.96
+    },
+    {
+      "instrument": "B-BTC_USDT",
+      "price_last": 65182.7,
+      "volatility_score": 0.01754475783032599,
+      "sigma_yz": 0.017348396821577156,
+      "sigma_ewma": 0.01666363594767717,
+      "sigma_base": 0.01710873051571216,
+      "jump_fraction": 0.04908693312531501,
+      "quality_score": 1.0,
+      "price_change_24h": -0.00635,
+      "price_change_1h": 0.0,
+      "trade_signal": "Range",
+      "vol_direction": "Surging",
+      "oi_available": true,
+      "oi_source": "binance",
+      "oi_24h_change": -0.0304,
+      "funding_rate": 0.00000382,
+      "dollar_vol_24h": 7454087610.63
+    }
+  ]
+}

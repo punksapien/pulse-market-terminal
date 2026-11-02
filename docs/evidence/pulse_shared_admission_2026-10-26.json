@@ -1,0 +1,25 @@
+{
+  "status": "synthetic_shared_admission_passed",
+  "keys": [
+    "pulse:stg:{quota-synthetic-55f423698afc45269a6ffdc4ce31a4e7}:source:meta",
+    "pulse:stg:{quota-synthetic-55f423698afc45269a6ffdc4ce31a4e7}:source:history",
+    "pulse:stg:{quota-synthetic-55f423698afc45269a6ffdc4ce31a4e7}:source:weight",
+    "pulse:stg:{quota-synthetic-5f893ed0e2b849829bbe9e488a22fc55}:source:meta",
+    "pulse:stg:{quota-synthetic-5f893ed0e2b849829bbe9e488a22fc55}:source:weight"
+  ],
+  "checks": ["missing_state_refused", "explicit_usage_bootstrap", "second_writer_charged", "first_writer_charged", "all_dimensions_denied", "cannot_reset", "partial_state_fails_closed", "prune_fixture_bootstrap", "bounded_prune_does_not_admit", "after_prune_single_charge"],
+  "exchange_calls": 0,
+  "deletions": 0,
+  "transport": "plaintext_approved_staging_exception",
+  "memory": {
+    "used_memory": 13733120,
+    "used_memory_rss": 13733120,
+    "mem_fragmentation_ratio": 1,
+    "used_memory_peak": 14876976,
+    "used_memory_lua": 305152,
+    "maxmemory": null,
+    "maxmemory_policy": "noeviction"
+  },
+  "live_egress_usage_reconciled": false,
+  "staging_complete": false
+}

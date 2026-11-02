@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pulse:schema:v1:artifact",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "pulse.artifact.v1"
+    },
+    "logical_sha256": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "raw_bytes": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1048576
+    },
+    "mapping_version": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "generation": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "variants": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "br11": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "sha256": {
+              "type": "string",
+              "pattern": "^sha256:[a-f0-9]{64}$"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1114112
+            },
+            "encoding": {
+              "const": "br"
+            }
+          },
+          "required": [
+            "sha256",
+            "bytes",
+            "encoding"
+          ]
+        },
+        "br5": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "sha256": {
+              "type": "string",
+              "pattern": "^sha256:[a-f0-9]{64}$"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1114112
+            },
+            "encoding": {
+              "const": "br"
+            }
+          },
+          "required": [
+            "sha256",
+            "bytes",
+            "encoding"
+          ]
+        },
+        "gzip": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "sha256": {
+              "type": "string",
+              "pattern": "^sha256:[a-f0-9]{64}$"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1114112
+            },
+            "encoding": {
+              "const": "gzip"
+            }
+          },
+          "required": [
+            "sha256",
+            "bytes",
+            "encoding"
+          ]
+        },
+        "identity": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "sha256": {
+              "type": "string",
+              "pattern": "^sha256:[a-f0-9]{64}$"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1114112
+            },
+            "encoding": {
+              "const": "identity"
+            }
+          },
+          "required": [
+            "sha256",
+            "bytes",
+            "encoding"
+          ]
+        }
+      },
+      "required": [
+        "br11",
+        "gzip"
+      ]
+    }
+  },
+  "required": [
+    "schema",
+    "logical_sha256",
+    "raw_bytes",
+    "mapping_version",
+    "generation",
+    "variants"
+  ]
+}

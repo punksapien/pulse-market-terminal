@@ -1,0 +1,6535 @@
+{
+ "contract": "ladder-price-change.v1",
+ "bound_factor": "1e-12",
+ "t0": 1800000000000,
+ "cases": [
+  {
+   "id": "slot0_start_1H",
+   "horizon": "1H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000000000,
+    "expires_ms": 1800000120000
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.01861167002012072434607645875251509",
+    "delayed": null
+   }
+  },
+  {
+   "id": "slot0_end_1H",
+   "horizon": "1H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000059999,
+    "expires_ms": 1800000179999
+   },
+   "now_ms": 1800000060999,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.01861167002012072434607645875251509",
+    "delayed": null
+   }
+  },
+  {
+   "id": "slot1_start_1H",
+   "horizon": "1H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000060000,
+    "expires_ms": 1800000180000
+   },
+   "now_ms": 1800000061000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.01850920430540187103913087214565939",
+    "delayed": null
+   }
+  },
+  {
+   "id": "slot4_end_1H",
+   "horizon": "1H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000298500,
+    "expires_ms": 1800000418500
+   },
+   "now_ms": 1800000299500,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.01820193081255028157683024939662108",
+    "delayed": null
+   }
+  },
+  {
+   "id": "before_ladder_1H",
+   "horizon": "1H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1799999999999,
+    "expires_ms": 1800000119999
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "outside_ladder",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "after_ladder_1H",
+   "horizon": "1H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000300000,
+    "expires_ms": 1800000420000
+   },
+   "now_ms": 1800000300001,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "ladder_expired",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "ladder_expired_1H",
+   "horizon": "1H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000000100,
+    "expires_ms": 1800000120100
+   },
+   "now_ms": 1800000300000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "numerator_expired",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "numerator_expired_1H",
+   "horizon": "1H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000000100,
+    "expires_ms": 1800000030000
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "numerator_expired",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "future_tick_1H",
+   "horizon": "1H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000035001,
+    "expires_ms": 1800000155001
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "invalid_tick",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "tick_at_skew_limit_1H",
+   "horizon": "1H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000035000,
+    "expires_ms": 1800000155000
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.01861167002012072434607645875251509",
+    "delayed": null
+   }
+  },
+  {
+   "id": "nonpositive_tick_1H",
+   "horizon": "1H",
+   "tick": {
+    "price": "0",
+    "source_ms": 1800000000100,
+    "expires_ms": 1800000120100
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "invalid_tick",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "version_mismatch_1H",
+   "horizon": "1H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000000100,
+    "expires_ms": 1800000120100
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g2",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "version_mismatch",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "missing_minute_1H",
+   "horizon": "1H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000120010,
+    "expires_ms": 1800000240010
+   },
+   "now_ms": 1800000121010,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "unavailable",
+        "reason": "reference_missing",
+        "reference_minute_ms": null,
+        "open_price": null
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "reference_missing_or_invalid",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "other_slot_unaffected_1H",
+   "horizon": "1H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000180010,
+    "expires_ms": 1800000300010
+   },
+   "now_ms": 1800000181010,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "unavailable",
+        "reason": "reference_missing",
+        "reference_minute_ms": null,
+        "open_price": null
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.01830433470783465754802373529115961",
+    "delayed": null
+   }
+  },
+  {
+   "id": "zero_reference_1H",
+   "horizon": "1H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000120010,
+    "expires_ms": 1800000240010
+   },
+   "now_ms": 1800000121010,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "unavailable",
+        "reason": "reference_missing",
+        "reference_minute_ms": null,
+        "open_price": null
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "reference_missing_or_invalid",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "rollover_1H",
+   "horizon": "1H",
+   "tick": {
+    "price": "100.00",
+    "source_ms": 1800000060000,
+    "expires_ms": 1800000180000
+   },
+   "now_ms": 1800000061000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.005935016597927773865808268785836435",
+    "delayed": null
+   }
+  },
+  {
+   "id": "slot0_start_4H",
+   "horizon": "4H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000000000,
+    "expires_ms": 1800000120000
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.03739754098360655737704918032786885",
+    "delayed": null
+   }
+  },
+  {
+   "id": "slot0_end_4H",
+   "horizon": "4H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000059999,
+    "expires_ms": 1800000179999
+   },
+   "now_ms": 1800000060999,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.03739754098360655737704918032786885",
+    "delayed": null
+   }
+  },
+  {
+   "id": "slot1_start_4H",
+   "horizon": "4H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000060000,
+    "expires_ms": 1800000180000
+   },
+   "now_ms": 1800000061000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.03729126114127650855445138817744084",
+    "delayed": null
+   }
+  },
+  {
+   "id": "slot4_end_4H",
+   "horizon": "4H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000298500,
+    "expires_ms": 1800000418500
+   },
+   "now_ms": 1800000299500,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.03697255223269151986890618598934863",
+    "delayed": null
+   }
+  },
+  {
+   "id": "before_ladder_4H",
+   "horizon": "4H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1799999999999,
+    "expires_ms": 1800000119999
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "outside_ladder",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "after_ladder_4H",
+   "horizon": "4H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000300000,
+    "expires_ms": 1800000420000
+   },
+   "now_ms": 1800000300001,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "ladder_expired",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "ladder_expired_4H",
+   "horizon": "4H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000000100,
+    "expires_ms": 1800000120100
+   },
+   "now_ms": 1800000300000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "numerator_expired",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "numerator_expired_4H",
+   "horizon": "4H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000000100,
+    "expires_ms": 1800000030000
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "numerator_expired",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "future_tick_4H",
+   "horizon": "4H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000035001,
+    "expires_ms": 1800000155001
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "invalid_tick",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "tick_at_skew_limit_4H",
+   "horizon": "4H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000035000,
+    "expires_ms": 1800000155000
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.03739754098360655737704918032786885",
+    "delayed": null
+   }
+  },
+  {
+   "id": "nonpositive_tick_4H",
+   "horizon": "4H",
+   "tick": {
+    "price": "0",
+    "source_ms": 1800000000100,
+    "expires_ms": 1800000120100
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "invalid_tick",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "version_mismatch_4H",
+   "horizon": "4H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000000100,
+    "expires_ms": 1800000120100
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g2",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "version_mismatch",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "missing_minute_4H",
+   "horizon": "4H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000120010,
+    "expires_ms": 1800000240010
+   },
+   "now_ms": 1800000121010,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "unavailable",
+        "reason": "reference_missing",
+        "reference_minute_ms": null,
+        "open_price": null
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "reference_missing_or_invalid",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "other_slot_unaffected_4H",
+   "horizon": "4H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000180010,
+    "expires_ms": 1800000300010
+   },
+   "now_ms": 1800000181010,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "unavailable",
+        "reason": "reference_missing",
+        "reference_minute_ms": null,
+        "open_price": null
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.03707876677250845027143296117996517",
+    "delayed": null
+   }
+  },
+  {
+   "id": "zero_reference_4H",
+   "horizon": "4H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000120010,
+    "expires_ms": 1800000240010
+   },
+   "now_ms": 1800000121010,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "unavailable",
+        "reason": "reference_missing",
+        "reference_minute_ms": null,
+        "open_price": null
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "reference_missing_or_invalid",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "rollover_4H",
+   "horizon": "4H",
+   "tick": {
+    "price": "100.00",
+    "source_ms": 1800000060000,
+    "expires_ms": 1800000180000
+   },
+   "now_ms": 1800000061000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.02448519618891507017723593894068231",
+    "delayed": null
+   }
+  },
+  {
+   "id": "slot0_start_24H",
+   "horizon": "24H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000000000,
+    "expires_ms": 1800000120000
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.1828271028037383177570093457943925",
+    "delayed": null
+   }
+  },
+  {
+   "id": "slot0_end_24H",
+   "horizon": "24H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000059999,
+    "expires_ms": 1800000179999
+   },
+   "now_ms": 1800000060999,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.1828271028037383177570093457943925",
+    "delayed": null
+   }
+  },
+  {
+   "id": "slot1_start_24H",
+   "horizon": "24H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000060000,
+    "expires_ms": 1800000180000
+   },
+   "now_ms": 1800000061000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.1826889382081532531246349725499358",
+    "delayed": null
+   }
+  },
+  {
+   "id": "slot4_end_24H",
+   "horizon": "24H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000298500,
+    "expires_ms": 1800000418500
+   },
+   "now_ms": 1800000299500,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.1822746380196170014012143858010276",
+    "delayed": null
+   }
+  },
+  {
+   "id": "before_ladder_24H",
+   "horizon": "24H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1799999999999,
+    "expires_ms": 1800000119999
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "outside_ladder",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "after_ladder_24H",
+   "horizon": "24H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000300000,
+    "expires_ms": 1800000420000
+   },
+   "now_ms": 1800000300001,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "ladder_expired",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "ladder_expired_24H",
+   "horizon": "24H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000000100,
+    "expires_ms": 1800000120100
+   },
+   "now_ms": 1800000300000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "numerator_expired",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "numerator_expired_24H",
+   "horizon": "24H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000000100,
+    "expires_ms": 1800000030000
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "numerator_expired",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "future_tick_24H",
+   "horizon": "24H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000035001,
+    "expires_ms": 1800000155001
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "invalid_tick",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "tick_at_skew_limit_24H",
+   "horizon": "24H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000035000,
+    "expires_ms": 1800000155000
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.1828271028037383177570093457943925",
+    "delayed": null
+   }
+  },
+  {
+   "id": "nonpositive_tick_24H",
+   "horizon": "24H",
+   "tick": {
+    "price": "0",
+    "source_ms": 1800000000100,
+    "expires_ms": 1800000120100
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "invalid_tick",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "version_mismatch_24H",
+   "horizon": "24H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000000100,
+    "expires_ms": 1800000120100
+   },
+   "now_ms": 1800000030000,
+   "generation_id": "g2",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "version_mismatch",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "missing_minute_24H",
+   "horizon": "24H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000120010,
+    "expires_ms": 1800000240010
+   },
+   "now_ms": 1800000121010,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "unavailable",
+        "reason": "reference_missing",
+        "reference_minute_ms": null,
+        "open_price": null
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "reference_missing_or_invalid",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "other_slot_unaffected_24H",
+   "horizon": "24H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000180010,
+    "expires_ms": 1800000300010
+   },
+   "now_ms": 1800000181010,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "unavailable",
+        "reason": "reference_missing",
+        "reference_minute_ms": null,
+        "open_price": null
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.1824127058273969403246525750321149",
+    "delayed": null
+   }
+  },
+  {
+   "id": "zero_reference_24H",
+   "horizon": "24H",
+   "tick": {
+    "price": "101.25",
+    "source_ms": 1800000120010,
+    "expires_ms": 1800000240010
+   },
+   "now_ms": 1800000121010,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "unavailable",
+        "reason": "reference_missing",
+        "reference_minute_ms": null,
+        "open_price": null
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "unavailable",
+    "reason": "reference_missing_or_invalid",
+    "fraction": null,
+    "delayed": null
+   }
+  },
+  {
+   "id": "rollover_24H",
+   "horizon": "24H",
+   "tick": {
+    "price": "100.00",
+    "source_ms": 1800000060000,
+    "expires_ms": 1800000180000
+   },
+   "now_ms": 1800000061000,
+   "generation_id": "g1",
+   "refs": {
+    "status": "available",
+    "reason": null,
+    "mapping_version": "m1",
+    "definition_version": "price_change.v1",
+    "generation_id": "g1",
+    "ladder": {
+     "built_at_ms": 1800000030000,
+     "start_ms": 1800000000000,
+     "valid_until_ms": 1800000300000,
+     "windows": [
+      "1H",
+      "4H",
+      "24H"
+     ],
+     "slots": [
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996400000,
+        "open_price": "99.4"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985600000,
+        "open_price": "97.6"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913600000,
+        "open_price": "85.6"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996460000,
+        "open_price": "99.41"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985660000,
+        "open_price": "97.61"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913660000,
+        "open_price": "85.61"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996520000,
+        "open_price": "99.42"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985720000,
+        "open_price": "97.62"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913720000,
+        "open_price": "85.62"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996580000,
+        "open_price": "99.43"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985780000,
+        "open_price": "97.63"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913780000,
+        "open_price": "85.63"
+       }
+      ],
+      [
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799996640000,
+        "open_price": "99.44"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799985840000,
+        "open_price": "97.64"
+       },
+       {
+        "status": "available",
+        "reason": null,
+        "reference_minute_ms": 1799913840000,
+        "open_price": "85.64"
+       }
+      ]
+     ]
+    }
+   },
+   "expected": {
+    "status": "available",
+    "reason": null,
+    "fraction": "0.1680878402055834598761826889382082",
+    "delayed": null
+   }
+  }
+ ]
+}

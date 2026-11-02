@@ -1,0 +1,151 @@
+{
+  "fixture_kind": "fictional_protocol_only",
+  "oracle": "pulse.metrics.funding.current_delta",
+  "identity_bound_bridge_pending": false,
+  "cases": [
+    {
+      "name": "valid",
+      "envelope": {
+        "mapping_version": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      },
+      "live": {
+        "id": 0,
+        "status": "available",
+        "reason": null,
+        "h": 8,
+        "nft": 1800028799000,
+        "fr": "0.00015",
+        "efr": "0.0002",
+        "source_ms": 1799999999500,
+        "expires_ms": 1800000119500
+      },
+      "settled": {
+        "id": 0,
+        "mapping_version": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "status": "available",
+        "reason": null,
+        "h": 8,
+        "nft": 1800028799000,
+        "settled_rate": "0.00015",
+        "settlement_ms": 1799999999000,
+        "verified_at_ms": 1800000000000,
+        "expires_ms": 1800029699000
+      },
+      "now_ms": 1800000000000,
+      "expected": {
+        "available": true,
+        "reason": null,
+        "value": "0.00005",
+        "bps": "0.50000"
+      }
+    },
+    {
+      "name": "zero",
+      "envelope": {
+        "mapping_version": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      },
+      "live": {
+        "id": 0,
+        "status": "available",
+        "reason": null,
+        "h": 8,
+        "nft": 1800028799000,
+        "fr": "0.00015",
+        "efr": "0.00015",
+        "source_ms": 1799999999500,
+        "expires_ms": 1800000119500
+      },
+      "settled": {
+        "id": 0,
+        "mapping_version": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "status": "available",
+        "reason": null,
+        "h": 8,
+        "nft": 1800028799000,
+        "settled_rate": "0.00015",
+        "settlement_ms": 1799999999000,
+        "verified_at_ms": 1800000000000,
+        "expires_ms": 1800029699000
+      },
+      "now_ms": 1800000000000,
+      "expected": {
+        "available": true,
+        "reason": null,
+        "value": "0",
+        "bps": "0"
+      }
+    },
+    {
+      "name": "estimate_before_settlement",
+      "envelope": {
+        "mapping_version": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      },
+      "live": {
+        "id": 0,
+        "status": "available",
+        "reason": null,
+        "h": 8,
+        "nft": 1800028799000,
+        "fr": "0.00015",
+        "efr": "0.0002",
+        "source_ms": 1799999998000,
+        "expires_ms": 1800000118000
+      },
+      "settled": {
+        "id": 0,
+        "mapping_version": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "status": "available",
+        "reason": null,
+        "h": 8,
+        "nft": 1800028799000,
+        "settled_rate": "0.00015",
+        "settlement_ms": 1799999999000,
+        "verified_at_ms": 1800000000000,
+        "expires_ms": 1800029699000
+      },
+      "now_ms": 1800000000000,
+      "expected": {
+        "available": false,
+        "reason": "cycle_identity_mismatch",
+        "value": null,
+        "bps": null
+      }
+    },
+    {
+      "name": "actual_due_before_jittered_nft",
+      "envelope": {
+        "mapping_version": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      },
+      "live": {
+        "id": 0,
+        "status": "available",
+        "reason": null,
+        "h": 8,
+        "nft": 1800000003000,
+        "fr": "0.00015",
+        "efr": "0.0002",
+        "source_ms": 1800000000500,
+        "expires_ms": 1800000003000
+      },
+      "settled": {
+        "id": 0,
+        "mapping_version": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "status": "available",
+        "reason": null,
+        "h": 8,
+        "nft": 1800000003000,
+        "settled_rate": "0.00015",
+        "settlement_ms": 1799971200000,
+        "verified_at_ms": 1799999990000,
+        "expires_ms": 1800000900000
+      },
+      "now_ms": 1800000001000,
+      "expected": {
+        "available": false,
+        "reason": "settlement_pending",
+        "value": null,
+        "bps": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,2785 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pulse:schema:v1:snapshot",
+  "title": "Self-contained Pulse snapshot v1 proposal",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "pulse.snapshot.v1"
+    },
+    "mapping_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9_.:-]+$"
+    },
+    "generation": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9_.:-]+$"
+    },
+    "horizon": {
+      "enum": [
+        "1H",
+        "4H",
+        "24H"
+      ]
+    },
+    "generated_ms": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "expires_ms": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "universe": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 8192,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 8191
+          },
+          "pair_id": {
+            "type": "string",
+            "maxLength": 64,
+            "pattern": "^B-[A-Z0-9]+_USDT$"
+          },
+          "symbol": {
+            "type": "string",
+            "maxLength": 64,
+            "pattern": "^[A-Z0-9]+USDT$"
+          },
+          "funding_hours": {
+            "anyOf": [
+              {
+                "enum": [
+                  1,
+                  4,
+                  8
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "pair_id",
+          "symbol",
+          "funding_hours"
+        ]
+      }
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 8192,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 8191
+          },
+          "price": {
+            "allOf": [
+              {
+                "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+              },
+              {
+                "properties": {
+                  "unit": {
+                    "const": "price"
+                  },
+                  "definition_version": {
+                    "const": "price_change.v1"
+                  }
+                }
+              }
+            ]
+          },
+          "changes": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "1H": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "fraction"
+                      },
+                      "definition_version": {
+                        "const": "price_change.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "4H": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "fraction"
+                      },
+                      "definition_version": {
+                        "const": "price_change.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "24H": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "fraction"
+                      },
+                      "definition_version": {
+                        "const": "price_change.v1"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "required": [
+              "1H",
+              "4H",
+              "24H"
+            ]
+          },
+          "volume": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "quote_24h": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "USDT"
+                      },
+                      "definition_version": {
+                        "enum": ["volume.rt.v1", "volume.rt.v2"]
+                      }
+                    }
+                  }
+                ]
+              },
+              "venue": {
+                "const": "Binance_USDT_perpetual"
+              }
+            },
+            "required": [
+              "quote_24h",
+              "venue"
+            ]
+          },
+          "oi": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "quantity": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "quantity"
+                      },
+                      "definition_version": {
+                        "const": "open_interest.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "change_1h": {
+                "allOf": [
+                  {
+                    "allOf": [
+                      {
+                        "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                      },
+                      {
+                        "properties": {
+                          "unit": {
+                            "const": "fraction"
+                          },
+                          "definition_version": {
+                            "const": "open_interest.v1"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "required": [
+                      "baseline_asof_ms",
+                      "actual_duration_ms",
+                      "baseline_error_ms",
+                      "mode"
+                    ]
+                  }
+                ]
+              },
+              "change_4h": {
+                "allOf": [
+                  {
+                    "allOf": [
+                      {
+                        "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                      },
+                      {
+                        "properties": {
+                          "unit": {
+                            "const": "fraction"
+                          },
+                          "definition_version": {
+                            "const": "open_interest.v1"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "required": [
+                      "baseline_asof_ms",
+                      "actual_duration_ms",
+                      "baseline_error_ms",
+                      "mode"
+                    ]
+                  }
+                ]
+              },
+              "change_24h": {
+                "allOf": [
+                  {
+                    "allOf": [
+                      {
+                        "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                      },
+                      {
+                        "properties": {
+                          "unit": {
+                            "const": "fraction"
+                          },
+                          "definition_version": {
+                            "const": "open_interest.v1"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "required": [
+                      "baseline_asof_ms",
+                      "actual_duration_ms",
+                      "baseline_error_ms",
+                      "mode"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "quantity",
+              "change_1h",
+              "change_4h",
+              "change_24h"
+            ]
+          },
+          "ls": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "global_ratio": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "ratio"
+                      },
+                      "definition_version": {
+                        "const": "long_short.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "top_ratio": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "ratio"
+                      },
+                      "definition_version": {
+                        "const": "long_short.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "global_long_share": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "fraction"
+                      },
+                      "definition_version": {
+                        "const": "long_short.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "top_long_share": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "fraction"
+                      },
+                      "definition_version": {
+                        "const": "long_short.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "global_share_change": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "1H": {
+                    "allOf": [
+                      {
+                        "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                      },
+                      {
+                        "properties": {
+                          "unit": {
+                            "const": "pp"
+                          },
+                          "definition_version": {
+                            "const": "long_short.v1"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "4H": {
+                    "allOf": [
+                      {
+                        "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                      },
+                      {
+                        "properties": {
+                          "unit": {
+                            "const": "pp"
+                          },
+                          "definition_version": {
+                            "const": "long_short.v1"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "24H": {
+                    "allOf": [
+                      {
+                        "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                      },
+                      {
+                        "properties": {
+                          "unit": {
+                            "const": "pp"
+                          },
+                          "definition_version": {
+                            "const": "long_short.v1"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "1H",
+                  "4H",
+                  "24H"
+                ]
+              },
+              "top_share_change": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "1H": {
+                    "allOf": [
+                      {
+                        "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                      },
+                      {
+                        "properties": {
+                          "unit": {
+                            "const": "pp"
+                          },
+                          "definition_version": {
+                            "const": "long_short.v1"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "4H": {
+                    "allOf": [
+                      {
+                        "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                      },
+                      {
+                        "properties": {
+                          "unit": {
+                            "const": "pp"
+                          },
+                          "definition_version": {
+                            "const": "long_short.v1"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "24H": {
+                    "allOf": [
+                      {
+                        "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                      },
+                      {
+                        "properties": {
+                          "unit": {
+                            "const": "pp"
+                          },
+                          "definition_version": {
+                            "const": "long_short.v1"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "1H",
+                  "4H",
+                  "24H"
+                ]
+              },
+              "divergence": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "pp"
+                      },
+                      "definition_version": {
+                        "const": "long_short.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "period_ratios": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "1H": {
+                    "allOf": [
+                      {
+                        "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                      },
+                      {
+                        "properties": {
+                          "unit": {
+                            "const": "ratio"
+                          },
+                          "definition_version": {
+                            "const": "long_short.v1"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "4H": {
+                    "allOf": [
+                      {
+                        "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                      },
+                      {
+                        "properties": {
+                          "unit": {
+                            "const": "ratio"
+                          },
+                          "definition_version": {
+                            "const": "long_short.v1"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "24H": {
+                    "allOf": [
+                      {
+                        "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                      },
+                      {
+                        "properties": {
+                          "unit": {
+                            "const": "ratio"
+                          },
+                          "definition_version": {
+                            "const": "long_short.v1"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "1H",
+                  "4H",
+                  "24H"
+                ]
+              }
+            },
+            "required": [
+              "global_ratio",
+              "top_ratio",
+              "global_long_share",
+              "top_long_share",
+              "global_share_change",
+              "top_share_change",
+              "divergence"
+            ]
+          },
+          "funding": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "h": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      1,
+                      4,
+                      8
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "nft": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "native_estimate": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "fraction"
+                      },
+                      "definition_version": {
+                        "const": "funding.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "cumulative_1d": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "fraction"
+                      },
+                      "definition_version": {
+                        "const": "funding.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "cumulative_7d": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "fraction"
+                      },
+                      "definition_version": {
+                        "const": "funding.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "cap": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "fraction"
+                      },
+                      "definition_version": {
+                        "const": "funding.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "floor": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "fraction"
+                      },
+                      "definition_version": {
+                        "const": "funding.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "at_cap": {
+                "$ref": "urn:pulse:schema:v1:common#/$defs/flagField"
+              },
+              "at_floor": {
+                "$ref": "urn:pulse:schema:v1:common#/$defs/flagField"
+              }
+            },
+            "required": [
+              "h",
+              "nft",
+              "native_estimate",
+              "cumulative_1d",
+              "cumulative_7d",
+              "cap",
+              "floor",
+              "at_cap",
+              "at_floor"
+            ]
+          },
+          "funding_change": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "status": {
+                "enum": [
+                  "available",
+                  "unavailable",
+                  "settlement_pending",
+                  "unsupported"
+                ]
+              },
+              "reason": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^[a-z][a-z0-9_]*$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "id": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 8191
+              },
+              "mapping_version": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128,
+                "pattern": "^[A-Za-z0-9_.:-]+$"
+              },
+              "h": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      1,
+                      4,
+                      8
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "nft": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "settled_rate": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "settlement_ms": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "verified_at_ms": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "expires_ms": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "settled_last": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "fraction"
+                      },
+                      "definition_version": {
+                        "const": "funding_change.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "settled_1d": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "fraction"
+                      },
+                      "definition_version": {
+                        "const": "funding_change.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "settled_7d": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "fraction"
+                      },
+                      "definition_version": {
+                        "const": "funding_change.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "basis_bps": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "bps"
+                      },
+                      "definition_version": {
+                        "const": "funding_change.v1"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "required": [
+              "status",
+              "reason",
+              "id",
+              "mapping_version",
+              "h",
+              "nft",
+              "settled_rate",
+              "settlement_ms",
+              "verified_at_ms",
+              "expires_ms",
+              "settled_last",
+              "settled_1d",
+              "settled_7d",
+              "basis_bps"
+            ],
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "status": {
+                      "const": "available"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "reason": {
+                      "type": "null"
+                    },
+                    "h": {
+                      "enum": [
+                        1,
+                        4,
+                        8
+                      ]
+                    },
+                    "nft": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "settled_rate": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 64,
+                      "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                    },
+                    "settlement_ms": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "verified_at_ms": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "expires_ms": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
+                    }
+                  }
+                },
+                "else": {
+                  "properties": {
+                    "reason": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 64,
+                      "pattern": "^[a-z][a-z0-9_]*$"
+                    },
+                    "settled_rate": {
+                      "type": "null"
+                    },
+                    "settlement_ms": {
+                      "type": "null"
+                    },
+                    "verified_at_ms": {
+                      "type": "null"
+                    },
+                    "expires_ms": {
+                      "type": "null"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "volatility": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "score": {
+                "allOf": [
+                  {
+                    "allOf": [
+                      {
+                        "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                      },
+                      {
+                        "properties": {
+                          "unit": {
+                            "const": "fraction"
+                          },
+                          "definition_version": {
+                            "const": "volatility.v1"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "windows": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "1H": {
+                    "allOf": [
+                      {
+                        "allOf": [
+                          {
+                            "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                          },
+                          {
+                            "properties": {
+                              "unit": {
+                                "const": "fraction"
+                              },
+                              "definition_version": {
+                                "const": "volatility.v1"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "4H": {
+                    "allOf": [
+                      {
+                        "allOf": [
+                          {
+                            "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                          },
+                          {
+                            "properties": {
+                              "unit": {
+                                "const": "fraction"
+                              },
+                              "definition_version": {
+                                "const": "volatility.v1"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "24H": {
+                    "allOf": [
+                      {
+                        "allOf": [
+                          {
+                            "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                          },
+                          {
+                            "properties": {
+                              "unit": {
+                                "const": "fraction"
+                              },
+                              "definition_version": {
+                                "const": "volatility.v1"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "1H",
+                  "4H",
+                  "24H"
+                ]
+              },
+              "direction": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/textField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "state"
+                      },
+                      "definition_version": {
+                        "const": "volatility.v1"
+                      },
+                      "value": {
+                        "enum": [
+                          null,
+                          "Surging",
+                          "Rising",
+                          "Stable",
+                          "Falling",
+                          "Contracting"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "required": [
+              "score",
+              "windows",
+              "direction"
+            ]
+          },
+          "signal": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "code": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/textField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "state"
+                      },
+                      "definition_version": {
+                        "const": "signal.v1"
+                      },
+                      "value": {
+                        "enum": [
+                          null,
+                          "MomentumLong",
+                          "MomentumShort",
+                          "ReversalLong",
+                          "ReversalShort",
+                          "BreakoutWatch",
+                          "Range",
+                          "Avoid"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "category": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/textField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "state"
+                      },
+                      "definition_version": {
+                        "const": "signal.v1"
+                      },
+                      "value": {
+                        "enum": [
+                          null,
+                          "Avoid",
+                          "Breakout",
+                          "Downtrend",
+                          "Range",
+                          "Reversal",
+                          "Uptrend"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "required": [
+              "code",
+              "category"
+            ]
+          },
+          "signal_since": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "status": {
+                "enum": [
+                  "available",
+                  "unavailable",
+                  "settlement_pending",
+                  "unsupported"
+                ]
+              },
+              "reason": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^[a-z][a-z0-9_]*$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "state": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "MomentumLong",
+                      "MomentumShort",
+                      "ReversalLong",
+                      "ReversalShort",
+                      "BreakoutWatch",
+                      "Range",
+                      "Avoid"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "price": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "at_ms": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "asof_ms": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "expires_ms": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "definition_version": {
+                "const": "signal_state.v1"
+              },
+              "input_refs": {
+                "type": "array",
+                "maxItems": 8,
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9_.:-]+$"
+                }
+              }
+            },
+            "required": [
+              "status",
+              "reason",
+              "state",
+              "price",
+              "at_ms",
+              "asof_ms",
+              "expires_ms",
+              "definition_version",
+              "input_refs"
+            ],
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "status": {
+                      "const": "available"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "reason": {
+                      "type": "null"
+                    },
+                    "state": {
+                      "enum": [
+                        "MomentumLong",
+                        "MomentumShort",
+                        "ReversalLong",
+                        "ReversalShort",
+                        "BreakoutWatch",
+                        "Range",
+                        "Avoid"
+                      ]
+                    },
+                    "price": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 64,
+                      "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                    },
+                    "at_ms": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "asof_ms": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "expires_ms": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "input_refs": {
+                      "minItems": 1
+                    }
+                  }
+                },
+                "else": {
+                  "properties": {
+                    "reason": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 64,
+                      "pattern": "^[a-z][a-z0-9_]*$"
+                    },
+                    "state": {
+                      "type": "null"
+                    },
+                    "price": {
+                      "type": "null"
+                    },
+                    "at_ms": {
+                      "type": "null"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "context": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "rsi_14": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "score"
+                      },
+                      "definition_version": {
+                        "const": "legacy_context.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "volatility_momentum": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "log_ratio"
+                      },
+                      "definition_version": {
+                        "const": "legacy_context.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "volatility_velocity": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/textField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "state"
+                      },
+                      "definition_version": {
+                        "const": "legacy_context.v1"
+                      },
+                      "value": {
+                        "enum": [
+                          null,
+                          "Accelerating",
+                          "Decelerating",
+                          "Stable"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "required": [
+              "rsi_14",
+              "volatility_momentum",
+              "volatility_velocity"
+            ]
+          },
+          "outlook": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "label": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/textField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "state"
+                      },
+                      "definition_version": {
+                        "const": "legacy_outlook.v1"
+                      },
+                      "value": {
+                        "enum": [
+                          null,
+                          "Persist",
+                          "Fade",
+                          "Neutral"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "confidence": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/numericField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "fraction"
+                      },
+                      "definition_version": {
+                        "const": "legacy_outlook.v1"
+                      }
+                    }
+                  }
+                ]
+              },
+              "description": {
+                "allOf": [
+                  {
+                    "$ref": "urn:pulse:schema:v1:common#/$defs/textField"
+                  },
+                  {
+                    "properties": {
+                      "unit": {
+                        "const": "text"
+                      },
+                      "definition_version": {
+                        "const": "legacy_outlook.v1"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "required": [
+              "label",
+              "confidence",
+              "description"
+            ]
+          },
+          "history": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "volatility": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "available",
+                      "unavailable",
+                      "settlement_pending",
+                      "unsupported"
+                    ]
+                  },
+                  "reason": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 64,
+                        "pattern": "^[a-z][a-z0-9_]*$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "unit": {
+                    "enum": [
+                      "fraction",
+                      "ratio"
+                    ]
+                  },
+                  "definition_version": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128,
+                    "pattern": "^[A-Za-z0-9_.:-]+$"
+                  },
+                  "input_refs": {
+                    "type": "array",
+                    "maxItems": 8,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 128,
+                      "pattern": "^[A-Za-z0-9_.:-]+$"
+                    },
+                    "uniqueItems": true
+                  },
+                  "points": {
+                    "type": "array",
+                    "maxItems": 96,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "source_ms": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "value": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 64,
+                          "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                        }
+                      },
+                      "required": [
+                        "source_ms",
+                        "value"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "status",
+                  "reason",
+                  "unit",
+                  "definition_version",
+                  "input_refs",
+                  "points"
+                ],
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "status": {
+                          "const": "available"
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "reason": {
+                          "type": "null"
+                        },
+                        "points": {
+                          "minItems": 1
+                        },
+                        "input_refs": {
+                          "minItems": 1
+                        }
+                      }
+                    },
+                    "else": {
+                      "properties": {
+                        "reason": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 64,
+                          "pattern": "^[a-z][a-z0-9_]*$"
+                        },
+                        "points": {
+                          "maxItems": 0
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "ls": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "available",
+                      "unavailable",
+                      "settlement_pending",
+                      "unsupported"
+                    ]
+                  },
+                  "reason": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 64,
+                        "pattern": "^[a-z][a-z0-9_]*$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "unit": {
+                    "enum": [
+                      "fraction",
+                      "ratio"
+                    ]
+                  },
+                  "definition_version": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128,
+                    "pattern": "^[A-Za-z0-9_.:-]+$"
+                  },
+                  "input_refs": {
+                    "type": "array",
+                    "maxItems": 8,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 128,
+                      "pattern": "^[A-Za-z0-9_.:-]+$"
+                    },
+                    "uniqueItems": true
+                  },
+                  "points": {
+                    "type": "array",
+                    "maxItems": 96,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "source_ms": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "value": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 64,
+                          "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                        }
+                      },
+                      "required": [
+                        "source_ms",
+                        "value"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "status",
+                  "reason",
+                  "unit",
+                  "definition_version",
+                  "input_refs",
+                  "points"
+                ],
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "status": {
+                          "const": "available"
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "reason": {
+                          "type": "null"
+                        },
+                        "points": {
+                          "minItems": 1
+                        },
+                        "input_refs": {
+                          "minItems": 1
+                        }
+                      }
+                    },
+                    "else": {
+                      "properties": {
+                        "reason": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 64,
+                          "pattern": "^[a-z][a-z0-9_]*$"
+                        },
+                        "points": {
+                          "maxItems": 0
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "funding": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "available",
+                      "unavailable",
+                      "settlement_pending",
+                      "unsupported"
+                    ]
+                  },
+                  "reason": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 64,
+                        "pattern": "^[a-z][a-z0-9_]*$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "unit": {
+                    "enum": [
+                      "fraction",
+                      "ratio"
+                    ]
+                  },
+                  "definition_version": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128,
+                    "pattern": "^[A-Za-z0-9_.:-]+$"
+                  },
+                  "input_refs": {
+                    "type": "array",
+                    "maxItems": 8,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 128,
+                      "pattern": "^[A-Za-z0-9_.:-]+$"
+                    },
+                    "uniqueItems": true
+                  },
+                  "points": {
+                    "type": "array",
+                    "maxItems": 96,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "source_ms": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "value": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 64,
+                          "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                        }
+                      },
+                      "required": [
+                        "source_ms",
+                        "value"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "status",
+                  "reason",
+                  "unit",
+                  "definition_version",
+                  "input_refs",
+                  "points"
+                ],
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "status": {
+                          "const": "available"
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "reason": {
+                          "type": "null"
+                        },
+                        "points": {
+                          "minItems": 1
+                        },
+                        "input_refs": {
+                          "minItems": 1
+                        }
+                      }
+                    },
+                    "else": {
+                      "properties": {
+                        "reason": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 64,
+                          "pattern": "^[a-z][a-z0-9_]*$"
+                        },
+                        "points": {
+                          "maxItems": 0
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "funding_change": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "available",
+                      "unavailable",
+                      "settlement_pending",
+                      "unsupported"
+                    ]
+                  },
+                  "reason": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 64,
+                        "pattern": "^[a-z][a-z0-9_]*$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "unit": {
+                    "enum": [
+                      "fraction",
+                      "ratio"
+                    ]
+                  },
+                  "definition_version": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128,
+                    "pattern": "^[A-Za-z0-9_.:-]+$"
+                  },
+                  "input_refs": {
+                    "type": "array",
+                    "maxItems": 8,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 128,
+                      "pattern": "^[A-Za-z0-9_.:-]+$"
+                    },
+                    "uniqueItems": true
+                  },
+                  "points": {
+                    "type": "array",
+                    "maxItems": 96,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "source_ms": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "value": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 64,
+                          "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                        }
+                      },
+                      "required": [
+                        "source_ms",
+                        "value"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "status",
+                  "reason",
+                  "unit",
+                  "definition_version",
+                  "input_refs",
+                  "points"
+                ],
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "status": {
+                          "const": "available"
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "reason": {
+                          "type": "null"
+                        },
+                        "points": {
+                          "minItems": 1
+                        },
+                        "input_refs": {
+                          "minItems": 1
+                        }
+                      }
+                    },
+                    "else": {
+                      "properties": {
+                        "reason": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 64,
+                          "pattern": "^[a-z][a-z0-9_]*$"
+                        },
+                        "points": {
+                          "maxItems": 0
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "oi": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "available",
+                      "unavailable",
+                      "settlement_pending",
+                      "unsupported"
+                    ]
+                  },
+                  "reason": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 64,
+                        "pattern": "^[a-z][a-z0-9_]*$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "unit": {
+                    "enum": [
+                      "fraction",
+                      "ratio"
+                    ]
+                  },
+                  "definition_version": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128,
+                    "pattern": "^[A-Za-z0-9_.:-]+$"
+                  },
+                  "input_refs": {
+                    "type": "array",
+                    "maxItems": 8,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 128,
+                      "pattern": "^[A-Za-z0-9_.:-]+$"
+                    },
+                    "uniqueItems": true
+                  },
+                  "points": {
+                    "type": "array",
+                    "maxItems": 96,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "source_ms": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "value": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 64,
+                          "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                        }
+                      },
+                      "required": [
+                        "source_ms",
+                        "value"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "status",
+                  "reason",
+                  "unit",
+                  "definition_version",
+                  "input_refs",
+                  "points"
+                ],
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "status": {
+                          "const": "available"
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "reason": {
+                          "type": "null"
+                        },
+                        "points": {
+                          "minItems": 1
+                        },
+                        "input_refs": {
+                          "minItems": 1
+                        }
+                      }
+                    },
+                    "else": {
+                      "properties": {
+                        "reason": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 64,
+                          "pattern": "^[a-z][a-z0-9_]*$"
+                        },
+                        "points": {
+                          "maxItems": 0
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "required": [
+              "volatility",
+              "ls",
+              "funding",
+              "funding_change",
+              "oi"
+            ]
+          },
+          "references": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "status": {
+                "enum": [
+                  "available",
+                  "unavailable",
+                  "settlement_pending",
+                  "unsupported"
+                ]
+              },
+              "reason": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "pattern": "^[a-z][a-z0-9_]*$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "mapping_version": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128,
+                "pattern": "^[A-Za-z0-9_.:-]+$"
+              },
+              "definition_version": {
+                "const": "price_change.v1"
+              },
+              "generation_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 128,
+                "pattern": "^[A-Za-z0-9_.:-]+$"
+              },
+              "ladder": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "built_at_ms": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "start_ms": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "valid_until_ms": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "windows": {
+                        "const": [
+                          "1H",
+                          "4H",
+                          "24H"
+                        ]
+                      },
+                      "slots": {
+                        "type": "array",
+                        "minItems": 5,
+                        "maxItems": 5,
+                        "items": {
+                          "type": "array",
+                          "minItems": 3,
+                          "maxItems": 3,
+                          "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "status": {
+                                "enum": [
+                                  "available",
+                                  "unavailable",
+                                  "settlement_pending",
+                                  "unsupported"
+                                ]
+                              },
+                              "reason": {
+                                "anyOf": [
+                                  {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 64,
+                                    "pattern": "^[a-z][a-z0-9_]*$"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
+                              },
+                              "reference_minute_ms": {
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 9007199254740991
+                              },
+                              "open_price": {
+                                "anyOf": [
+                                  {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 64,
+                                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "status",
+                              "reason",
+                              "reference_minute_ms",
+                              "open_price"
+                            ],
+                            "allOf": [
+                              {
+                                "if": {
+                                  "properties": {
+                                    "status": {
+                                      "const": "available"
+                                    }
+                                  }
+                                },
+                                "then": {
+                                  "properties": {
+                                    "reason": {
+                                      "type": "null"
+                                    },
+                                    "open_price": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 64,
+                                      "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                                    }
+                                  }
+                                },
+                                "else": {
+                                  "properties": {
+                                    "reason": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 64,
+                                      "pattern": "^[a-z][a-z0-9_]*$"
+                                    },
+                                    "open_price": {
+                                      "type": "null"
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    "required": [
+                      "built_at_ms",
+                      "start_ms",
+                      "valid_until_ms",
+                      "windows",
+                      "slots"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "fallback": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "source_ms": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "price": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 64,
+                        "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                      },
+                      "expires_ms": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "references": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "1H": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "status": {
+                                "enum": [
+                                  "available",
+                                  "unavailable",
+                                  "settlement_pending",
+                                  "unsupported"
+                                ]
+                              },
+                              "reason": {
+                                "anyOf": [
+                                  {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 64,
+                                    "pattern": "^[a-z][a-z0-9_]*$"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
+                              },
+                              "reference_minute_ms": {
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 9007199254740991
+                              },
+                              "open_price": {
+                                "anyOf": [
+                                  {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 64,
+                                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "status",
+                              "reason",
+                              "reference_minute_ms",
+                              "open_price"
+                            ],
+                            "allOf": [
+                              {
+                                "if": {
+                                  "properties": {
+                                    "status": {
+                                      "const": "available"
+                                    }
+                                  }
+                                },
+                                "then": {
+                                  "properties": {
+                                    "reason": {
+                                      "type": "null"
+                                    },
+                                    "open_price": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 64,
+                                      "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                                    }
+                                  }
+                                },
+                                "else": {
+                                  "properties": {
+                                    "reason": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 64,
+                                      "pattern": "^[a-z][a-z0-9_]*$"
+                                    },
+                                    "open_price": {
+                                      "type": "null"
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "4H": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "status": {
+                                "enum": [
+                                  "available",
+                                  "unavailable",
+                                  "settlement_pending",
+                                  "unsupported"
+                                ]
+                              },
+                              "reason": {
+                                "anyOf": [
+                                  {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 64,
+                                    "pattern": "^[a-z][a-z0-9_]*$"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
+                              },
+                              "reference_minute_ms": {
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 9007199254740991
+                              },
+                              "open_price": {
+                                "anyOf": [
+                                  {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 64,
+                                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "status",
+                              "reason",
+                              "reference_minute_ms",
+                              "open_price"
+                            ],
+                            "allOf": [
+                              {
+                                "if": {
+                                  "properties": {
+                                    "status": {
+                                      "const": "available"
+                                    }
+                                  }
+                                },
+                                "then": {
+                                  "properties": {
+                                    "reason": {
+                                      "type": "null"
+                                    },
+                                    "open_price": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 64,
+                                      "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                                    }
+                                  }
+                                },
+                                "else": {
+                                  "properties": {
+                                    "reason": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 64,
+                                      "pattern": "^[a-z][a-z0-9_]*$"
+                                    },
+                                    "open_price": {
+                                      "type": "null"
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "24H": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "status": {
+                                "enum": [
+                                  "available",
+                                  "unavailable",
+                                  "settlement_pending",
+                                  "unsupported"
+                                ]
+                              },
+                              "reason": {
+                                "anyOf": [
+                                  {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 64,
+                                    "pattern": "^[a-z][a-z0-9_]*$"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
+                              },
+                              "reference_minute_ms": {
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 9007199254740991
+                              },
+                              "open_price": {
+                                "anyOf": [
+                                  {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 64,
+                                    "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "status",
+                              "reason",
+                              "reference_minute_ms",
+                              "open_price"
+                            ],
+                            "allOf": [
+                              {
+                                "if": {
+                                  "properties": {
+                                    "status": {
+                                      "const": "available"
+                                    }
+                                  }
+                                },
+                                "then": {
+                                  "properties": {
+                                    "reason": {
+                                      "type": "null"
+                                    },
+                                    "open_price": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 64,
+                                      "pattern": "^-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?(?:[0-9]|[1-3][0-9]|40))?$"
+                                    }
+                                  }
+                                },
+                                "else": {
+                                  "properties": {
+                                    "reason": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 64,
+                                      "pattern": "^[a-z][a-z0-9_]*$"
+                                    },
+                                    "open_price": {
+                                      "type": "null"
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "1H",
+                          "4H",
+                          "24H"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "source_ms",
+                      "price",
+                      "expires_ms",
+                      "references"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "status",
+              "reason",
+              "mapping_version",
+              "definition_version",
+              "generation_id",
+              "ladder",
+              "fallback"
+            ],
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "status": {
+                      "const": "available"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "reason": {
+                      "type": "null"
+                    },
+                    "ladder": {
+                      "type": "object"
+                    }
+                  }
+                },
+                "else": {
+                  "properties": {
+                    "reason": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 64,
+                      "pattern": "^[a-z][a-z0-9_]*$"
+                    },
+                    "ladder": {
+                      "type": "null"
+                    },
+                    "fallback": {
+                      "type": "null"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "price",
+          "changes",
+          "volume",
+          "oi",
+          "ls",
+          "funding",
+          "funding_change",
+          "volatility",
+          "signal",
+          "signal_since",
+          "context",
+          "outlook",
+          "history",
+          "references"
+        ]
+      }
+    },
+    "inputs": {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 65536,
+      "propertyNames": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 128,
+        "pattern": "^[A-Za-z0-9_.:-]+$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "version": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "pattern": "^[A-Za-z0-9_.:-]+$"
+          },
+          "source_ms": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "verified_at_ms": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "expires_ms": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "definition_version": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "pattern": "^[A-Za-z0-9_.:-]+$"
+          }
+        },
+        "required": [
+          "version",
+          "source_ms",
+          "verified_at_ms",
+          "expires_ms",
+          "definition_version"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "mapping_version",
+    "generation",
+    "horizon",
+    "generated_ms",
+    "expires_ms",
+    "universe",
+    "rows",
+    "inputs"
+  ]
+}

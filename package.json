@@ -1,0 +1,12 @@
+{
+  "name": "pulse-market-terminal",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "test": "node tools/run-node-tests.mjs"
+  },
+  "dependencies": {
+    "redis": "6.3.0",
+    "ws": "8.22.0"
+  }
+}

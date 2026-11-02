@@ -1,0 +1,440 @@
+{
+  "schema": "pulse.columns.v1",
+  "part": "ls",
+  "count": 1,
+  "mapping_version": "sha256:f6bf9e306fa2314c7de7d6b58d2796fb1b9322cd88d737e6e6728733bb510ca9",
+  "generation": "sha256:49c5810a2af990d3bad8240b69dfdafd101c866c5528d9503e456452bd958ec2",
+  "horizon": "1H",
+  "generated_ms": 1800000000000,
+  "expires_ms": 1800000060000,
+  "metadata": [
+    {
+      "unit": "pp",
+      "assurance": null,
+      "definition_version": "long_short.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "fraction",
+      "assurance": null,
+      "definition_version": "long_short.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "ratio",
+      "assurance": null,
+      "definition_version": "long_short.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    }
+  ],
+  "groups": [
+    {
+      "asof_ms": 1799999999000,
+      "expires_ms": 1800000060000,
+      "input_refs": [
+        "fixture:source"
+      ]
+    }
+  ],
+  "columns": [
+    [
+      [
+        "history",
+        "ls",
+        "definition_version"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "history.fixture.v1"
+      ]
+    ],
+    [
+      [
+        "history",
+        "ls",
+        "input_refs"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        []
+      ]
+    ],
+    [
+      [
+        "history",
+        "ls",
+        "points"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        []
+      ]
+    ],
+    [
+      [
+        "history",
+        "ls",
+        "reason"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "not_retained"
+      ]
+    ],
+    [
+      [
+        "history",
+        "ls",
+        "status"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "unsupported"
+      ]
+    ],
+    [
+      [
+        "history",
+        "ls",
+        "unit"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "ratio"
+      ]
+    ],
+    [
+      [
+        "ls",
+        "divergence"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0"
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "ls",
+        "global_long_share"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.6"
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "ls",
+        "global_ratio"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "1.5"
+      ],
+      [
+        "c",
+        2
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "ls",
+        "global_share_change",
+        "1H"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "1.0"
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "ls",
+        "global_share_change",
+        "24H"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "1.0"
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "ls",
+        "global_share_change",
+        "4H"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "1.0"
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "ls",
+        "top_long_share"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.6"
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "ls",
+        "top_ratio"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "1.5"
+      ],
+      [
+        "c",
+        2
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "ls",
+        "top_share_change",
+        "1H"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "1.0"
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "ls",
+        "top_share_change",
+        "24H"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "1.0"
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "ls",
+        "top_share_change",
+        "4H"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "1.0"
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ]
+  ],
+  "inputs": {
+    "fixture:source": {
+      "version": "fixture.input.v1",
+      "source_ms": 1799999999000,
+      "verified_at_ms": 1800000000000,
+      "expires_ms": 1800029699000,
+      "definition_version": "fixture.source.v1"
+    }
+  }
+}

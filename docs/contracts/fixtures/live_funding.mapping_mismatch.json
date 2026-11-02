@@ -1,0 +1,60 @@
+{
+  "schema": "pulse.live_funding.v1",
+  "mapping_version": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "sequence": 1,
+  "generated_ms": 1800000000000,
+  "expires_ms": 1800000015000,
+  "rows": [
+    {
+      "id": 0,
+      "status": "available",
+      "reason": null,
+      "source_ms": 1799999999500,
+      "expires_ms": 1800000119500,
+      "input_refs": [
+        "fixture:live:funding"
+      ],
+      "h": 8,
+      "nft": 1800028799000,
+      "fr": "0.00015",
+      "efr": "0.0002"
+    },
+    {
+      "id": 1,
+      "status": "available",
+      "reason": null,
+      "source_ms": 1799999999500,
+      "expires_ms": 1800000119500,
+      "input_refs": [
+        "fixture:live:funding"
+      ],
+      "h": 4,
+      "nft": 1800014399000,
+      "fr": "0.00015",
+      "efr": "0.0002"
+    },
+    {
+      "id": 2,
+      "status": "available",
+      "reason": null,
+      "source_ms": 1799999999500,
+      "expires_ms": 1800000119500,
+      "input_refs": [
+        "fixture:live:funding"
+      ],
+      "h": 1,
+      "nft": 1800003599000,
+      "fr": "0.00015",
+      "efr": "0.0002"
+    }
+  ],
+  "inputs": {
+    "fixture:live:funding": {
+      "version": "fixture.live.v1",
+      "source_ms": 1799999999500,
+      "verified_at_ms": null,
+      "expires_ms": 1800000119500,
+      "definition_version": "live.funding.v1"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "provenance": "synthetic deterministic full inputs: tests/volatility_fixture.py; pre-adapter executable 5aa3d7a, Python3.12.15",
+  "inputs": {
+    "60": "97b900e30d2373225a3a940a7a29ce3beb3694f0804ea926592f771b6e058940",
+    "240": "fdefd090f34d9a0cd4969ede8a4c0533bd98106b70c173559b5204ae50ce4e8c",
+    "1D": "ad09649fc6f659678240f53881179f0a387e9c29b4f810fe7955df0e366f17d5"
+  },
+  "outputs": {
+    "60/1H": {
+      "sigma_yz": "0x1.520a10645b49ap-7",
+      "sigma_ewma": "0x1.4be4678db9635p-7",
+      "jump_fraction": "0x0.0p+0",
+      "sigma_base": "0x1.4fe3487fa29f7p-7",
+      "jump_correction": "0x1.0000000000000p+0",
+      "volatility_score": "0x1.4fe3487fa29f7p-7",
+      "score_band": "High Risk"
+    },
+    "60/4H": {
+      "sigma_yz": "0x1.520a10645b49ap-6",
+      "sigma_ewma": "0x1.4be4678db9635p-6",
+      "jump_fraction": "0x0.0p+0",
+      "sigma_base": "0x1.4fe3487fa29f7p-6",
+      "jump_correction": "0x1.0000000000000p+0",
+      "volatility_score": "0x1.4fe3487fa29f7p-6",
+      "score_band": "High Risk"
+    },
+    "60/24H": {
+      "sigma_yz": "0x1.9e030cd384bc8p-5",
+      "sigma_ewma": "0x1.967bb7fac0732p-5",
+      "jump_fraction": "0x0.0p+0",
+      "sigma_base": "0x1.9b607bee0cd60p-5",
+      "jump_correction": "0x1.0000000000000p+0",
+      "volatility_score": "0x1.9b607bee0cd60p-5",
+      "score_band": "High Risk"
+    },
+    "240/1H": {
+      "sigma_yz": "0x1.520a10645b49ap-8",
+      "sigma_ewma": "0x1.4be4678db9635p-8",
+      "jump_fraction": "0x0.0p+0",
+      "sigma_base": "0x1.4fe3487fa29f7p-8",
+      "jump_correction": "0x1.0000000000000p+0",
+      "volatility_score": "0x1.4fe3487fa29f7p-8",
+      "score_band": "Active"
+    },
+    "240/4H": {
+      "sigma_yz": "0x1.520a10645b49ap-7",
+      "sigma_ewma": "0x1.4be4678db9635p-7",
+      "jump_fraction": "0x0.0p+0",
+      "sigma_base": "0x1.4fe3487fa29f7p-7",
+      "jump_correction": "0x1.0000000000000p+0",
+      "volatility_score": "0x1.4fe3487fa29f7p-7",
+      "score_band": "Active"
+    },
+    "240/24H": {
+      "sigma_yz": "0x1.9e030cd384bc8p-6",
+      "sigma_ewma": "0x1.967bb7fac0732p-6",
+      "jump_fraction": "0x0.0p+0",
+      "sigma_base": "0x1.9b607bee0cd60p-6",
+      "jump_correction": "0x1.0000000000000p+0",
+      "volatility_score": "0x1.9b607bee0cd60p-6",
+      "score_band": "Active"
+    },
+    "1D/1H": {
+      "sigma_yz": "0x1.1402088d03286p-9",
+      "sigma_ewma": "0x1.0efd2551d5a21p-9",
+      "jump_fraction": "0x0.0p+0",
+      "sigma_base": "0x1.1240529eb3396p-9",
+      "jump_correction": "0x1.0000000000000p+0",
+      "volatility_score": "0x1.1240529eb3396p-9",
+      "score_band": "Quiet"
+    },
+    "1D/4H": {
+      "sigma_yz": "0x1.1402088d03286p-8",
+      "sigma_ewma": "0x1.0efd2551d5a21p-8",
+      "jump_fraction": "0x0.0p+0",
+      "sigma_base": "0x1.1240529eb3396p-8",
+      "jump_correction": "0x1.0000000000000p+0",
+      "volatility_score": "0x1.1240529eb3396p-8",
+      "score_band": "Quiet"
+    },
+    "1D/24H": {
+      "sigma_yz": "0x1.520a10645b49ap-7",
+      "sigma_ewma": "0x1.4be4678db9635p-7",
+      "jump_fraction": "0x0.0p+0",
+      "sigma_base": "0x1.4fe3487fa29f7p-7",
+      "jump_correction": "0x1.0000000000000p+0",
+      "volatility_score": "0x1.4fe3487fa29f7p-7",
+      "score_band": "Quiet"
+    }
+  }
+}

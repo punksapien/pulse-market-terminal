@@ -1,0 +1,56 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "regions": [
+    "bom1"
+  ],
+  "framework": null,
+  "buildCommand": "python3 build_static.py",
+  "outputDirectory": "public",
+  "ignoreCommand": "node -e \"process.exit((process.env.VERCEL_GIT_COMMIT_MESSAGE || '').includes('[skip vercel]') ? 0 : 1)\"",
+  "functions": {
+    "api/pulse.py": {
+      "regions": [
+        "bom1"
+      ]
+    },
+    "api/pulse_stream.js": {
+      "regions": ["bom1"],
+      "maxDuration": 90
+    },
+    "api/pulse_worker.py": {
+      "regions": [
+        "bom1"
+      ],
+      "maxDuration": 90
+    },
+    "api/pulse_publish.py": {
+      "regions": ["bom1"],
+      "maxDuration": 90
+    },
+    "api/pulse_history.py": {
+      "regions": ["bom1"],
+      "maxDuration": 90
+    },
+    "api/pulse_live.py": {
+      "regions": ["bom1"],
+      "maxDuration": 90
+    }
+  },
+  "rewrites": [],
+  "crons": [
+    {
+      "path": "/api/pulse_publish",
+      "schedule": "* * * * *"
+    },
+    {
+      "path": "/api/pulse_worker",
+      "schedule": "* * * * *"
+    },
+    {
+      "path": "/api/pulse_history",
+      "schedule": "* * * * *"
+    }
+  ],
+  "redirects": []
+}

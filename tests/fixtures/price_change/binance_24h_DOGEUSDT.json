@@ -1,0 +1,16 @@
+{
+ "symbol": "DOGEUSDT",
+ "ticker": {
+  "lastPrice": "0.075360",
+  "openPrice": "0.079820",
+  "priceChangePercent": "-5.588",
+  "openTime": 1792769880000,
+  "closeTime": 1792856311293
+ },
+ "kline_1m_at_openTime": {
+  "openTime": 1792769880000,
+  "open": "0.079820"
+ },
+ "computed_percent": -5.588,
+ "matches": true
+}

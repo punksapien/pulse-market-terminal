@@ -1,0 +1,74 @@
+[
+  {
+    "timestamp": "2026-05-22T11:12:43.181Z",
+    "event": "api_data_fetch",
+    "utm_source": "volatility_terminal",
+    "utm_medium": "api_client",
+    "utm_campaign": "volatility_discovery_v1",
+    "utm_content": "manual_refresh",
+    "utm_term": "tf_1D_hz_7D"
+  },
+  {
+    "timestamp": "2026-05-22T11:13:16.585Z",
+    "event": "api_data_fetch",
+    "utm_source": "volatility_terminal",
+    "utm_medium": "api_client",
+    "utm_campaign": "volatility_discovery_v1",
+    "utm_content": "manual_refresh",
+    "utm_term": "tf_240_hz_24H"
+  },
+  {
+    "timestamp": "2026-05-22T11:15:43.200Z",
+    "event": "api_data_fetch",
+    "utm_source": "volatility_terminal",
+    "utm_medium": "api_client",
+    "utm_campaign": "volatility_discovery_v1",
+    "utm_content": "manual_refresh",
+    "utm_term": "tf_1D_hz_7D"
+  },
+  {
+    "timestamp": "2026-05-22T11:16:43.253Z",
+    "event": "api_data_fetch",
+    "utm_source": "volatility_terminal",
+    "utm_medium": "api_client",
+    "utm_campaign": "volatility_discovery_v1",
+    "utm_content": "manual_refresh",
+    "utm_term": "tf_1D_hz_7D"
+  },
+  {
+    "timestamp": "2026-05-22T11:17:43.189Z",
+    "event": "api_data_fetch",
+    "utm_source": "volatility_terminal",
+    "utm_medium": "api_client",
+    "utm_campaign": "volatility_discovery_v1",
+    "utm_content": "manual_refresh",
+    "utm_term": "tf_1D_hz_7D"
+  },
+  {
+    "timestamp": "2026-05-22T13:12:23.856Z",
+    "event": "trade_now_click",
+    "utm_source": "volatility_terminal",
+    "utm_medium": "top_action_bar",
+    "utm_campaign": "volatility_discovery_v1",
+    "utm_content": "trade_now_open",
+    "utm_term": "trade_now"
+  },
+  {
+    "timestamp": "2026-05-22T13:12:26.735Z",
+    "event": "trade_now_click",
+    "utm_source": "volatility_terminal",
+    "utm_medium": "top_action_bar",
+    "utm_campaign": "volatility_discovery_v1",
+    "utm_content": "trade_now_close",
+    "utm_term": "trade_now"
+  },
+  {
+    "timestamp": "2026-05-22T13:12:43.318Z",
+    "event": "api_data_fetch",
+    "utm_source": "volatility_terminal",
+    "utm_medium": "api_client",
+    "utm_campaign": "volatility_discovery_v1",
+    "utm_content": "manual_refresh",
+    "utm_term": "tf_1D_hz_7D"
+  }
+]

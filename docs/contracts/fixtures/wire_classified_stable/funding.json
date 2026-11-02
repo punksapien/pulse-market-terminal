@@ -1,0 +1,364 @@
+{
+  "schema": "pulse.columns.v1",
+  "part": "funding",
+  "count": 1,
+  "mapping_version": "sha256:f6bf9e306fa2314c7de7d6b58d2796fb1b9322cd88d737e6e6728733bb510ca9",
+  "generation": "sha256:49c5810a2af990d3bad8240b69dfdafd101c866c5528d9503e456452bd958ec2",
+  "horizon": "1H",
+  "generated_ms": 1800000000000,
+  "expires_ms": 1800000060000,
+  "metadata": [
+    {
+      "unit": "boolean",
+      "assurance": null,
+      "definition_version": "funding.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "fraction",
+      "assurance": null,
+      "definition_version": "funding.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    },
+    {
+      "unit": "fraction",
+      "assurance": "window_consistent_provisional",
+      "definition_version": "funding.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    }
+  ],
+  "groups": [
+    {
+      "asof_ms": 1799999999000,
+      "expires_ms": 1800000060000,
+      "input_refs": [
+        "fixture:source"
+      ]
+    },
+    {
+      "asof_ms": 1799999999000,
+      "expires_ms": 1800000119000,
+      "input_refs": [
+        "fixture:source"
+      ]
+    },
+    {
+      "asof_ms": 1799999999000,
+      "expires_ms": 1800028799000,
+      "input_refs": [
+        "fixture:source"
+      ]
+    }
+  ],
+  "columns": [
+    [
+      [
+        "funding",
+        "at_cap"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        false
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "funding",
+        "at_floor"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        false
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "funding",
+        "cap"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.003"
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "funding",
+        "cumulative_1d"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.00035"
+      ],
+      [
+        "c",
+        2
+      ],
+      [
+        "c",
+        2
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "funding",
+        "cumulative_7d"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.00215"
+      ],
+      [
+        "c",
+        2
+      ],
+      [
+        "c",
+        2
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "funding",
+        "floor"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "-0.003"
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "funding",
+        "h"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        8
+      ]
+    ],
+    [
+      [
+        "funding",
+        "native_estimate"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.0002"
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "funding",
+        "nft"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        1800028799000
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding",
+        "definition_version"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "history.fixture.v1"
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding",
+        "input_refs"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        []
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding",
+        "points"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        []
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding",
+        "reason"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "not_retained"
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding",
+        "status"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "unsupported"
+      ]
+    ],
+    [
+      [
+        "history",
+        "funding",
+        "unit"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "fraction"
+      ]
+    ]
+  ],
+  "inputs": {
+    "fixture:source": {
+      "version": "fixture.input.v1",
+      "source_ms": 1799999999000,
+      "verified_at_ms": 1800000000000,
+      "expires_ms": 1800029699000,
+      "definition_version": "fixture.source.v1"
+    }
+  }
+}

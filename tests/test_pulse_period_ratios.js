@@ -1,0 +1,14 @@
+"use strict";
+const fs=require("node:fs"),assert=require("node:assert/strict");
+const A=require("../frontend/src/pulse/pulse_adapter.js");
+assert.deepEqual(require("../frontend/src/pulse/pulse_model.js").windowLabels("long_short"),["1H","4H","24H"]);
+const wire=JSON.parse(fs.readFileSync("docs/contracts/fixtures/snapshot.valid.1H.json","utf8"));
+const now=wire.generated_ms+1000,field=wire.rows[0].ls.global_ratio;
+wire.rows[0].ls.period_ratios=Object.fromEntries(["1H","4H","24H"].map((w,i)=>[w,{...field,value:["1.2","2","3"][i]}]));
+let snap=A.adapt(wire,now);
+assert.deepEqual(["1H","4H","24H"].map(w=>snap.rows[0].metrics.long_short[w].value),[1.2,2,3]);
+wire.rows[0].ls.period_ratios["4H"]={...field,status:"unavailable",reason:"source_unavailable",value:null};
+snap=A.adapt(wire,now);
+assert.equal(snap.rows[0].metrics.long_short["4H"].value,null,"missing period never borrows another ratio");
+assert.equal(snap.rows[0].metrics.long_short["1H"].value,1.2);
+console.log("Native-period L/S: three actual ratios, missing period unavailable");

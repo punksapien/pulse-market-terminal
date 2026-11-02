@@ -1,0 +1,101 @@
+{
+  "corpus": "synthetic-not-market-seed81",
+  "rows": 504,
+  "logical_sha256": "sha256:a18a232403739670e0db1e8a97c53018a6f83f16fdc39d4813469e33d980f4c7",
+  "logical_raw": 9785464,
+  "encode_ms": 373.8188330316916,
+  "decode_ms": 181.47466698428616,
+  "parts": {
+    "core": {
+      "raw": 451252,
+      "gzip6": 40652,
+      "br5": {
+        "bytes": 28872,
+        "encode_ms": 5.071333999999993
+      },
+      "br11": {
+        "bytes": 23866,
+        "encode_ms": 463.7355
+      }
+    },
+    "volatility": {
+      "raw": 192488,
+      "gzip6": 13211,
+      "br5": {
+        "bytes": 9447,
+        "encode_ms": 1.2965
+      },
+      "br11": {
+        "bytes": 7910,
+        "encode_ms": 212.18570799999998
+      }
+    },
+    "ls": {
+      "raw": 227110,
+      "gzip6": 28876,
+      "br5": {
+        "bytes": 25018,
+        "encode_ms": 2.0244170000000015
+      },
+      "br11": {
+        "bytes": 19793,
+        "encode_ms": 242.517209
+      }
+    },
+    "funding": {
+      "raw": 288154,
+      "gzip6": 26876,
+      "br5": {
+        "bytes": 17186,
+        "encode_ms": 1.9655419999999992
+      },
+      "br11": {
+        "bytes": 13636,
+        "encode_ms": 349.749959
+      }
+    },
+    "funding_change": {
+      "raw": 333769,
+      "gzip6": 20752,
+      "br5": {
+        "bytes": 14745,
+        "encode_ms": 1.839708
+      },
+      "br11": {
+        "bytes": 12007,
+        "encode_ms": 383.835167
+      }
+    },
+    "oi": {
+      "raw": 197168,
+      "gzip6": 15443,
+      "br5": {
+        "bytes": 11744,
+        "encode_ms": 1.512042000000001
+      },
+      "br11": {
+        "bytes": 9368,
+        "encode_ms": 247.66074999999998
+      }
+    },
+    "references": {
+      "raw": 971598,
+      "gzip6": 96851,
+      "br5": {
+        "bytes": 86869,
+        "encode_ms": 6.091250000000002
+      },
+      "br11": {
+        "bytes": 66858,
+        "encode_ms": 1008.513292
+      }
+    }
+  },
+  "gzip6_largest_core_plus_metric": 69528,
+  "gzip6_with_references": 166379,
+  "br5_largest_core_plus_metric": 53890,
+  "br5_with_references": 140759,
+  "br11_largest_core_plus_metric": 43659,
+  "br11_with_references": 110517,
+  "source_versions": "materialised-source-batch-per-group-required"
+}

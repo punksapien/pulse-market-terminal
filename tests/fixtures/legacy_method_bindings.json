@@ -1,0 +1,28 @@
+{
+  "warm_all_combinations": {
+    "module": "refresh",
+    "method": true,
+    "bindings": {
+      "VercelStorage": "storage",
+      "_generation_health_snapshot": "health_snapshot",
+      "_set_refresh_backoff": "set_backoff",
+      "_record_refresh_status": "record_status",
+      "_get_cached_or_compute": "compute",
+      "_validate_generated_report": "validate_report",
+      "_validate_generation_set": "validate_set",
+      "_publish_generation": "publish"
+    }
+  },
+  "_get_report_with_auto_heal": {
+    "module": "refresh",
+    "method": true,
+    "bindings": {
+      "_get_cached_or_compute": "compute",
+      "_refresh_backoff_status": "backoff_status",
+      "_warm": "warm"
+    },
+    "receiver_calls": {
+      "_warm": "warm_all_combinations"
+    }
+  }
+}

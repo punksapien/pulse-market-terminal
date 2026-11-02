@@ -1,0 +1,544 @@
+{
+  "schema": "pulse.columns.v1",
+  "part": "references",
+  "count": 1,
+  "mapping_version": "sha256:f6bf9e306fa2314c7de7d6b58d2796fb1b9322cd88d737e6e6728733bb510ca9",
+  "generation": "sha256:49c5810a2af990d3bad8240b69dfdafd101c866c5528d9503e456452bd958ec2",
+  "horizon": "1H",
+  "generated_ms": 1800000000000,
+  "expires_ms": 1800000060000,
+  "metadata": [
+    {
+      "unit": "fraction",
+      "assurance": null,
+      "definition_version": "price_change.v1",
+      "classification_status": "uncalibrated",
+      "level": null,
+      "level_basis": null,
+      "level_basis_unit": null
+    }
+  ],
+  "groups": [
+    {
+      "asof_ms": 1799999999000,
+      "expires_ms": 1800000060000,
+      "input_refs": [
+        "fixture:source"
+      ]
+    }
+  ],
+  "columns": [
+    [
+      [
+        "changes",
+        "24H"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.02"
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "changes",
+        "4H"
+      ],
+      null,
+      "f",
+      [
+        "c",
+        "0.02"
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        0
+      ],
+      [
+        "c",
+        {
+          "reason": null,
+          "status": "available"
+        }
+      ]
+    ],
+    [
+      [
+        "references",
+        "definition_version"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "price_change.v1"
+      ]
+    ],
+    [
+      [
+        "references",
+        "fallback",
+        "expires_ms"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        1800000060000
+      ]
+    ],
+    [
+      [
+        "references",
+        "fallback",
+        "price"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "102"
+      ]
+    ],
+    [
+      [
+        "references",
+        "fallback",
+        "references",
+        "1H",
+        "open_price"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "100"
+      ]
+    ],
+    [
+      [
+        "references",
+        "fallback",
+        "references",
+        "1H",
+        "reason"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        null
+      ]
+    ],
+    [
+      [
+        "references",
+        "fallback",
+        "references",
+        "1H",
+        "reference_minute_ms"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        1799996340000
+      ]
+    ],
+    [
+      [
+        "references",
+        "fallback",
+        "references",
+        "1H",
+        "status"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "available"
+      ]
+    ],
+    [
+      [
+        "references",
+        "fallback",
+        "references",
+        "24H",
+        "open_price"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "100"
+      ]
+    ],
+    [
+      [
+        "references",
+        "fallback",
+        "references",
+        "24H",
+        "reason"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        null
+      ]
+    ],
+    [
+      [
+        "references",
+        "fallback",
+        "references",
+        "24H",
+        "reference_minute_ms"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        1799913540000
+      ]
+    ],
+    [
+      [
+        "references",
+        "fallback",
+        "references",
+        "24H",
+        "status"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "available"
+      ]
+    ],
+    [
+      [
+        "references",
+        "fallback",
+        "references",
+        "4H",
+        "open_price"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "100"
+      ]
+    ],
+    [
+      [
+        "references",
+        "fallback",
+        "references",
+        "4H",
+        "reason"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        null
+      ]
+    ],
+    [
+      [
+        "references",
+        "fallback",
+        "references",
+        "4H",
+        "reference_minute_ms"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        1799985540000
+      ]
+    ],
+    [
+      [
+        "references",
+        "fallback",
+        "references",
+        "4H",
+        "status"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "available"
+      ]
+    ],
+    [
+      [
+        "references",
+        "fallback",
+        "source_ms"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        1799999999000
+      ]
+    ],
+    [
+      [
+        "references",
+        "generation_id"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "sha256:49c5810a2af990d3bad8240b69dfdafd101c866c5528d9503e456452bd958ec2"
+      ]
+    ],
+    [
+      [
+        "references",
+        "ladder",
+        "built_at_ms"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        1800000000000
+      ]
+    ],
+    [
+      [
+        "references",
+        "ladder",
+        "slots"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        [
+          [
+            {
+              "open_price": "100",
+              "reason": null,
+              "reference_minute_ms": 1799996400000,
+              "status": "available"
+            },
+            {
+              "open_price": "100",
+              "reason": null,
+              "reference_minute_ms": 1799985600000,
+              "status": "available"
+            },
+            {
+              "open_price": "100",
+              "reason": null,
+              "reference_minute_ms": 1799913600000,
+              "status": "available"
+            }
+          ],
+          [
+            {
+              "open_price": "100",
+              "reason": null,
+              "reference_minute_ms": 1799996460000,
+              "status": "available"
+            },
+            {
+              "open_price": "100",
+              "reason": null,
+              "reference_minute_ms": 1799985660000,
+              "status": "available"
+            },
+            {
+              "open_price": "100",
+              "reason": null,
+              "reference_minute_ms": 1799913660000,
+              "status": "available"
+            }
+          ],
+          [
+            {
+              "open_price": "100",
+              "reason": null,
+              "reference_minute_ms": 1799996520000,
+              "status": "available"
+            },
+            {
+              "open_price": "100",
+              "reason": null,
+              "reference_minute_ms": 1799985720000,
+              "status": "available"
+            },
+            {
+              "open_price": "100",
+              "reason": null,
+              "reference_minute_ms": 1799913720000,
+              "status": "available"
+            }
+          ],
+          [
+            {
+              "open_price": "100",
+              "reason": null,
+              "reference_minute_ms": 1799996580000,
+              "status": "available"
+            },
+            {
+              "open_price": "100",
+              "reason": null,
+              "reference_minute_ms": 1799985780000,
+              "status": "available"
+            },
+            {
+              "open_price": "100",
+              "reason": null,
+              "reference_minute_ms": 1799913780000,
+              "status": "available"
+            }
+          ],
+          [
+            {
+              "open_price": "100",
+              "reason": null,
+              "reference_minute_ms": 1799996640000,
+              "status": "available"
+            },
+            {
+              "open_price": "100",
+              "reason": null,
+              "reference_minute_ms": 1799985840000,
+              "status": "available"
+            },
+            {
+              "open_price": "100",
+              "reason": null,
+              "reference_minute_ms": 1799913840000,
+              "status": "available"
+            }
+          ]
+        ]
+      ]
+    ],
+    [
+      [
+        "references",
+        "ladder",
+        "start_ms"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        1800000000000
+      ]
+    ],
+    [
+      [
+        "references",
+        "ladder",
+        "valid_until_ms"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        1800000300000
+      ]
+    ],
+    [
+      [
+        "references",
+        "ladder",
+        "windows"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        [
+          "1H",
+          "4H",
+          "24H"
+        ]
+      ]
+    ],
+    [
+      [
+        "references",
+        "mapping_version"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "sha256:f6bf9e306fa2314c7de7d6b58d2796fb1b9322cd88d737e6e6728733bb510ca9"
+      ]
+    ],
+    [
+      [
+        "references",
+        "reason"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        null
+      ]
+    ],
+    [
+      [
+        "references",
+        "status"
+      ],
+      null,
+      "j",
+      [
+        "c",
+        "available"
+      ]
+    ]
+  ],
+  "inputs": {
+    "fixture:source": {
+      "version": "fixture.input.v1",
+      "source_ms": 1799999999000,
+      "verified_at_ms": 1800000000000,
+      "expires_ms": 1800029699000,
+      "definition_version": "fixture.source.v1"
+    }
+  }
+}
